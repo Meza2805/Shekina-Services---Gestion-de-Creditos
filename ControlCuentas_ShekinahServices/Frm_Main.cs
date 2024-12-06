@@ -1,5 +1,6 @@
 using ControlCuentas_ShekinahServices.FormulariosHijos;
 using FontAwesome.Sharp;
+using Microsoft.Extensions.DependencyInjection;
 using System.Runtime.InteropServices;
 
 
@@ -7,6 +8,8 @@ namespace ControlCuentas_ShekinahServices
 {
     public partial class Frm_Main : Form
     {
+        private readonly IServiceProvider _serviceProvider;
+
 
         /// Campos 
         private IconButton currentBtn;
@@ -24,7 +27,7 @@ namespace ControlCuentas_ShekinahServices
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
         ///Construtor
-        public Frm_Main()
+        public Frm_Main(IServiceProvider serviceProvider)
         {
             InitializeComponent();
             leftBorderBtn = new Panel();
@@ -38,6 +41,7 @@ namespace ControlCuentas_ShekinahServices
             this.DoubleBuffered = true;
 
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            this._serviceProvider = serviceProvider;
         }
 
         ///Metodos
@@ -172,7 +176,9 @@ namespace ControlCuentas_ShekinahServices
         private void btnInicio_Click(object sender, EventArgs e)
         {
             Resetear();
-            AbrirFormularioHijo(new Frm_Principal());
+            //En este caso hago uso de los formularios que he implementado en el archivo Main.cs en lugar de Instanciarlos
+            var Formulario = _serviceProvider.GetRequiredService<Frm_Principal>();
+            AbrirFormularioHijo(Formulario);
         }
 
         private void PanelSuperior_MouseDown(object sender, MouseEventArgs e)

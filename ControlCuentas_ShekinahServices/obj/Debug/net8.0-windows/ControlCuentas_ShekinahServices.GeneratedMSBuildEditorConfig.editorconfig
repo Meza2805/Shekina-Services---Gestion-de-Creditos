@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ControlCuentas_ShekinahServices
-build_property.ProjectDir = C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Proyecto de Control de Cuentas\ControlCuentas_ShekinahServices\ControlCuentas_ShekinahServices\
+build_property.ProjectDir = C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Shekina Services - Gestión de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\ControlCuentas_ShekinahServices\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

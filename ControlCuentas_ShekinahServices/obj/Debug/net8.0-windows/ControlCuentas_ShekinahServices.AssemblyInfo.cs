@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ControlCuentas_ShekinahServices")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b18b44560709f793a859e644bbb325e3043042db")]
 [assembly: System.Reflection.AssemblyProductAttribute("ControlCuentas_ShekinahServices")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ControlCuentas_ShekinahServices")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

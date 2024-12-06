@@ -1,0 +1,16 @@
+C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Shekina Services - Gestión de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\Aplicacion\bin\Debug\net8.0\Aplicacion.deps.json
+C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Shekina Services - Gestión de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\Aplicacion\bin\Debug\net8.0\Aplicacion.dll
+C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Shekina Services - Gestión de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\Aplicacion\bin\Debug\net8.0\Aplicacion.pdb
+C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Shekina Services - Gestión de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\Aplicacion\bin\Debug\net8.0\Entidades.dll
+C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Shekina Services - Gestión de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\Aplicacion\bin\Debug\net8.0\Entidades.pdb
+C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Shekina Services - Gestión de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\Aplicacion\obj\Debug\net8.0\Aplicacion.csproj.AssemblyReference.cache
+C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Shekina Services - Gestión de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\Aplicacion\obj\Debug\net8.0\Aplicacion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Shekina Services - Gestión de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\Aplicacion\obj\Debug\net8.0\Aplicacion.AssemblyInfoInputs.cache
+C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Shekina Services - Gestión de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\Aplicacion\obj\Debug\net8.0\Aplicacion.AssemblyInfo.cs
+C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Shekina Services - Gestión de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\Aplicacion\obj\Debug\net8.0\Aplicacion.csproj.CoreCompileInputs.cache
+C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Shekina Services - Gestión de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\Aplicacion\obj\Debug\net8.0\Aplicacion.sourcelink.json
+C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Shekina Services - Gestión de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\Aplicacion\obj\Debug\net8.0\Aplicacion.csproj.Up2Date
+C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Shekina Services - Gestión de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\Aplicacion\obj\Debug\net8.0\Aplicacion.dll
+C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Shekina Services - Gestión de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\Aplicacion\obj\Debug\net8.0\refint\Aplicacion.dll
+C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Shekina Services - Gestión de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\Aplicacion\obj\Debug\net8.0\Aplicacion.pdb
+C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Shekina Services - Gestión de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\Aplicacion\obj\Debug\net8.0\ref\Aplicacion.dll
