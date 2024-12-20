@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Aplicacion
-build_property.ProjectDir = C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Shekina Services - Gestión de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\Aplicacion\
+build_property.ProjectDir = C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Gestion de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\Aplicacion\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

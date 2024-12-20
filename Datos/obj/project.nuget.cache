@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tiiumgxjqok=",
+  "dgSpecHash": "OTi5GuDKZs8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Datos\\Datos.csproj",
+  "projectFilePath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Datos\\Datos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\UNCSM-SISTEMAS\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\UNCSM-SISTEMAS\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

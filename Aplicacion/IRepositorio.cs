@@ -11,5 +11,6 @@ namespace Aplicacion
         Task<T> ObtenerporId(int Id);
         Task<IEnumerable<T>> ObtenerListadoAsync();
         Task AgregarItem(T item);
+        Task ObtenerTodos();
     }
 }

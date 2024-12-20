@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\ControlCuentas_ShekinahServices\\ControlCuentas_ShekinahServices.csproj": {}
+    "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\ControlCuentas_ShekinahServices\\ControlCuentas_ShekinahServices.csproj": {}
   },
   "projects": {
-    "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Aplicacion\\Aplicacion.csproj": {
+    "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Aplicacion\\Aplicacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Aplicacion\\Aplicacion.csproj",
+        "projectUniqueName": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Aplicacion\\Aplicacion.csproj",
         "projectName": "Aplicacion",
-        "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Aplicacion\\Aplicacion.csproj",
+        "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Aplicacion\\Aplicacion.csproj",
         "packagesPath": "C:\\Users\\UNCSM-SISTEMAS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Aplicacion\\obj\\",
+        "outputPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Aplicacion\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\UNCSM-SISTEMAS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,8 +29,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\Entidades.csproj"
+              "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\Entidades.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\ControlCuentas_ShekinahServices\\ControlCuentas_ShekinahServices.csproj": {
+    "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\ControlCuentas_ShekinahServices\\ControlCuentas_ShekinahServices.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\ControlCuentas_ShekinahServices\\ControlCuentas_ShekinahServices.csproj",
+        "projectUniqueName": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\ControlCuentas_ShekinahServices\\ControlCuentas_ShekinahServices.csproj",
         "projectName": "ControlCuentas_ShekinahServices",
-        "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\ControlCuentas_ShekinahServices\\ControlCuentas_ShekinahServices.csproj",
+        "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\ControlCuentas_ShekinahServices\\ControlCuentas_ShekinahServices.csproj",
         "packagesPath": "C:\\Users\\UNCSM-SISTEMAS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\ControlCuentas_ShekinahServices\\obj\\",
+        "outputPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\ControlCuentas_ShekinahServices\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\UNCSM-SISTEMAS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -94,20 +94,20 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Aplicacion\\Aplicacion.csproj": {
-                "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Aplicacion\\Aplicacion.csproj"
+              "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Aplicacion\\Aplicacion.csproj": {
+                "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Aplicacion\\Aplicacion.csproj"
               },
-              "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Datos\\Datos.csproj": {
-                "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Datos\\Datos.csproj"
+              "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Datos\\Datos.csproj": {
+                "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Datos\\Datos.csproj"
               },
-              "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\Entidades.csproj"
+              "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\Entidades.csproj"
               },
-              "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Modelos\\Modelos.csproj": {
-                "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Modelos\\Modelos.csproj"
+              "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Modelos\\Modelos.csproj": {
+                "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Modelos\\Modelos.csproj"
               },
-              "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Repositorio\\Repositorio.csproj": {
-                "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Repositorio\\Repositorio.csproj"
+              "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Repositorio\\Repositorio.csproj": {
+                "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Repositorio\\Repositorio.csproj"
               }
             }
           }
@@ -163,14 +163,14 @@
         }
       }
     },
-    "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Datos\\Datos.csproj": {
+    "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Datos\\Datos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Datos\\Datos.csproj",
+        "projectUniqueName": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Datos\\Datos.csproj",
         "projectName": "Datos",
-        "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Datos\\Datos.csproj",
+        "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Datos\\Datos.csproj",
         "packagesPath": "C:\\Users\\UNCSM-SISTEMAS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Datos\\obj\\",
+        "outputPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Datos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\UNCSM-SISTEMAS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -188,11 +188,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\Entidades.csproj"
+              "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\Entidades.csproj"
               },
-              "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Modelos\\Modelos.csproj": {
-                "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Modelos\\Modelos.csproj"
+              "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Modelos\\Modelos.csproj": {
+                "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Modelos\\Modelos.csproj"
               }
             }
           }
@@ -241,14 +241,14 @@
         }
       }
     },
-    "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\Entidades.csproj": {
+    "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\Entidades.csproj",
+        "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\Entidades.csproj",
         "packagesPath": "C:\\Users\\UNCSM-SISTEMAS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\obj\\",
+        "outputPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\UNCSM-SISTEMAS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -302,14 +302,14 @@
         }
       }
     },
-    "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Modelos\\Modelos.csproj": {
+    "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Modelos\\Modelos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Modelos\\Modelos.csproj",
+        "projectUniqueName": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Modelos\\Modelos.csproj",
         "projectName": "Modelos",
-        "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Modelos\\Modelos.csproj",
+        "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Modelos\\Modelos.csproj",
         "packagesPath": "C:\\Users\\UNCSM-SISTEMAS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Modelos\\obj\\",
+        "outputPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Modelos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\UNCSM-SISTEMAS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -363,14 +363,14 @@
         }
       }
     },
-    "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Repositorio\\Repositorio.csproj": {
+    "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Repositorio\\Repositorio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Repositorio\\Repositorio.csproj",
+        "projectUniqueName": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Repositorio\\Repositorio.csproj",
         "projectName": "Repositorio",
-        "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Repositorio\\Repositorio.csproj",
+        "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Repositorio\\Repositorio.csproj",
         "packagesPath": "C:\\Users\\UNCSM-SISTEMAS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Repositorio\\obj\\",
+        "outputPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Repositorio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\UNCSM-SISTEMAS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -388,17 +388,17 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Aplicacion\\Aplicacion.csproj": {
-                "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Aplicacion\\Aplicacion.csproj"
+              "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Aplicacion\\Aplicacion.csproj": {
+                "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Aplicacion\\Aplicacion.csproj"
               },
-              "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Datos\\Datos.csproj": {
-                "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Datos\\Datos.csproj"
+              "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Datos\\Datos.csproj": {
+                "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Datos\\Datos.csproj"
               },
-              "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\Entidades.csproj"
+              "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\Entidades.csproj"
               },
-              "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Modelos\\Modelos.csproj": {
-                "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Shekina Services - Gestión de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Modelos\\Modelos.csproj"
+              "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Modelos\\Modelos.csproj": {
+                "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Modelos\\Modelos.csproj"
               }
             }
           }

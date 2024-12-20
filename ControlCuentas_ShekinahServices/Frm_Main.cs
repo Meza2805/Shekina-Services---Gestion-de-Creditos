@@ -1,6 +1,9 @@
 using ControlCuentas_ShekinahServices.FormulariosHijos;
+using ControlCuentas_ShekinahServices.Message_Persl;
+using ControlCuentas_ShekinahServices.MessageBox_Personalizados;
 using FontAwesome.Sharp;
 using Microsoft.Extensions.DependencyInjection;
+using System.Media;
 using System.Runtime.InteropServices;
 
 
@@ -10,6 +13,9 @@ namespace ControlCuentas_ShekinahServices
     {
         private readonly IServiceProvider _serviceProvider;
 
+        // Crear un reproductor de sonido
+        SoundPlayer player = new SoundPlayer(Properties.Resources.MouseClickPunchy);
+        SoundPlayer OpenClose = new SoundPlayer(Properties.Resources.space_ship_door_open_47688);
 
         /// Campos 
         private IconButton currentBtn;
@@ -85,7 +91,7 @@ namespace ControlCuentas_ShekinahServices
             }
         }
 
-        private void Resetear()
+        public void Resetear()
         {
             DesactivarBoton();
             leftBorderBtn.Visible = false;
@@ -95,7 +101,7 @@ namespace ControlCuentas_ShekinahServices
             TituloFormularioHijo.ForeColor = Color.White;
         }
 
-        private void AbrirFormularioHijo(Form FormularioHijo)
+        public void AbrirFormularioHijo(Form FormularioHijo)
         {
             if (FormularioHijoActual != null)
             {
@@ -140,8 +146,8 @@ namespace ControlCuentas_ShekinahServices
 
             if (btnInicio.Location == new Point(26, 17))
             {
-                btnInicio.Location = new Point(3,58);
-                btnInicio.Size = new Size(40,40);
+                btnInicio.Location = new Point(3, 58);
+                btnInicio.Size = new Size(40, 40);
                 btnInicio.Image = Properties.Resources.Lion;
             }
             else
@@ -155,26 +161,33 @@ namespace ControlCuentas_ShekinahServices
         /// Eventos
         private void BtnClientes_Click(object sender, EventArgs e)
         {
+            player.Play(); // Reproduce el sonido
             ActivarBoton(sender, ColoresRGB.Rosa_Coral_Suave, "Clientes");
+            var Formulario = _serviceProvider.GetRequiredService<Frm_Persona>();
+            AbrirFormularioHijo(Formulario);
         }
 
         private void BtnCreditos_Click(object sender, EventArgs e)
         {
+            player.Play(); // Reproduce el sonido
             ActivarBoton(sender, ColoresRGB.Amarrillo_Mostaza, "Creditos");
         }
 
         private void BtnReportes_Click(object sender, EventArgs e)
         {
+            player.Play(); // Reproduce el sonido
             ActivarBoton(sender, ColoresRGB.Malva_Claro, "Reportes");
         }
 
         private void BtnAjustes_Click(object sender, EventArgs e)
         {
+            player.Play(); // Reproduce el sonido
             ActivarBoton(sender, ColoresRGB.Amarillo_Dorado_Suave, "Ajustes");
         }
 
         private void btnInicio_Click(object sender, EventArgs e)
         {
+            player.Play(); // Reproduce el sonido
             Resetear();
             //En este caso hago uso de los formularios que he implementado en el archivo Main.cs en lugar de Instanciarlos
             var Formulario = _serviceProvider.GetRequiredService<Frm_Principal>();
@@ -189,24 +202,37 @@ namespace ControlCuentas_ShekinahServices
 
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
+            player.Play();
             WindowState = FormWindowState.Minimized;
         }
 
         private void btnMaximizar_Click(object sender, EventArgs e)
         {
+            player.Play(); // Reproduce el sonido
             if (WindowState == FormWindowState.Normal)
                 WindowState = FormWindowState.Maximized;
             else
                 WindowState = FormWindowState.Normal;
         }
 
-        private void btnCerrar_Click(object sender, EventArgs e)
+        private void btnCerrar_Click(object sender, EventArgs e, Frm_Message_SI_NO formulario)
         {
+            player.Play(); // Reproduce el sonido
+
+            var Formulario = _serviceProvider.GetRequiredService<Frm_Message_SI_NO>();
+            Formulario.ConfigurarMensaje("¿Está seguro que desea salir?");
+            Formulario.ShowDialog();
             Application.Exit();
+
         }
 
         private void iconPictureBox1_Click(object sender, EventArgs e)
         {
+            player.Play(); // Reproduce el sonido
+
+            OpenClose.Play();
+
+
             ReducirPaneles_Botones();
             if (BtnAccionMenu.IconChar == IconChar.ArrowsLeftRightToLine)
             {
@@ -234,7 +260,7 @@ namespace ControlCuentas_ShekinahServices
                 {
                     PanelMenu.Width -= animationSpeed;
 
-      
+
 
                     if (PanelMenu.Width <= targetWidth)
                     {
@@ -261,6 +287,20 @@ namespace ControlCuentas_ShekinahServices
                     }
                 }
             }
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            player.Play(); // Reproduce el sonido
+            var  MessageBox =  _serviceProvider.GetService<Frm_Message_SI_NO>();
+            MessageBox.ConfigurarMensaje("¿Está seguro que desea salir?");
+            MessageBox.ShowDialog();
+            if (MessageBox.Resultado)
+            {
+                var Formulario = _serviceProvider.GetRequiredService<Frm_Despedida>();
+                Formulario.Show();
+            }
+      
         }
     }
 

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Main));
             PanelMenu = new Panel();
             BtnAjustes = new FontAwesome.Sharp.IconButton();
             BtnReportes = new FontAwesome.Sharp.IconButton();
@@ -49,6 +50,7 @@
             PanelContenedor_2 = new Panel();
             panel2 = new Panel();
             animationTimer = new System.Windows.Forms.Timer(components);
+            timer1 = new System.Windows.Forms.Timer(components);
             PanelMenu.SuspendLayout();
             PanelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)BtnAccionMenu).BeginInit();
@@ -198,7 +200,7 @@
             // btnInicio
             // 
             btnInicio.Cursor = Cursors.Hand;
-            btnInicio.Image = Properties.Resources.Logo_Ajustado_Blanco___copia;
+            btnInicio.Image = (Image)resources.GetObject("btnInicio.Image");
             btnInicio.Location = new Point(26, 17);
             btnInicio.Name = "btnInicio";
             btnInicio.Size = new Size(140, 118);
@@ -399,5 +401,6 @@
         private Panel panel2;
         private FontAwesome.Sharp.IconPictureBox BtnAccionMenu;
         private System.Windows.Forms.Timer animationTimer;
+        private System.Windows.Forms.Timer timer1;
     }
 }

@@ -18,6 +18,8 @@ namespace Repositorio
         }
 
 
+
+
         ///Este metodo recibe un modelo y lo convierte en una entidad
         public async Task AgregarItem(Persona persona)
         {
@@ -80,6 +82,11 @@ namespace Repositorio
                 Direccion = PersonaModel.Direccion,
                 FechaNacimiento = PersonaModel.FechaNacimiento
             };
+        }
+
+        Task IRepositorio<Persona>.ObtenerTodos()
+        {
+            throw new NotImplementedException();
         }
     }
 }
