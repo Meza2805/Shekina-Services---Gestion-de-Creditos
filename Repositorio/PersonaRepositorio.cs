@@ -62,7 +62,8 @@ namespace Repositorio
                 NoCedula = p.NoCedula,
                 NoTelefono = p.NoTelefono,
                 Direccion = p.Direccion,
-                FechaNacimiento = p.FechaNacimiento
+                FechaNacimiento = p.FechaNacimiento,
+                FechaCreacion = p.FechaCreacion
 
             }).ToListAsync();
         public async Task<Persona> ObtenerporId(int Id)

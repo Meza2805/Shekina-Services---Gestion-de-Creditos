@@ -161,7 +161,7 @@ namespace ControlCuentas_ShekinahServices
         /// Eventos
         private void BtnClientes_Click(object sender, EventArgs e)
         {
-            player.Play(); // Reproduce el sonido
+            /// player.Play(); // Reproduce el sonido
             ActivarBoton(sender, ColoresRGB.Rosa_Coral_Suave, "Clientes");
             var Formulario = _serviceProvider.GetRequiredService<Frm_Persona>();
             AbrirFormularioHijo(Formulario);
@@ -169,25 +169,25 @@ namespace ControlCuentas_ShekinahServices
 
         private void BtnCreditos_Click(object sender, EventArgs e)
         {
-            player.Play(); // Reproduce el sonido
+            /// player.Play(); // Reproduce el sonido
             ActivarBoton(sender, ColoresRGB.Amarrillo_Mostaza, "Creditos");
         }
 
         private void BtnReportes_Click(object sender, EventArgs e)
         {
-            player.Play(); // Reproduce el sonido
+            /// player.Play(); // Reproduce el sonido
             ActivarBoton(sender, ColoresRGB.Malva_Claro, "Reportes");
         }
 
         private void BtnAjustes_Click(object sender, EventArgs e)
         {
-            player.Play(); // Reproduce el sonido
+            /// player.Play(); // Reproduce el sonido
             ActivarBoton(sender, ColoresRGB.Amarillo_Dorado_Suave, "Ajustes");
         }
 
         private void btnInicio_Click(object sender, EventArgs e)
         {
-            player.Play(); // Reproduce el sonido
+            /// player.Play(); // Reproduce el sonido
             Resetear();
             //En este caso hago uso de los formularios que he implementado en el archivo Main.cs en lugar de Instanciarlos
             var Formulario = _serviceProvider.GetRequiredService<Frm_Principal>();
@@ -202,13 +202,13 @@ namespace ControlCuentas_ShekinahServices
 
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
-            player.Play();
+            /// player.Play();
             WindowState = FormWindowState.Minimized;
         }
 
         private void btnMaximizar_Click(object sender, EventArgs e)
         {
-            player.Play(); // Reproduce el sonido
+            /// player.Play(); // Reproduce el sonido
             if (WindowState == FormWindowState.Normal)
                 WindowState = FormWindowState.Maximized;
             else
@@ -217,7 +217,7 @@ namespace ControlCuentas_ShekinahServices
 
         private void btnCerrar_Click(object sender, EventArgs e, Frm_Message_SI_NO formulario)
         {
-            player.Play(); // Reproduce el sonido
+            /// player.Play(); // Reproduce el sonido
 
             var Formulario = _serviceProvider.GetRequiredService<Frm_Message_SI_NO>();
             Formulario.ConfigurarMensaje("¿Está seguro que desea salir?");
@@ -228,7 +228,7 @@ namespace ControlCuentas_ShekinahServices
 
         private void iconPictureBox1_Click(object sender, EventArgs e)
         {
-            player.Play(); // Reproduce el sonido
+            /// player.Play(); // Reproduce el sonido
 
             OpenClose.Play();
 
@@ -291,7 +291,7 @@ namespace ControlCuentas_ShekinahServices
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            player.Play(); // Reproduce el sonido
+            /// player.Play(); // Reproduce el sonido
             var  MessageBox =  _serviceProvider.GetService<Frm_Message_SI_NO>();
             MessageBox.ConfigurarMensaje("¿Está seguro que desea salir?");
             MessageBox.ShowDialog();

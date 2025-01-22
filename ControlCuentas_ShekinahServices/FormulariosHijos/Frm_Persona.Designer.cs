@@ -28,10 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
+            components = new System.ComponentModel.Container();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             dgvPersona = new DataGridView();
             panel1 = new Panel();
             label1 = new Label();
@@ -45,44 +46,47 @@
             btnAgregarCliente = new Button();
             btnEliminarCliente = new Button();
             btnEditarCliente = new Button();
+            bSPersonas = new BindingSource(components);
             ((System.ComponentModel.ISupportInitialize)dgvPersona).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnCerrar).BeginInit();
             panel2.SuspendLayout();
             PanelContenedorDgvClientes.SuspendLayout();
             PanelDerechoBotonesClientes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)bSPersonas).BeginInit();
             SuspendLayout();
             // 
             // dgvPersona
             // 
+            dgvPersona.AllowUserToAddRows = false;
             dgvPersona.AllowUserToDeleteRows = false;
             dgvPersona.AllowUserToResizeColumns = false;
             dgvPersona.AllowUserToResizeRows = false;
             dgvPersona.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            dgvPersona.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            dgvPersona.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvPersona.BackgroundColor = Color.FromArgb(60, 80, 100);
             dgvPersona.BorderStyle = BorderStyle.None;
             dgvPersona.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             dgvPersona.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = Color.FromArgb(220, 110, 130);
-            dataGridViewCellStyle5.Font = new Font("Palatino Linotype", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle5.ForeColor = Color.Gainsboro;
-            dataGridViewCellStyle5.SelectionBackColor = Color.FromArgb(220, 110, 130);
-            dataGridViewCellStyle5.SelectionForeColor = Color.Gainsboro;
-            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
-            dgvPersona.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(220, 110, 130);
+            dataGridViewCellStyle1.Font = new Font("Palatino Linotype", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle1.ForeColor = Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(220, 110, 130);
+            dataGridViewCellStyle1.SelectionForeColor = Color.White;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dgvPersona.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgvPersona.ColumnHeadersHeight = 30;
             dgvPersona.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dgvPersona.Cursor = Cursors.Hand;
-            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = SystemColors.Window;
-            dataGridViewCellStyle6.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle6.ForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.False;
-            dgvPersona.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = SystemColors.Window;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            dgvPersona.DefaultCellStyle = dataGridViewCellStyle2;
             dgvPersona.EnableHeadersVisualStyles = false;
             dgvPersona.GridColor = Color.Gainsboro;
             dgvPersona.Location = new Point(0, 0);
@@ -90,23 +94,23 @@
             dgvPersona.Name = "dgvPersona";
             dgvPersona.ReadOnly = true;
             dgvPersona.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = Color.FromArgb(60, 80, 100);
-            dataGridViewCellStyle7.Font = new Font("Palatino Linotype", 9.75F);
-            dataGridViewCellStyle7.ForeColor = Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = DataGridViewTriState.True;
-            dgvPersona.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = Color.FromArgb(60, 80, 100);
+            dataGridViewCellStyle3.Font = new Font("Palatino Linotype", 9.75F);
+            dataGridViewCellStyle3.ForeColor = Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dgvPersona.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             dgvPersona.RowHeadersVisible = false;
             dgvPersona.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = Color.FromArgb(60, 80, 100);
-            dataGridViewCellStyle8.Font = new Font("Palatino Linotype", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle8.ForeColor = Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = Color.FromArgb(227, 166, 177);
-            dataGridViewCellStyle8.SelectionForeColor = Color.Black;
-            dgvPersona.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = Color.FromArgb(60, 80, 100);
+            dataGridViewCellStyle4.Font = new Font("Palatino Linotype", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle4.ForeColor = Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = Color.FromArgb(227, 166, 177);
+            dataGridViewCellStyle4.SelectionForeColor = Color.Black;
+            dgvPersona.RowsDefaultCellStyle = dataGridViewCellStyle4;
             dgvPersona.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvPersona.Size = new Size(657, 342);
             dgvPersona.TabIndex = 0;
@@ -129,13 +133,13 @@
             // 
             label1.Anchor = AnchorStyles.Left;
             label1.AutoSize = true;
-            label1.Font = new Font("Palatino Linotype", 14.25F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Palatino Linotype", 18F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.FromArgb(220, 110, 130);
             label1.Location = new Point(250, 9);
             label1.Name = "label1";
-            label1.Size = new Size(293, 26);
+            label1.Size = new Size(236, 32);
             label1.TabIndex = 4;
-            label1.Text = "Listado de Clientes Registrados";
+            label1.Text = "Clientes Registrados";
             // 
             // btnCerrar
             // 
@@ -171,11 +175,12 @@
             txtBusqueda.Anchor = AnchorStyles.Left;
             txtBusqueda.BackColor = Color.White;
             txtBusqueda.BorderStyle = BorderStyle.None;
-            txtBusqueda.Font = new Font("Palatino Linotype", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtBusqueda.Font = new Font("Palatino Linotype", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtBusqueda.Location = new Point(124, 74);
             txtBusqueda.Name = "txtBusqueda";
-            txtBusqueda.Size = new Size(396, 18);
+            txtBusqueda.Size = new Size(396, 22);
             txtBusqueda.TabIndex = 1;
+            txtBusqueda.TextChanged += txtBusqueda_TextChanged;
             // 
             // panel2
             // 
@@ -282,6 +287,7 @@
             panel2.ResumeLayout(false);
             PanelContenedorDgvClientes.ResumeLayout(false);
             PanelDerechoBotonesClientes.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)bSPersonas).EndInit();
             ResumeLayout(false);
         }
 
@@ -300,5 +306,6 @@
         private Button btnAgregarCliente;
         private Panel PanelIzquierdoClientes;
         private Panel PanelContenedorDgvClientes;
+        private BindingSource bSPersonas;
     }
 }

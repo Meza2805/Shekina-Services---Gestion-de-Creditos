@@ -11,5 +11,6 @@
         public DateTime FechaNacimiento { get; set; }
         public string Direccion { get; set; }
         public string NoTelefono { get; set; }
+        public DateTime FechaCreacion { get;set; }
     }
 }
