@@ -44,7 +44,8 @@ namespace ControlCuentas_ShekinahServices
 
 
             var mainForm = servicesProvider.GetRequiredService<Frm_Main>();
-            Application.Run(mainForm);
+            var mainLogin = servicesProvider.GetRequiredService<Acceso>();
+            Application.Run(mainLogin);
 
         }
 
@@ -85,6 +86,7 @@ namespace ControlCuentas_ShekinahServices
             // Aquí se registran formularios que pertenecen a la capa de presentación.
             // Cada formulario tiene un ciclo de vida transitorio, es decir, se crea una nueva instancia cada vez que se solicita.
             services.AddTransient<Frm_Main>();       // Formulario principal
+            services.AddTransient<Acceso>();       // Formulario de Acceso
             services.AddTransient<Frm_Persona>();    // Formulario para gestionar personas
             services.AddTransient<Frm_Principal>();  // Formulario de Contenedor Principal
             services.AddTransient<Frm_Carga_01>();   // Formulario de carga de Procesos Opcion 01

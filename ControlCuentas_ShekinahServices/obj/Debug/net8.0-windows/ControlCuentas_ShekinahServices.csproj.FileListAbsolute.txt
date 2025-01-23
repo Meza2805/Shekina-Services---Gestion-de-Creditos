@@ -105,3 +105,4 @@ C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Gestion de Créditos\Shekina-Services--
 C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Gestion de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\ControlCuentas_ShekinahServices\obj\Debug\net8.0-windows\ref\ControlCuentas_ShekinahServices.dll
 C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Gestion de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\ControlCuentas_ShekinahServices\obj\Debug\net8.0-windows\ControlCuentas_ShekinahServices.Message_Persl.Frm_Despedida.resources
 C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Gestion de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\ControlCuentas_ShekinahServices\obj\Debug\net8.0-windows\ControlCuentas_ShekinahServices.FormulariosHijos.Frm_AgregarPersona.resources
+C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Gestion de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\ControlCuentas_ShekinahServices\obj\Debug\net8.0-windows\ControlCuentas_ShekinahServices.Acceso.resources

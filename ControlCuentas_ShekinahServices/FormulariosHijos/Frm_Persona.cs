@@ -25,7 +25,6 @@ namespace ControlCuentas_ShekinahServices.FormulariosHijos
         // Crear un reproductor de sonido
         SoundPlayer player = new SoundPlayer(Properties.Resources.MouseClickPunchy);
 
-
         public Frm_Persona(IRepositorio<Persona> repositorio, IServiceProvider serviceProvider)  //Aca realizo la inyeccion de dependencias
         {                                                                                        // la dependecia del repositorio para poder establecer las reglas del negocio de la entidad
             _repositorio = repositorio;                                                         // y la dependencia del serviceProvider para poder inyectar los formularios hijos y/o formularios de carga
