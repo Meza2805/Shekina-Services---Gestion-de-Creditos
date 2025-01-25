@@ -16,5 +16,8 @@ namespace ControlCuentas_ShekinahServices
         public static Color Amarrillo_Mostaza = Color.FromArgb(200, 180, 60);
         public static Color Malva_Claro = Color.FromArgb(150, 130, 200);  ///
         public static Color Rosa_Coral_Suave = Color.FromArgb(220, 110, 130);
+        public static Color Gris_Claro = Color.FromArgb(119, 114, 113);
+        public static Color Verde_Menta_Boton = Color.FromArgb(45, 180, 50);
+        ///45; 180; 50
     }
 }

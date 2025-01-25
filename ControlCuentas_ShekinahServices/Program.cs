@@ -81,6 +81,7 @@ namespace ControlCuentas_ShekinahServices
             // `PersonaRepositorio` es la implementación concreta de este repositorio.
             // Esto permite que `AgregarPersona` y otros servicios utilicen la abstracción `IRepositorio<Persona>`.
             services.AddTransient<IRepositorio<Persona>, PersonaRepositorio>();
+            services.AddTransient<IAcessoSistema<AccesoSistema>, Acceso_Sistema_Repositorio>();
 
             // Inyección de dependencias para formularios:
             // Aquí se registran formularios que pertenecen a la capa de presentación.

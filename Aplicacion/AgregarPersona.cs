@@ -30,8 +30,6 @@ namespace Aplicacion
                 throw new Exception("El primer apellido es obligatorio!");
             }
 
-
-
             await _Persona.AgregarItem(persona);
         }
     }

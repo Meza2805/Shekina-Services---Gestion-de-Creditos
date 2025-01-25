@@ -18,8 +18,6 @@ namespace Repositorio
         }
 
 
-
-
         ///Este metodo recibe un modelo y lo convierte en una entidad
         public async Task AgregarItem(Persona persona)
         {
@@ -48,8 +46,6 @@ namespace Repositorio
             await _dbContext.AddAsync(PersonaModelo);  ///Agregar los campios al modelot
             await _dbContext.SaveChangesAsync();  // Guardar los campos en la base de datos
         }
-
-
 
         public async Task<IEnumerable<Persona>> ObtenerListadoAsync() => 
             await _dbContext.Personas.Select (p => new Persona 

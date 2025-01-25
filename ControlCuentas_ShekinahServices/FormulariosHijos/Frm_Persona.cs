@@ -15,7 +15,6 @@ using System.Windows.Forms;
 
 namespace ControlCuentas_ShekinahServices.FormulariosHijos
 {
-
     public partial class Frm_Persona : Form
     {
         private IRepositorio<Persona> _repositorio;
@@ -41,8 +40,6 @@ namespace ControlCuentas_ShekinahServices.FormulariosHijos
             DataTable dtPersonas = ConvertToDataTable(persona);
 
             dgvPersona.DataSource = dtPersonas;
-
-
             dgvPersona.Columns[0].Visible = false;//Id
             dgvPersona.Columns[2].Visible = false;//PrimerNombre
             dgvPersona.Columns[3].Visible = false;//SegundoNombre

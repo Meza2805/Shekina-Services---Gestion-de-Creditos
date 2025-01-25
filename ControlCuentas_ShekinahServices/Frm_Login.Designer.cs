@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Acceso));
             Grp_Acceso = new GroupBox();
             lbTitutlo_Login = new Label();
@@ -38,8 +39,10 @@
             lbUsuario = new Label();
             txt_Contrasenia = new TextBox();
             lbContrasenia = new Label();
+            erP_Usuario = new ErrorProvider(components);
             Grp_Acceso.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)PicPhotoCliente).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)erP_Usuario).BeginInit();
             SuspendLayout();
             // 
             // Grp_Acceso
@@ -53,7 +56,6 @@
             Grp_Acceso.Controls.Add(lbUsuario);
             Grp_Acceso.Controls.Add(txt_Contrasenia);
             Grp_Acceso.Controls.Add(lbContrasenia);
-            Grp_Acceso.Dock = DockStyle.Fill;
             Grp_Acceso.Font = new Font("Palatino Linotype", 15.75F, FontStyle.Bold);
             Grp_Acceso.ForeColor = Color.White;
             Grp_Acceso.Location = new Point(0, 0);
@@ -106,6 +108,7 @@
             // 
             btnAcceder.BackColor = Color.FromArgb(45, 180, 50);
             btnAcceder.Cursor = Cursors.Hand;
+            btnAcceder.Enabled = false;
             btnAcceder.FlatAppearance.BorderSize = 0;
             btnAcceder.FlatStyle = FlatStyle.Flat;
             btnAcceder.Font = new Font("Palatino Linotype", 14.25F, FontStyle.Bold);
@@ -116,6 +119,7 @@
             btnAcceder.TabIndex = 3;
             btnAcceder.Text = "Acceder";
             btnAcceder.UseVisualStyleBackColor = false;
+            btnAcceder.Click += btnAcceder_Click;
             // 
             // txt_Usuario
             // 
@@ -127,6 +131,7 @@
             txt_Usuario.Size = new Size(215, 26);
             txt_Usuario.TabIndex = 0;
             txt_Usuario.TextAlign = HorizontalAlignment.Center;
+            txt_Usuario.Leave += txt_Usuario_Leave;
             // 
             // lbUsuario
             // 
@@ -141,7 +146,7 @@
             // 
             // txt_Contrasenia
             // 
-            txt_Contrasenia.BackColor = Color.Gainsboro;
+            txt_Contrasenia.BackColor = Color.White;
             txt_Contrasenia.BorderStyle = BorderStyle.None;
             txt_Contrasenia.Font = new Font("Palatino Linotype", 14.25F);
             txt_Contrasenia.Location = new Point(38, 316);
@@ -162,6 +167,11 @@
             lbContrasenia.TabIndex = 7;
             lbContrasenia.Text = "Contraseña";
             // 
+            // erP_Usuario
+            // 
+            erP_Usuario.ContainerControl = this;
+            erP_Usuario.Icon = (Icon)resources.GetObject("erP_Usuario.Icon");
+            // 
             // Acceso
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -176,6 +186,7 @@
             Grp_Acceso.ResumeLayout(false);
             Grp_Acceso.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)PicPhotoCliente).EndInit();
+            ((System.ComponentModel.ISupportInitialize)erP_Usuario).EndInit();
             ResumeLayout(false);
         }
 
@@ -190,5 +201,6 @@
         private TextBox txt_Contrasenia;
         private Label lbContrasenia;
         private Label lbTitutlo_Login;
+        private ErrorProvider erP_Usuario;
     }
 }
