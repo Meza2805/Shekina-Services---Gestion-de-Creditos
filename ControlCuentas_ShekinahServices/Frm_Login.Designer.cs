@@ -40,6 +40,7 @@
             txt_Contrasenia = new TextBox();
             lbContrasenia = new Label();
             erP_Usuario = new ErrorProvider(components);
+            chk_MostrarContra = new CheckBox();
             Grp_Acceso.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)PicPhotoCliente).BeginInit();
             ((System.ComponentModel.ISupportInitialize)erP_Usuario).BeginInit();
@@ -48,6 +49,7 @@
             // Grp_Acceso
             // 
             Grp_Acceso.BackColor = Color.FromArgb(25, 55, 110);
+            Grp_Acceso.Controls.Add(chk_MostrarContra);
             Grp_Acceso.Controls.Add(lbTitutlo_Login);
             Grp_Acceso.Controls.Add(PicPhotoCliente);
             Grp_Acceso.Controls.Add(btnCancelar);
@@ -60,7 +62,7 @@
             Grp_Acceso.ForeColor = Color.White;
             Grp_Acceso.Location = new Point(0, 0);
             Grp_Acceso.Name = "Grp_Acceso";
-            Grp_Acceso.Size = new Size(291, 409);
+            Grp_Acceso.Size = new Size(291, 433);
             Grp_Acceso.TabIndex = 25;
             Grp_Acceso.TabStop = false;
             Grp_Acceso.Text = "Acceso  ";
@@ -96,7 +98,7 @@
             btnCancelar.FlatStyle = FlatStyle.Flat;
             btnCancelar.Font = new Font("Palatino Linotype", 14.25F, FontStyle.Bold);
             btnCancelar.ForeColor = Color.White;
-            btnCancelar.Location = new Point(150, 357);
+            btnCancelar.Location = new Point(150, 389);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(103, 38);
             btnCancelar.TabIndex = 4;
@@ -113,7 +115,7 @@
             btnAcceder.FlatStyle = FlatStyle.Flat;
             btnAcceder.Font = new Font("Palatino Linotype", 14.25F, FontStyle.Bold);
             btnAcceder.ForeColor = Color.White;
-            btnAcceder.Location = new Point(38, 357);
+            btnAcceder.Location = new Point(38, 389);
             btnAcceder.Name = "btnAcceder";
             btnAcceder.Size = new Size(103, 38);
             btnAcceder.TabIndex = 3;
@@ -155,6 +157,7 @@
             txt_Contrasenia.TabIndex = 1;
             txt_Contrasenia.TextAlign = HorizontalAlignment.Center;
             txt_Contrasenia.UseSystemPasswordChar = true;
+            txt_Contrasenia.KeyDown += txt_Contrasenia_KeyDown;
             // 
             // lbContrasenia
             // 
@@ -172,11 +175,22 @@
             erP_Usuario.ContainerControl = this;
             erP_Usuario.Icon = (Icon)resources.GetObject("erP_Usuario.Icon");
             // 
+            // chk_MostrarContra
+            // 
+            chk_MostrarContra.AutoSize = true;
+            chk_MostrarContra.Font = new Font("Palatino Linotype", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            chk_MostrarContra.Location = new Point(65, 348);
+            chk_MostrarContra.Name = "chk_MostrarContra";
+            chk_MostrarContra.Size = new Size(164, 26);
+            chk_MostrarContra.TabIndex = 16;
+            chk_MostrarContra.Text = "Mostrar Contraseña";
+            chk_MostrarContra.UseVisualStyleBackColor = true;
+            // 
             // Acceso
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(291, 409);
+            ClientSize = new Size(291, 445);
             Controls.Add(Grp_Acceso);
             FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
@@ -202,5 +216,6 @@
         private Label lbContrasenia;
         private Label lbTitutlo_Login;
         private ErrorProvider erP_Usuario;
+        private CheckBox chk_MostrarContra;
     }
 }

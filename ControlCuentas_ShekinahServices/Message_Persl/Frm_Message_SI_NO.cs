@@ -66,7 +66,7 @@ namespace ControlCuentas_ShekinahServices.MessageBox_Personalizados
 
         private void btnSi_Click(object sender, EventArgs e)
         {
-            BtnSonido.Play();
+           // BtnSonido.Play();
             Resultado = true;
             this.Close();
             
@@ -76,7 +76,7 @@ namespace ControlCuentas_ShekinahServices.MessageBox_Personalizados
 
         private void btnNo_Click(object sender, EventArgs e)
         {
-            BtnSonido.Play();
+           // BtnSonido.Play();
             this.Close();
         }
     }

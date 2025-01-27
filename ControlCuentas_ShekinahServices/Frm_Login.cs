@@ -65,6 +65,11 @@ namespace ControlCuentas_ShekinahServices
 
         private async void btnAcceder_Click(object sender, EventArgs e)
         {
+            Acceder_Sistema();
+        }
+
+        private async void Acceder_Sistema()
+        {
             if (txt_Usuario.Text == string.Empty || txt_Contrasenia.Text == string.Empty)
             {
                 MessageBox.Show("Debe Completar todos los campos");
@@ -72,14 +77,22 @@ namespace ControlCuentas_ShekinahServices
             else
             {
                 bandera = await _repositorio.Acceder_Sistema(txt_Usuario.Text, txt_Contrasenia.Text);
-                if (!bandera)
+                if (bandera)
                 {
                     Frm_Main frm_Main = new Frm_Main(_serviceProvider);
                     this.Hide();
                     frm_Main.ShowDialog();
                 }
             }
-            
+        }
+
+        private void txt_Contrasenia_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) // Verifica si la tecla presionada es "Enter"
+            {
+                e.SuppressKeyPress = true; // Evita el sonido de "ding" en el TextBox
+                Acceder_Sistema();
+            }
         }
     }
 }

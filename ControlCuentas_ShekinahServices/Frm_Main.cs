@@ -292,7 +292,7 @@ namespace ControlCuentas_ShekinahServices
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             /// player.Play(); // Reproduce el sonido
-            var  MessageBox =  _serviceProvider.GetService<Frm_Message_SI_NO>();
+            var MessageBox = _serviceProvider.GetService<Frm_Message_SI_NO>();
             MessageBox.ConfigurarMensaje("¿Está seguro que desea salir?");
             MessageBox.ShowDialog();
             if (MessageBox.Resultado)
@@ -300,7 +300,12 @@ namespace ControlCuentas_ShekinahServices
                 var Formulario = _serviceProvider.GetRequiredService<Frm_Despedida>();
                 Formulario.Show();
             }
-      
+
+        }
+
+        private void PanelMenu_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 

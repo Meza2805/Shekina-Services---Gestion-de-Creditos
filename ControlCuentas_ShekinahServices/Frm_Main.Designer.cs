@@ -31,6 +31,13 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Main));
             PanelMenu = new Panel();
+            Lb_UsuarioEnLinea = new Label();
+            panel3 = new Panel();
+            Panel_NombreUsuario = new Panel();
+            panel4 = new Panel();
+            Lb_NombreUsuario = new Label();
+            Panel_ImagenUsuario = new Panel();
+            pictureBox1 = new PictureBox();
             BtnAjustes = new FontAwesome.Sharp.IconButton();
             BtnReportes = new FontAwesome.Sharp.IconButton();
             BtnCreditos = new FontAwesome.Sharp.IconButton();
@@ -52,6 +59,11 @@
             animationTimer = new System.Windows.Forms.Timer(components);
             timer1 = new System.Windows.Forms.Timer(components);
             PanelMenu.SuspendLayout();
+            panel3.SuspendLayout();
+            Panel_NombreUsuario.SuspendLayout();
+            panel4.SuspendLayout();
+            Panel_ImagenUsuario.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             PanelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)BtnAccionMenu).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnInicio).BeginInit();
@@ -67,6 +79,8 @@
             // PanelMenu
             // 
             PanelMenu.BackColor = Color.FromArgb(25, 55, 110);
+            PanelMenu.Controls.Add(Lb_UsuarioEnLinea);
+            PanelMenu.Controls.Add(panel3);
             PanelMenu.Controls.Add(BtnAjustes);
             PanelMenu.Controls.Add(BtnReportes);
             PanelMenu.Controls.Add(BtnCreditos);
@@ -77,6 +91,76 @@
             PanelMenu.Name = "PanelMenu";
             PanelMenu.Size = new Size(187, 450);
             PanelMenu.TabIndex = 0;
+            PanelMenu.Paint += PanelMenu_Paint;
+            // 
+            // Lb_UsuarioEnLinea
+            // 
+            Lb_UsuarioEnLinea.AutoSize = true;
+            Lb_UsuarioEnLinea.Dock = DockStyle.Bottom;
+            Lb_UsuarioEnLinea.Font = new Font("Palatino Linotype", 9.75F, FontStyle.Bold);
+            Lb_UsuarioEnLinea.Location = new Point(0, 375);
+            Lb_UsuarioEnLinea.Name = "Lb_UsuarioEnLinea";
+            Lb_UsuarioEnLinea.Size = new Size(111, 18);
+            Lb_UsuarioEnLinea.TabIndex = 6;
+            Lb_UsuarioEnLinea.Text = "Usuario en Linea";
+            // 
+            // panel3
+            // 
+            panel3.Controls.Add(Panel_NombreUsuario);
+            panel3.Dock = DockStyle.Bottom;
+            panel3.Location = new Point(0, 393);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(187, 57);
+            panel3.TabIndex = 5;
+            // 
+            // Panel_NombreUsuario
+            // 
+            Panel_NombreUsuario.Controls.Add(panel4);
+            Panel_NombreUsuario.Controls.Add(Panel_ImagenUsuario);
+            Panel_NombreUsuario.Dock = DockStyle.Fill;
+            Panel_NombreUsuario.Location = new Point(0, 0);
+            Panel_NombreUsuario.Name = "Panel_NombreUsuario";
+            Panel_NombreUsuario.Size = new Size(187, 57);
+            Panel_NombreUsuario.TabIndex = 2;
+            // 
+            // panel4
+            // 
+            panel4.Controls.Add(Lb_NombreUsuario);
+            panel4.Dock = DockStyle.Fill;
+            panel4.Location = new Point(58, 0);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(129, 57);
+            panel4.TabIndex = 3;
+            // 
+            // Lb_NombreUsuario
+            // 
+            Lb_NombreUsuario.AutoSize = true;
+            Lb_NombreUsuario.Font = new Font("Palatino Linotype", 9.75F, FontStyle.Bold);
+            Lb_NombreUsuario.Location = new Point(35, 22);
+            Lb_NombreUsuario.Name = "Lb_NombreUsuario";
+            Lb_NombreUsuario.Size = new Size(45, 18);
+            Lb_NombreUsuario.TabIndex = 0;
+            Lb_NombreUsuario.Text = "label1";
+            // 
+            // Panel_ImagenUsuario
+            // 
+            Panel_ImagenUsuario.Controls.Add(pictureBox1);
+            Panel_ImagenUsuario.Dock = DockStyle.Left;
+            Panel_ImagenUsuario.Location = new Point(0, 0);
+            Panel_ImagenUsuario.Name = "Panel_ImagenUsuario";
+            Panel_ImagenUsuario.Size = new Size(58, 57);
+            Panel_ImagenUsuario.TabIndex = 1;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Dock = DockStyle.Fill;
+            pictureBox1.Image = Properties.Resources.AgregarPersona;
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(58, 57);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // BtnAjustes
             // 
@@ -365,6 +449,13 @@
             Text = "Sistema de Control de Cuentas";
             WindowState = FormWindowState.Maximized;
             PanelMenu.ResumeLayout(false);
+            PanelMenu.PerformLayout();
+            panel3.ResumeLayout(false);
+            Panel_NombreUsuario.ResumeLayout(false);
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
+            Panel_ImagenUsuario.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             PanelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)BtnAccionMenu).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnInicio).EndInit();
@@ -402,5 +493,12 @@
         private FontAwesome.Sharp.IconPictureBox BtnAccionMenu;
         private System.Windows.Forms.Timer animationTimer;
         private System.Windows.Forms.Timer timer1;
+        private Panel panel3;
+        private Panel Panel_NombreUsuario;
+        private Panel panel4;
+        private Panel Panel_ImagenUsuario;
+        private PictureBox pictureBox1;
+        private Label Lb_UsuarioEnLinea;
+        private Label Lb_NombreUsuario;
     }
 }
