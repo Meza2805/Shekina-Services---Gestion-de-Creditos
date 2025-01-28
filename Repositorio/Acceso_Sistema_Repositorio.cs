@@ -19,10 +19,10 @@ namespace Repositorio
             _dbContext = context;
         }
 
-        public async Task<bool> Acceder_Sistema(string usuario, string contrasena)
+        public async Task<int> Acceder_Sistema(string usuario, string contrasena)
         {
             int resultado = await _dbContext.AccederSistemaAsync(usuario, contrasena);
-            return resultado == 1;
+            return resultado;
         }
 
         public async Task<bool> Verificar_Usuario(string usuario)

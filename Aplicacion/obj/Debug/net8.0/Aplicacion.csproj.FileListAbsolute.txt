@@ -30,3 +30,19 @@ C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Gestion de Créditos\Shekina-Services--
 C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Gestion de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\Aplicacion\obj\Debug\net8.0\refint\Aplicacion.dll
 C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Gestion de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\Aplicacion\obj\Debug\net8.0\Aplicacion.pdb
 C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Gestion de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\Aplicacion\obj\Debug\net8.0\ref\Aplicacion.dll
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Aplicacion\bin\Debug\net8.0\Aplicacion.deps.json
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Aplicacion\bin\Debug\net8.0\Aplicacion.dll
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Aplicacion\bin\Debug\net8.0\Aplicacion.pdb
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Aplicacion\bin\Debug\net8.0\Entidades.dll
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Aplicacion\bin\Debug\net8.0\Entidades.pdb
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Aplicacion\obj\Debug\net8.0\Aplicacion.csproj.AssemblyReference.cache
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Aplicacion\obj\Debug\net8.0\Aplicacion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Aplicacion\obj\Debug\net8.0\Aplicacion.AssemblyInfoInputs.cache
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Aplicacion\obj\Debug\net8.0\Aplicacion.AssemblyInfo.cs
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Aplicacion\obj\Debug\net8.0\Aplicacion.csproj.CoreCompileInputs.cache
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Aplicacion\obj\Debug\net8.0\Aplicacion.sourcelink.json
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Aplicacion\obj\Debug\net8.0\Aplicacion.csproj.Up2Date
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Aplicacion\obj\Debug\net8.0\Aplicacion.dll
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Aplicacion\obj\Debug\net8.0\refint\Aplicacion.dll
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Aplicacion\obj\Debug\net8.0\Aplicacion.pdb
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Aplicacion\obj\Debug\net8.0\ref\Aplicacion.dll

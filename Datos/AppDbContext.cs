@@ -17,7 +17,12 @@ namespace Datos
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<PersonaModel>().ToTable("Persona");
+            modelBuilder.Entity<UsuariosModel>().ToTable("Usuarios");
+            modelBuilder.Entity<PermisosModel>().ToTable("Permisos");
+            modelBuilder.Entity<Perfil_UsuarioModel>().HasNoKey(); // Indica que no es una tabla real
         }
+
+ 
 
 
         // Método para llamar al procedimiento almacenado
@@ -42,5 +47,21 @@ namespace Datos
 
             return (int)salidaParam.Value == 1;
         }
+
+        public DbSet<Perfil_UsuarioModel> UsuariosConPermiso { get; set; }
+    
+
+
+        public async Task<Perfil_UsuarioModel> BuscarUsuarioPorId(int idUsuario)
+        {
+            var usuario = await Perfil_UsuarioModel
+                .FromSqlRaw("EXEC Sp_Buscar_Usuario_Id @Id_usuario = {0}", idUsuario)
+                .AsNoTracking() // Mejora el rendimiento si solo es una consulta
+                .FirstOrDefaultAsync();
+
+            return usuario;
+        }
+
+
     }
 }

@@ -33,7 +33,7 @@ namespace ControlCuentas_ShekinahServices
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
         ///Construtor
-        public Frm_Main(IServiceProvider serviceProvider)
+        public Frm_Main(IServiceProvider serviceProvider,int Id)
         {
             InitializeComponent();
             leftBorderBtn = new Panel();

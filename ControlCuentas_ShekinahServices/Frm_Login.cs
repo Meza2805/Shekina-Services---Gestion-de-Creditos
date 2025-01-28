@@ -19,6 +19,7 @@ namespace ControlCuentas_ShekinahServices
         private readonly IServiceProvider _serviceProvider;
         private AccesoSistema _accesoSistema = new AccesoSistema();
         bool bandera;
+        int Id_Usuario = 0;
 
         public Acceso(IAcessoSistema<AccesoSistema> repositorio, IServiceProvider serviceProvider)
         {
@@ -76,10 +77,10 @@ namespace ControlCuentas_ShekinahServices
             }
             else
             {
-                bandera = await _repositorio.Acceder_Sistema(txt_Usuario.Text, txt_Contrasenia.Text);
-                if (bandera)
+                Id_Usuario = await _repositorio.Acceder_Sistema(txt_Usuario.Text, txt_Contrasenia.Text);
+                if (Id_Usuario > 0 )
                 {
-                    Frm_Main frm_Main = new Frm_Main(_serviceProvider);
+                    Frm_Main frm_Main = new Frm_Main(_serviceProvider, Id_Usuario);
                     this.Hide();
                     frm_Main.ShowDialog();
                 }
@@ -93,6 +94,11 @@ namespace ControlCuentas_ShekinahServices
                 e.SuppressKeyPress = true; // Evita el sonido de "ding" en el TextBox
                 Acceder_Sistema();
             }
+        }
+
+        private void chk_MostrarContra_CheckedChanged(object sender, EventArgs e)
+        {
+            txt_Contrasenia.UseSystemPasswordChar = !chk_MostrarContra.Checked;
         }
     }
 }

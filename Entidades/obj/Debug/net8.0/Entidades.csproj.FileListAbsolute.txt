@@ -22,3 +22,15 @@ C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Gestion de Créditos\Shekina-Services--
 C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Gestion de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\Entidades\obj\Debug\net8.0\refint\Entidades.dll
 C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Gestion de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\Entidades\obj\Debug\net8.0\Entidades.pdb
 C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Gestion de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\Entidades\obj\Debug\net8.0\ref\Entidades.dll
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Entidades\bin\Debug\net8.0\Entidades.deps.json
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Entidades\bin\Debug\net8.0\Entidades.dll
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Entidades\bin\Debug\net8.0\Entidades.pdb
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Entidades\obj\Debug\net8.0\Entidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Entidades\obj\Debug\net8.0\Entidades.AssemblyInfoInputs.cache
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Entidades\obj\Debug\net8.0\Entidades.AssemblyInfo.cs
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Entidades\obj\Debug\net8.0\Entidades.csproj.CoreCompileInputs.cache
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Entidades\obj\Debug\net8.0\Entidades.sourcelink.json
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Entidades\obj\Debug\net8.0\Entidades.dll
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Entidades\obj\Debug\net8.0\refint\Entidades.dll
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Entidades\obj\Debug\net8.0\Entidades.pdb
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Entidades\obj\Debug\net8.0\ref\Entidades.dll

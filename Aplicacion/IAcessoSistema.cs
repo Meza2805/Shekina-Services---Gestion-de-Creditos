@@ -10,6 +10,6 @@ namespace Aplicacion
     {
         Task<bool> Verificar_Usuario(string usuario);
 
-        Task<bool> Acceder_Sistema(string usuario,string contra);
+        Task<int> Acceder_Sistema(string usuario,string contra);
     }
 }
