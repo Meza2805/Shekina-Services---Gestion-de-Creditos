@@ -38,7 +38,7 @@ namespace ControlCuentas_ShekinahServices.MessageBox_Personalizados
             int nHeightEllipse  // Altura de la elipse
         );
 
-    
+
         public Frm_Message_SI_NO(IServiceProvider _serviceProvider)
         {
             InitializeComponent();
@@ -66,17 +66,32 @@ namespace ControlCuentas_ShekinahServices.MessageBox_Personalizados
 
         private void btnSi_Click(object sender, EventArgs e)
         {
-           // BtnSonido.Play();
+            // BtnSonido.Play();
             Resultado = true;
             this.Close();
-            
+
             //var Formulario = _serviceProvider.GetRequiredService<Frm_Despedida>();
             //Formulario.Show();
         }
 
         private void btnNo_Click(object sender, EventArgs e)
         {
-           // BtnSonido.Play();
+            // BtnSonido.Play();
+            this.Close();
+        }
+
+        private void lbMensaje_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSi_Click_1(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+        private void btnNo_Click_1(object sender, EventArgs e)
+        {
             this.Close();
         }
     }

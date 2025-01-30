@@ -25,9 +25,39 @@ namespace Repositorio
             return resultado;
         }
 
-        public async Task<bool> Verificar_Usuario(string usuario)
+        public async Task<int> Verificar_Usuario(string usuario)
         {
-            return await _dbContext.VerificarUsuarioAsync(usuario);
+            int resultado = await _dbContext.VerificarUsuarioAsync(usuario);
+            return resultado;
+        }
+
+        public async Task<List<Perfil_Usuario>> ObtenerUsuarios_y_Permisos()
+        {
+            var query = from u in _dbContext.Usuarios
+                        join p in _dbContext.Permisos on u.Id_Permiso equals p.Id
+                        select new Perfil_Usuario
+                        {
+                            Id_Permiso = p.Id,
+                            Id_Usuario = u.Id,
+                            Nombre_Usuario = u.Nombre_Usuario,
+                            Permiso_Usuario = p.Descripcion
+                        };
+            return  await query.ToListAsync();
+        }
+
+        public async Task<List<Perfil_Usuario>> ObtenerUsuario_Especifico(int Id_Usuario)
+        {
+            var query = from u in _dbContext.Usuarios
+                        join p in _dbContext.Permisos on u.Id_Permiso equals p.Id
+                        where u.Id == Id_Usuario
+                        select new Perfil_Usuario
+                        {
+                            Id_Permiso = p.Id,
+                            Id_Usuario = u.Id,
+                            Nombre_Usuario = u.Nombre_Usuario,
+                            Permiso_Usuario = p.Descripcion
+                        } ;
+            return await query.ToListAsync();
         }
     }
 }

@@ -1,10 +1,12 @@
 using ControlCuentas_ShekinahServices.FormulariosHijos;
 using ControlCuentas_ShekinahServices.Message_Persl;
 using ControlCuentas_ShekinahServices.MessageBox_Personalizados;
+using Entidades;
 using FontAwesome.Sharp;
 using Microsoft.Extensions.DependencyInjection;
 using System.Media;
 using System.Runtime.InteropServices;
+using System.Windows.Forms;
 
 
 namespace ControlCuentas_ShekinahServices
@@ -12,7 +14,7 @@ namespace ControlCuentas_ShekinahServices
     public partial class Frm_Main : Form
     {
         private readonly IServiceProvider _serviceProvider;
-
+        private List<Perfil_Usuario> _Usuarios; //Declaro una lista para recibir los usarios, no uso inyeccion de dependecias, simplemente los pasos desde un metodo manipulado desde el formulario Login
         // Crear un reproductor de sonido
         SoundPlayer player = new SoundPlayer(Properties.Resources.MouseClickPunchy);
         SoundPlayer OpenClose = new SoundPlayer(Properties.Resources.space_ship_door_open_47688);
@@ -33,7 +35,7 @@ namespace ControlCuentas_ShekinahServices
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
         ///Construtor
-        public Frm_Main(IServiceProvider serviceProvider,int Id)
+        public Frm_Main(IServiceProvider serviceProvider)
         {
             InitializeComponent();
             leftBorderBtn = new Panel();
@@ -50,6 +52,14 @@ namespace ControlCuentas_ShekinahServices
             this._serviceProvider = serviceProvider;
         }
 
+
+        public void Recibir_Usuario(List<Perfil_Usuario> Usuarios)
+        {
+            _Usuarios = new List<Perfil_Usuario>();
+            _Usuarios = Usuarios;
+            Lb_NombreUsuario.Text = $"{Convert.ToString(Usuarios[0].Nombre_Usuario)} /  {Convert.ToString(Usuarios[0].Permiso_Usuario)}";
+         
+        }
         ///Metodos
         private void ActivarBoton(object senderBtn, Color color, string Opcion)
         {
@@ -220,6 +230,7 @@ namespace ControlCuentas_ShekinahServices
             /// player.Play(); // Reproduce el sonido
 
             var Formulario = _serviceProvider.GetRequiredService<Frm_Message_SI_NO>();
+            
             Formulario.ConfigurarMensaje("¿Está seguro que desea salir?");
             Formulario.ShowDialog();
             Application.Exit();
@@ -259,9 +270,6 @@ namespace ControlCuentas_ShekinahServices
                 if (PanelMenu.Width > targetWidth)
                 {
                     PanelMenu.Width -= animationSpeed;
-
-
-
                     if (PanelMenu.Width <= targetWidth)
                     {
                         PanelMenu.Width = targetWidth;
@@ -277,11 +285,8 @@ namespace ControlCuentas_ShekinahServices
                 if (PanelMenu.Width < targetWidth)
                 {
                     PanelMenu.Width += animationSpeed;
-
-
                     if (PanelMenu.Width >= targetWidth)
                     {
-
                         PanelMenu.Width = targetWidth;
                         animationTimer.Stop(); // Detiene el Timer cuando llega al ancho objetivo
                     }
@@ -305,7 +310,89 @@ namespace ControlCuentas_ShekinahServices
 
         private void PanelMenu_Paint(object sender, PaintEventArgs e)
         {
+            //var borderRadius = 15; // Radio del borde redondeado
+            //var borderColor = Color.White; // Color del borde
+            //var borderWidth = 1; // Grosor del borde
 
+            //// Obtiene las dimensiones del PictureBox, asegurándose de que no se solapen con el borde
+            //var rect = new Rectangle(0, 0, PanelMenu.Width - 1, PanelMenu.Height - 1);
+
+            //// Crea el camino de gráficos para el borde redondeado
+            //using (var path = new System.Drawing.Drawing2D.GraphicsPath())
+            //{
+            //    // Añadir las esquinas redondeadas utilizando AddArc
+            //    path.AddArc(rect.Left, rect.Top, borderRadius, borderRadius, 180, 90);  // Esquina superior izquierda
+            //    path.AddArc(rect.Left + rect.Width - borderRadius, rect.Top, borderRadius, borderRadius, 270, 90);  // Esquina superior derecha
+            //    path.AddArc(rect.Left + rect.Width - borderRadius, rect.Top + rect.Height - borderRadius, borderRadius, borderRadius, 0, 90);  // Esquina inferior derecha
+            //    path.AddArc(rect.Left, rect.Top + rect.Height - borderRadius, borderRadius, borderRadius, 90, 90);  // Esquina inferior izquierda
+            //    path.CloseAllFigures();  // Cierra el contorno de la figura
+
+            //    // Crea el pincel para dibujar el borde
+            //    using (var pen = new Pen(borderColor, borderWidth))
+            //    {
+            //        // Establece el suavizado para evitar bordes irregulares
+            //        e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            //        e.Graphics.DrawPath(pen, path);  // Dibuja el borde redondeado
+            //    }
+            //}
+        }
+
+        private void pb_Imagen_Usuario_Paint(object sender, PaintEventArgs e)
+        {
+            //var borderRadius = 20; // Radio del borde redondeado
+            //var borderColor = Color.White; // Color del borde
+            //var borderWidth = 1; // Grosor del borde
+
+            //// Obtiene las dimensiones del PictureBox, asegurándose de que no se solapen con el borde
+            //var rect = new Rectangle(0, 0, pb_Imagen_Usuario.Width - 5, pb_Imagen_Usuario.Height - 5);
+
+            //// Crea el camino de gráficos para el borde redondeado
+            //using (var path = new System.Drawing.Drawing2D.GraphicsPath())
+            //{
+            //    // Añadir las esquinas redondeadas utilizando AddArc
+            //    path.AddArc(rect.Left, rect.Top, borderRadius, borderRadius, 180, 90);  // Esquina superior izquierda
+            //    path.AddArc(rect.Left + rect.Width - borderRadius, rect.Top, borderRadius, borderRadius, 270, 90);  // Esquina superior derecha
+            //    path.AddArc(rect.Left + rect.Width - borderRadius, rect.Top + rect.Height - borderRadius, borderRadius, borderRadius, 0, 90);  // Esquina inferior derecha
+            //    path.AddArc(rect.Left, rect.Top + rect.Height - borderRadius, borderRadius, borderRadius, 90, 90);  // Esquina inferior izquierda
+            //    path.CloseAllFigures();  // Cierra el contorno de la figura
+
+            //    // Crea el pincel para dibujar el borde
+            //    using (var pen = new Pen(borderColor, borderWidth))
+            //    {
+            //        // Establece el suavizado para evitar bordes irregulares
+            //        e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            //        e.Graphics.DrawPath(pen, path);  // Dibuja el borde redondeado
+            //    }
+            //}
+        }
+
+        private void PanelLogo_Paint(object sender, PaintEventArgs e)
+        {
+            //var borderRadius = 15; // Radio del borde redondeado
+            //var borderColor = Color.White; // Color del borde
+            //var borderWidth = 1; // Grosor del borde
+
+            //// Obtiene las dimensiones del PictureBox, asegurándose de que no se solapen con el borde
+            //var rect = new Rectangle(0, 0, PanelLogo.Width - 1, PanelLogo.Height - 1);
+
+            //// Crea el camino de gráficos para el borde redondeado
+            //using (var path = new System.Drawing.Drawing2D.GraphicsPath())
+            //{
+            //    // Añadir las esquinas redondeadas utilizando AddArc
+            //    path.AddArc(rect.Left, rect.Top, borderRadius, borderRadius, 180, 90);  // Esquina superior izquierda
+            //    path.AddArc(rect.Left + rect.Width - borderRadius, rect.Top, borderRadius, borderRadius, 270, 90);  // Esquina superior derecha
+            //    path.AddArc(rect.Left + rect.Width - borderRadius, rect.Top + rect.Height - borderRadius, borderRadius, borderRadius, 0, 90);  // Esquina inferior derecha
+            //    path.AddArc(rect.Left, rect.Top + rect.Height - borderRadius, borderRadius, borderRadius, 90, 90);  // Esquina inferior izquierda
+            //    path.CloseAllFigures();  // Cierra el contorno de la figura
+
+            //    // Crea el pincel para dibujar el borde
+            //    using (var pen = new Pen(borderColor, borderWidth))
+            //    {
+            //        // Establece el suavizado para evitar bordes irregulares
+            //        e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            //        e.Graphics.DrawPath(pen, path);  // Dibuja el borde redondeado
+            //    }
+            //}
         }
     }
 

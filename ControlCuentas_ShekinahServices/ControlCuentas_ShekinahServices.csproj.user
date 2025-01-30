@@ -34,6 +34,9 @@
     <Compile Update="Frm_Main.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Message_Persl\Frm_Acceso_Bienvenida.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Message_Persl\Frm_Despedida.cs">
       <SubType>Form</SubType>
     </Compile>

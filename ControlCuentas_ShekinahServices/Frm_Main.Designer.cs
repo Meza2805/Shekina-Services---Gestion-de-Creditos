@@ -31,13 +31,6 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Main));
             PanelMenu = new Panel();
-            Lb_UsuarioEnLinea = new Label();
-            panel3 = new Panel();
-            Panel_NombreUsuario = new Panel();
-            panel4 = new Panel();
-            Lb_NombreUsuario = new Label();
-            Panel_ImagenUsuario = new Panel();
-            pictureBox1 = new PictureBox();
             BtnAjustes = new FontAwesome.Sharp.IconButton();
             BtnReportes = new FontAwesome.Sharp.IconButton();
             BtnCreditos = new FontAwesome.Sharp.IconButton();
@@ -45,12 +38,16 @@
             PanelLogo = new Panel();
             BtnAccionMenu = new FontAwesome.Sharp.IconPictureBox();
             btnInicio = new PictureBox();
+            Lb_NombreUsuario = new Label();
+            pb_Imagen_Usuario = new PictureBox();
             PanelSuperior = new Panel();
-            btnMinimizar = new FontAwesome.Sharp.IconPictureBox();
-            btnMaximizar = new FontAwesome.Sharp.IconPictureBox();
-            btnCerrar = new FontAwesome.Sharp.IconPictureBox();
-            TituloFormularioHijo = new Label();
+            panel3 = new Panel();
             IconoFormularioActual = new FontAwesome.Sharp.IconPictureBox();
+            TituloFormularioHijo = new Label();
+            Panel_Botones_Ventana = new Panel();
+            btnMinimizar = new FontAwesome.Sharp.IconPictureBox();
+            btnCerrar = new FontAwesome.Sharp.IconPictureBox();
+            btnMaximizar = new FontAwesome.Sharp.IconPictureBox();
             PanelSombra = new Panel();
             PanelContenedor = new Panel();
             panel1 = new Panel();
@@ -59,19 +56,17 @@
             animationTimer = new System.Windows.Forms.Timer(components);
             timer1 = new System.Windows.Forms.Timer(components);
             PanelMenu.SuspendLayout();
-            panel3.SuspendLayout();
-            Panel_NombreUsuario.SuspendLayout();
-            panel4.SuspendLayout();
-            Panel_ImagenUsuario.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             PanelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)BtnAccionMenu).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnInicio).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pb_Imagen_Usuario).BeginInit();
             PanelSuperior.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)btnMinimizar).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)btnMaximizar).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)btnCerrar).BeginInit();
+            panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)IconoFormularioActual).BeginInit();
+            Panel_Botones_Ventana.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)btnMinimizar).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnCerrar).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnMaximizar).BeginInit();
             PanelContenedor_2.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -79,8 +74,6 @@
             // PanelMenu
             // 
             PanelMenu.BackColor = Color.FromArgb(25, 55, 110);
-            PanelMenu.Controls.Add(Lb_UsuarioEnLinea);
-            PanelMenu.Controls.Add(panel3);
             PanelMenu.Controls.Add(BtnAjustes);
             PanelMenu.Controls.Add(BtnReportes);
             PanelMenu.Controls.Add(BtnCreditos);
@@ -92,75 +85,6 @@
             PanelMenu.Size = new Size(187, 450);
             PanelMenu.TabIndex = 0;
             PanelMenu.Paint += PanelMenu_Paint;
-            // 
-            // Lb_UsuarioEnLinea
-            // 
-            Lb_UsuarioEnLinea.AutoSize = true;
-            Lb_UsuarioEnLinea.Dock = DockStyle.Bottom;
-            Lb_UsuarioEnLinea.Font = new Font("Palatino Linotype", 9.75F, FontStyle.Bold);
-            Lb_UsuarioEnLinea.Location = new Point(0, 375);
-            Lb_UsuarioEnLinea.Name = "Lb_UsuarioEnLinea";
-            Lb_UsuarioEnLinea.Size = new Size(111, 18);
-            Lb_UsuarioEnLinea.TabIndex = 6;
-            Lb_UsuarioEnLinea.Text = "Usuario en Linea";
-            // 
-            // panel3
-            // 
-            panel3.Controls.Add(Panel_NombreUsuario);
-            panel3.Dock = DockStyle.Bottom;
-            panel3.Location = new Point(0, 393);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(187, 57);
-            panel3.TabIndex = 5;
-            // 
-            // Panel_NombreUsuario
-            // 
-            Panel_NombreUsuario.Controls.Add(panel4);
-            Panel_NombreUsuario.Controls.Add(Panel_ImagenUsuario);
-            Panel_NombreUsuario.Dock = DockStyle.Fill;
-            Panel_NombreUsuario.Location = new Point(0, 0);
-            Panel_NombreUsuario.Name = "Panel_NombreUsuario";
-            Panel_NombreUsuario.Size = new Size(187, 57);
-            Panel_NombreUsuario.TabIndex = 2;
-            // 
-            // panel4
-            // 
-            panel4.Controls.Add(Lb_NombreUsuario);
-            panel4.Dock = DockStyle.Fill;
-            panel4.Location = new Point(58, 0);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(129, 57);
-            panel4.TabIndex = 3;
-            // 
-            // Lb_NombreUsuario
-            // 
-            Lb_NombreUsuario.AutoSize = true;
-            Lb_NombreUsuario.Font = new Font("Palatino Linotype", 9.75F, FontStyle.Bold);
-            Lb_NombreUsuario.Location = new Point(35, 22);
-            Lb_NombreUsuario.Name = "Lb_NombreUsuario";
-            Lb_NombreUsuario.Size = new Size(45, 18);
-            Lb_NombreUsuario.TabIndex = 0;
-            Lb_NombreUsuario.Text = "label1";
-            // 
-            // Panel_ImagenUsuario
-            // 
-            Panel_ImagenUsuario.Controls.Add(pictureBox1);
-            Panel_ImagenUsuario.Dock = DockStyle.Left;
-            Panel_ImagenUsuario.Location = new Point(0, 0);
-            Panel_ImagenUsuario.Name = "Panel_ImagenUsuario";
-            Panel_ImagenUsuario.Size = new Size(58, 57);
-            Panel_ImagenUsuario.TabIndex = 1;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Dock = DockStyle.Fill;
-            pictureBox1.Image = Properties.Resources.AgregarPersona;
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(58, 57);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
             // 
             // BtnAjustes
             // 
@@ -264,6 +188,7 @@
             PanelLogo.Name = "PanelLogo";
             PanelLogo.Size = new Size(187, 158);
             PanelLogo.TabIndex = 0;
+            PanelLogo.Paint += PanelLogo_Paint;
             // 
             // BtnAccionMenu
             // 
@@ -293,20 +218,86 @@
             btnInicio.TabStop = false;
             btnInicio.Click += btnInicio_Click;
             // 
+            // Lb_NombreUsuario
+            // 
+            Lb_NombreUsuario.AutoSize = true;
+            Lb_NombreUsuario.Font = new Font("Palatino Linotype", 9.75F, FontStyle.Bold);
+            Lb_NombreUsuario.Location = new Point(41, 18);
+            Lb_NombreUsuario.Name = "Lb_NombreUsuario";
+            Lb_NombreUsuario.Size = new Size(45, 18);
+            Lb_NombreUsuario.TabIndex = 0;
+            Lb_NombreUsuario.Text = "label1";
+            // 
+            // pb_Imagen_Usuario
+            // 
+            pb_Imagen_Usuario.Image = (Image)resources.GetObject("pb_Imagen_Usuario.Image");
+            pb_Imagen_Usuario.Location = new Point(3, 11);
+            pb_Imagen_Usuario.Name = "pb_Imagen_Usuario";
+            pb_Imagen_Usuario.Size = new Size(30, 30);
+            pb_Imagen_Usuario.SizeMode = PictureBoxSizeMode.StretchImage;
+            pb_Imagen_Usuario.TabIndex = 0;
+            pb_Imagen_Usuario.TabStop = false;
+            pb_Imagen_Usuario.Paint += pb_Imagen_Usuario_Paint;
+            // 
             // PanelSuperior
             // 
             PanelSuperior.BackColor = Color.FromArgb(16, 40, 85);
-            PanelSuperior.Controls.Add(btnMinimizar);
-            PanelSuperior.Controls.Add(btnMaximizar);
-            PanelSuperior.Controls.Add(btnCerrar);
-            PanelSuperior.Controls.Add(TituloFormularioHijo);
+            PanelSuperior.Controls.Add(panel3);
             PanelSuperior.Controls.Add(IconoFormularioActual);
+            PanelSuperior.Controls.Add(TituloFormularioHijo);
+            PanelSuperior.Controls.Add(Panel_Botones_Ventana);
             PanelSuperior.Dock = DockStyle.Top;
             PanelSuperior.Location = new Point(0, 0);
             PanelSuperior.Name = "PanelSuperior";
             PanelSuperior.Size = new Size(711, 49);
             PanelSuperior.TabIndex = 1;
             PanelSuperior.MouseDown += PanelSuperior_MouseDown;
+            // 
+            // panel3
+            // 
+            panel3.Controls.Add(pb_Imagen_Usuario);
+            panel3.Controls.Add(Lb_NombreUsuario);
+            panel3.Dock = DockStyle.Right;
+            panel3.Location = new Point(413, 0);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(200, 49);
+            panel3.TabIndex = 7;
+            // 
+            // IconoFormularioActual
+            // 
+            IconoFormularioActual.BackColor = Color.FromArgb(16, 40, 85);
+            IconoFormularioActual.ForeColor = Color.GhostWhite;
+            IconoFormularioActual.IconChar = FontAwesome.Sharp.IconChar.House;
+            IconoFormularioActual.IconColor = Color.GhostWhite;
+            IconoFormularioActual.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            IconoFormularioActual.IconSize = 30;
+            IconoFormularioActual.Location = new Point(19, 12);
+            IconoFormularioActual.Name = "IconoFormularioActual";
+            IconoFormularioActual.Size = new Size(30, 30);
+            IconoFormularioActual.TabIndex = 0;
+            IconoFormularioActual.TabStop = false;
+            // 
+            // TituloFormularioHijo
+            // 
+            TituloFormularioHijo.AutoSize = true;
+            TituloFormularioHijo.Font = new Font("Palatino Linotype", 9.75F, FontStyle.Bold);
+            TituloFormularioHijo.ForeColor = Color.GhostWhite;
+            TituloFormularioHijo.Location = new Point(54, 18);
+            TituloFormularioHijo.Name = "TituloFormularioHijo";
+            TituloFormularioHijo.Size = new Size(43, 18);
+            TituloFormularioHijo.TabIndex = 1;
+            TituloFormularioHijo.Text = "Inicio";
+            // 
+            // Panel_Botones_Ventana
+            // 
+            Panel_Botones_Ventana.Controls.Add(btnMinimizar);
+            Panel_Botones_Ventana.Controls.Add(btnCerrar);
+            Panel_Botones_Ventana.Controls.Add(btnMaximizar);
+            Panel_Botones_Ventana.Dock = DockStyle.Right;
+            Panel_Botones_Ventana.Location = new Point(613, 0);
+            Panel_Botones_Ventana.Name = "Panel_Botones_Ventana";
+            Panel_Botones_Ventana.Size = new Size(98, 49);
+            Panel_Botones_Ventana.TabIndex = 6;
             // 
             // btnMinimizar
             // 
@@ -318,29 +309,12 @@
             btnMinimizar.IconColor = Color.Gainsboro;
             btnMinimizar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnMinimizar.IconSize = 25;
-            btnMinimizar.Location = new Point(627, 5);
+            btnMinimizar.Location = new Point(6, 2);
             btnMinimizar.Name = "btnMinimizar";
             btnMinimizar.Size = new Size(25, 25);
             btnMinimizar.TabIndex = 4;
             btnMinimizar.TabStop = false;
             btnMinimizar.Click += btnMinimizar_Click;
-            // 
-            // btnMaximizar
-            // 
-            btnMaximizar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            btnMaximizar.BackColor = Color.FromArgb(16, 40, 85);
-            btnMaximizar.Cursor = Cursors.Hand;
-            btnMaximizar.ForeColor = Color.Gainsboro;
-            btnMaximizar.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
-            btnMaximizar.IconColor = Color.Gainsboro;
-            btnMaximizar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnMaximizar.IconSize = 25;
-            btnMaximizar.Location = new Point(657, 5);
-            btnMaximizar.Name = "btnMaximizar";
-            btnMaximizar.Size = new Size(25, 25);
-            btnMaximizar.TabIndex = 3;
-            btnMaximizar.TabStop = false;
-            btnMaximizar.Click += btnMaximizar_Click;
             // 
             // btnCerrar
             // 
@@ -352,37 +326,29 @@
             btnCerrar.IconColor = Color.Gainsboro;
             btnCerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnCerrar.IconSize = 25;
-            btnCerrar.Location = new Point(685, 5);
+            btnCerrar.Location = new Point(64, 2);
             btnCerrar.Name = "btnCerrar";
             btnCerrar.Size = new Size(25, 25);
             btnCerrar.TabIndex = 2;
             btnCerrar.TabStop = false;
             btnCerrar.Click += btnCerrar_Click;
             // 
-            // TituloFormularioHijo
+            // btnMaximizar
             // 
-            TituloFormularioHijo.AutoSize = true;
-            TituloFormularioHijo.Font = new Font("Palatino Linotype", 9.75F, FontStyle.Bold);
-            TituloFormularioHijo.ForeColor = Color.GhostWhite;
-            TituloFormularioHijo.Location = new Point(42, 17);
-            TituloFormularioHijo.Name = "TituloFormularioHijo";
-            TituloFormularioHijo.Size = new Size(43, 18);
-            TituloFormularioHijo.TabIndex = 1;
-            TituloFormularioHijo.Text = "Inicio";
-            // 
-            // IconoFormularioActual
-            // 
-            IconoFormularioActual.BackColor = Color.FromArgb(16, 40, 85);
-            IconoFormularioActual.ForeColor = Color.GhostWhite;
-            IconoFormularioActual.IconChar = FontAwesome.Sharp.IconChar.House;
-            IconoFormularioActual.IconColor = Color.GhostWhite;
-            IconoFormularioActual.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            IconoFormularioActual.IconSize = 30;
-            IconoFormularioActual.Location = new Point(7, 11);
-            IconoFormularioActual.Name = "IconoFormularioActual";
-            IconoFormularioActual.Size = new Size(30, 30);
-            IconoFormularioActual.TabIndex = 0;
-            IconoFormularioActual.TabStop = false;
+            btnMaximizar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnMaximizar.BackColor = Color.FromArgb(16, 40, 85);
+            btnMaximizar.Cursor = Cursors.Hand;
+            btnMaximizar.ForeColor = Color.Gainsboro;
+            btnMaximizar.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
+            btnMaximizar.IconColor = Color.Gainsboro;
+            btnMaximizar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnMaximizar.IconSize = 25;
+            btnMaximizar.Location = new Point(36, 2);
+            btnMaximizar.Name = "btnMaximizar";
+            btnMaximizar.Size = new Size(25, 25);
+            btnMaximizar.TabIndex = 3;
+            btnMaximizar.TabStop = false;
+            btnMaximizar.Click += btnMaximizar_Click;
             // 
             // PanelSombra
             // 
@@ -449,22 +415,19 @@
             Text = "Sistema de Control de Cuentas";
             WindowState = FormWindowState.Maximized;
             PanelMenu.ResumeLayout(false);
-            PanelMenu.PerformLayout();
-            panel3.ResumeLayout(false);
-            Panel_NombreUsuario.ResumeLayout(false);
-            panel4.ResumeLayout(false);
-            panel4.PerformLayout();
-            Panel_ImagenUsuario.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             PanelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)BtnAccionMenu).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnInicio).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pb_Imagen_Usuario).EndInit();
             PanelSuperior.ResumeLayout(false);
             PanelSuperior.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)btnMinimizar).EndInit();
-            ((System.ComponentModel.ISupportInitialize)btnMaximizar).EndInit();
-            ((System.ComponentModel.ISupportInitialize)btnCerrar).EndInit();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)IconoFormularioActual).EndInit();
+            Panel_Botones_Ventana.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)btnMinimizar).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnCerrar).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnMaximizar).EndInit();
             PanelContenedor_2.ResumeLayout(false);
             panel2.ResumeLayout(false);
             ResumeLayout(false);
@@ -493,12 +456,9 @@
         private FontAwesome.Sharp.IconPictureBox BtnAccionMenu;
         private System.Windows.Forms.Timer animationTimer;
         private System.Windows.Forms.Timer timer1;
-        private Panel panel3;
-        private Panel Panel_NombreUsuario;
-        private Panel panel4;
-        private Panel Panel_ImagenUsuario;
-        private PictureBox pictureBox1;
-        private Label Lb_UsuarioEnLinea;
+        private PictureBox pb_Imagen_Usuario;
         private Label Lb_NombreUsuario;
+        private Panel panel3;
+        private Panel Panel_Botones_Ventana;
     }
 }

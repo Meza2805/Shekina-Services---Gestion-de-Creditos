@@ -10,9 +10,10 @@ namespace Modelos
     {
         public int Id { get; set; }
         public string Descripcion { get; set; }
-        public int UsuarioCrea { get; set; }
-        public DateTime FechaModificacion { get; set; }
-        public int UsuarioModifica { get; set; }
-        public bool Estado { get; set; }
+        public DateTime? FechaCreacion { get; set; }
+        public int? UsuarioCrea { get; set; }
+        public DateTime? FechaModificacion { get; set; }
+        public int? UsuarioModifica { get; set; }
+        public bool? Estado { get; set; }
     }
 }

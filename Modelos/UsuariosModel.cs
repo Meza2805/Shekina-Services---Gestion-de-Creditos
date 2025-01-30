@@ -9,15 +9,16 @@ namespace Modelos
     public class UsuariosModel
     {
         public int Id { get; set; }
+        public int? Id_Permiso { get; set; }
         public string Nombre_Usuario { get; set; }
-        public DateTime FechaCreacion { get; set; }
-        public int UsuarioCrea { get; set; }
-        public DateTime FechaModificacion { get; set; }
-        public int UsuarioModifica { get; set; }
-        // Clave foránea
-        public int Id_Permiso { get; set; }
+        public byte[] Contrasenia { get; set; }
+        public DateTime? FechaCreacion { get; set; }
+        public int? UsuarioCrea { get; set; }
+        public DateTime? FechaModificacion { get; set; }
+        public int? UsuarioModifica { get; set; }
+        public bool? Estado { get; set; }
 
-        // Navegación: Un usuario tiene un solo permiso
-        public virtual PermisosModel Permiso { get; set; }
+        // Relación con Permiso
+        public PermisosModel Permiso { get; set; }
     }
 }

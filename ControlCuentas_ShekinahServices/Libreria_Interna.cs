@@ -19,6 +19,15 @@ namespace ControlCuentas_ShekinahServices
             label.Left = posicionX;
         }
 
+        public static void CentrarPicture_Horizontal(PictureBox picture, Form formulario)
+        {
+            // Calcular la posición 'Left' para centrar el Label
+            int posicionX = (formulario.ClientSize.Width - picture.Width) / 2;
+
+            // Asignar la posición calculada al Label
+            picture.Left = posicionX;
+        }
+
         // Importar la función CreateRoundRectRgn desde la API de Windows
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn(

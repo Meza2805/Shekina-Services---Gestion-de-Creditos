@@ -99,6 +99,7 @@ namespace ControlCuentas_ShekinahServices
             services.AddTransient<Frm_Message_SI_NO>();   // Formulario de carga de Procesos Opcion 06
             services.AddTransient<Frm_Despedida>();   // Formulario de Despedida
             services.AddTransient<Frm_AgregarPersona>();   // Formulario de Agregar Persona
+            services.AddTransient<Frm_Acceso_Bienvenida>();   // Formulario de Bienvenida a Acceso a Sistema
         }
 
 

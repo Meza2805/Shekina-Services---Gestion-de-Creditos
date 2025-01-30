@@ -28,48 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnNo = new Button();
-            btnSi = new Button();
             pictureBox1 = new PictureBox();
             lbMensaje = new Label();
             PanelSombra = new Panel();
             panel1 = new Panel();
             panel2 = new Panel();
             panel3 = new Panel();
+            btnNo = new Button();
+            btnSi = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // btnNo
-            // 
-            btnNo.BackColor = Color.FromArgb(244, 34, 67);
-            btnNo.Cursor = Cursors.Hand;
-            btnNo.FlatAppearance.BorderSize = 0;
-            btnNo.FlatStyle = FlatStyle.Flat;
-            btnNo.Font = new Font("Palatino Linotype", 12F, FontStyle.Bold);
-            btnNo.ForeColor = Color.White;
-            btnNo.Location = new Point(227, 166);
-            btnNo.Name = "btnNo";
-            btnNo.Size = new Size(91, 30);
-            btnNo.TabIndex = 9;
-            btnNo.Text = "No";
-            btnNo.UseVisualStyleBackColor = false;
-            btnNo.Click += btnNo_Click;
-            // 
-            // btnSi
-            // 
-            btnSi.BackColor = Color.FromArgb(43, 123, 231);
-            btnSi.Cursor = Cursors.Hand;
-            btnSi.FlatAppearance.BorderSize = 0;
-            btnSi.FlatStyle = FlatStyle.Flat;
-            btnSi.Font = new Font("Palatino Linotype", 12F, FontStyle.Bold);
-            btnSi.ForeColor = Color.White;
-            btnSi.Location = new Point(89, 166);
-            btnSi.Name = "btnSi";
-            btnSi.Size = new Size(91, 30);
-            btnSi.TabIndex = 8;
-            btnSi.Text = "Si";
-            btnSi.UseVisualStyleBackColor = false;
-            btnSi.Click += btnSi_Click;
             // 
             // pictureBox1
             // 
@@ -87,11 +55,12 @@
             lbMensaje.AutoSize = true;
             lbMensaje.Font = new Font("Palatino Linotype", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbMensaje.ForeColor = Color.White;
-            lbMensaje.Location = new Point(164, 113);
+            lbMensaje.Location = new Point(164, 123);
             lbMensaje.Name = "lbMensaje";
             lbMensaje.Size = new Size(87, 26);
             lbMensaje.TabIndex = 11;
             lbMensaje.Text = "Mensaje";
+            lbMensaje.Click += lbMensaje_Click;
             // 
             // PanelSombra
             // 
@@ -129,6 +98,38 @@
             panel3.Size = new Size(5, 203);
             panel3.TabIndex = 14;
             // 
+            // btnNo
+            // 
+            btnNo.BackColor = Color.FromArgb(244, 34, 67);
+            btnNo.Cursor = Cursors.Hand;
+            btnNo.FlatAppearance.BorderSize = 0;
+            btnNo.FlatStyle = FlatStyle.Flat;
+            btnNo.Font = new Font("Palatino Linotype", 12F, FontStyle.Bold);
+            btnNo.ForeColor = Color.White;
+            btnNo.Location = new Point(224, 166);
+            btnNo.Name = "btnNo";
+            btnNo.Size = new Size(91, 30);
+            btnNo.TabIndex = 15;
+            btnNo.Text = "No";
+            btnNo.UseVisualStyleBackColor = false;
+            btnNo.Click += btnNo_Click_1;
+            // 
+            // btnSi
+            // 
+            btnSi.BackColor = Color.FromArgb(43, 123, 231);
+            btnSi.Cursor = Cursors.Hand;
+            btnSi.FlatAppearance.BorderSize = 0;
+            btnSi.FlatStyle = FlatStyle.Flat;
+            btnSi.Font = new Font("Palatino Linotype", 12F, FontStyle.Bold);
+            btnSi.ForeColor = Color.White;
+            btnSi.Location = new Point(86, 166);
+            btnSi.Name = "btnSi";
+            btnSi.Size = new Size(91, 30);
+            btnSi.TabIndex = 14;
+            btnSi.Text = "Si";
+            btnSi.UseVisualStyleBackColor = false;
+            btnSi.Click += btnSi_Click_1;
+            // 
             // Frm_Message_SI_NO
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -136,14 +137,14 @@
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.FromArgb(25, 55, 110);
             ClientSize = new Size(405, 208);
+            Controls.Add(btnNo);
             Controls.Add(panel1);
+            Controls.Add(btnSi);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(PanelSombra);
             Controls.Add(lbMensaje);
             Controls.Add(pictureBox1);
-            Controls.Add(btnNo);
-            Controls.Add(btnSi);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Frm_Message_SI_NO";
             StartPosition = FormStartPosition.CenterScreen;
@@ -154,14 +155,13 @@
         }
 
         #endregion
-
-        private Button btnNo;
-        private Button btnSi;
         private PictureBox pictureBox1;
         private Label lbMensaje;
         private Panel PanelSombra;
         private Panel panel1;
         private Panel panel2;
         private Panel panel3;
+        private Button btnNo;
+        private Button btnSi;
     }
 }

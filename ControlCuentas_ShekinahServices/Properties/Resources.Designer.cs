@@ -133,6 +133,16 @@ namespace ControlCuentas_ShekinahServices.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap codificacion {
+            get {
+                object obj = ResourceManager.GetObject("codificacion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap EditarPersona {
             get {
                 object obj = ResourceManager.GetObject("EditarPersona", resourceCulture);
@@ -195,6 +205,26 @@ namespace ControlCuentas_ShekinahServices.Properties {
         internal static System.IO.UnmanagedMemoryStream MouseClickPunchy {
             get {
                 return ResourceManager.GetStream("MouseClickPunchy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Perfil_Desarrollador {
+            get {
+                object obj = ResourceManager.GetObject("Perfil_Desarrollador", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap programacion {
+            get {
+                object obj = ResourceManager.GetObject("programacion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
