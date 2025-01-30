@@ -41,11 +41,9 @@
             lbContrasenia = new Label();
             erP_Usuario = new ErrorProvider(components);
             Panel_Acceso = new Panel();
-            panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)PicPhotoCliente).BeginInit();
             ((System.ComponentModel.ISupportInitialize)erP_Usuario).BeginInit();
             Panel_Acceso.SuspendLayout();
-            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // chk_MostrarContra
@@ -53,9 +51,10 @@
             chk_MostrarContra.AutoSize = true;
             chk_MostrarContra.Font = new Font("Palatino Linotype", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             chk_MostrarContra.ForeColor = Color.White;
-            chk_MostrarContra.Location = new Point(64, 363);
+            chk_MostrarContra.Location = new Point(110, 485);
+            chk_MostrarContra.Margin = new Padding(3, 4, 3, 4);
             chk_MostrarContra.Name = "chk_MostrarContra";
-            chk_MostrarContra.Size = new Size(164, 26);
+            chk_MostrarContra.Size = new Size(213, 31);
             chk_MostrarContra.TabIndex = 16;
             chk_MostrarContra.Text = "Mostrar Contraseña";
             chk_MostrarContra.UseVisualStyleBackColor = true;
@@ -65,9 +64,9 @@
             // 
             lbTitutlo_Login.Font = new Font("Palatino Linotype", 15.75F, FontStyle.Bold);
             lbTitutlo_Login.ForeColor = Color.White;
-            lbTitutlo_Login.Location = new Point(12, 19);
+            lbTitutlo_Login.Location = new Point(14, 25);
             lbTitutlo_Login.Name = "lbTitutlo_Login";
-            lbTitutlo_Login.Size = new Size(267, 56);
+            lbTitutlo_Login.Size = new Size(391, 75);
             lbTitutlo_Login.TabIndex = 15;
             lbTitutlo_Login.Text = "Sistema de Control de Créditos";
             lbTitutlo_Login.TextAlign = ContentAlignment.MiddleCenter;
@@ -76,9 +75,10 @@
             // 
             PicPhotoCliente.Cursor = Cursors.Hand;
             PicPhotoCliente.Image = Properties.Resources.security_protection_protect_key_password_login_108554;
-            PicPhotoCliente.Location = new Point(96, 107);
+            PicPhotoCliente.Location = new Point(110, 143);
+            PicPhotoCliente.Margin = new Padding(3, 4, 3, 4);
             PicPhotoCliente.Name = "PicPhotoCliente";
-            PicPhotoCliente.Size = new Size(111, 108);
+            PicPhotoCliente.Size = new Size(150, 150);
             PicPhotoCliente.SizeMode = PictureBoxSizeMode.StretchImage;
             PicPhotoCliente.TabIndex = 14;
             PicPhotoCliente.TabStop = false;
@@ -91,9 +91,10 @@
             btnCancelar.FlatStyle = FlatStyle.Flat;
             btnCancelar.Font = new Font("Palatino Linotype", 14.25F, FontStyle.Bold);
             btnCancelar.ForeColor = Color.White;
-            btnCancelar.Location = new Point(149, 424);
+            btnCancelar.Location = new Point(228, 567);
+            btnCancelar.Margin = new Padding(3, 4, 3, 4);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(103, 38);
+            btnCancelar.Size = new Size(118, 51);
             btnCancelar.TabIndex = 4;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
@@ -108,9 +109,10 @@
             btnAcceder.FlatStyle = FlatStyle.Flat;
             btnAcceder.Font = new Font("Palatino Linotype", 14.25F, FontStyle.Bold);
             btnAcceder.ForeColor = Color.White;
-            btnAcceder.Location = new Point(37, 424);
+            btnAcceder.Location = new Point(100, 567);
+            btnAcceder.Margin = new Padding(3, 4, 3, 4);
             btnAcceder.Name = "btnAcceder";
-            btnAcceder.Size = new Size(103, 38);
+            btnAcceder.Size = new Size(118, 51);
             btnAcceder.TabIndex = 3;
             btnAcceder.Text = "Acceder";
             btnAcceder.UseVisualStyleBackColor = false;
@@ -121,9 +123,10 @@
             txt_Usuario.BackColor = Color.Gainsboro;
             txt_Usuario.BorderStyle = BorderStyle.None;
             txt_Usuario.Font = new Font("Palatino Linotype", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txt_Usuario.Location = new Point(37, 261);
+            txt_Usuario.Location = new Point(42, 348);
+            txt_Usuario.Margin = new Padding(3, 4, 3, 4);
             txt_Usuario.Name = "txt_Usuario";
-            txt_Usuario.Size = new Size(215, 29);
+            txt_Usuario.Size = new Size(363, 36);
             txt_Usuario.TabIndex = 0;
             txt_Usuario.TextAlign = HorizontalAlignment.Center;
             txt_Usuario.Leave += txt_Usuario_Leave;
@@ -133,9 +136,9 @@
             lbUsuario.AutoSize = true;
             lbUsuario.Font = new Font("Palatino Linotype", 14.25F);
             lbUsuario.ForeColor = Color.White;
-            lbUsuario.Location = new Point(106, 227);
+            lbUsuario.Location = new Point(121, 303);
             lbUsuario.Name = "lbUsuario";
-            lbUsuario.Size = new Size(77, 26);
+            lbUsuario.Size = new Size(97, 32);
             lbUsuario.TabIndex = 5;
             lbUsuario.Text = "Usuario";
             // 
@@ -144,12 +147,14 @@
             txt_Contrasenia.BackColor = Color.White;
             txt_Contrasenia.BorderStyle = BorderStyle.None;
             txt_Contrasenia.Font = new Font("Palatino Linotype", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txt_Contrasenia.Location = new Point(37, 331);
+            txt_Contrasenia.Location = new Point(42, 441);
+            txt_Contrasenia.Margin = new Padding(3, 4, 3, 4);
             txt_Contrasenia.Name = "txt_Contrasenia";
-            txt_Contrasenia.Size = new Size(215, 29);
+            txt_Contrasenia.Size = new Size(363, 36);
             txt_Contrasenia.TabIndex = 1;
             txt_Contrasenia.TextAlign = HorizontalAlignment.Center;
             txt_Contrasenia.UseSystemPasswordChar = true;
+            txt_Contrasenia.TextChanged += txt_Contrasenia_TextChanged;
             txt_Contrasenia.KeyDown += txt_Contrasenia_KeyDown;
             // 
             // lbContrasenia
@@ -157,9 +162,9 @@
             lbContrasenia.AutoSize = true;
             lbContrasenia.Font = new Font("Palatino Linotype", 14.25F);
             lbContrasenia.ForeColor = Color.White;
-            lbContrasenia.Location = new Point(96, 298);
+            lbContrasenia.Location = new Point(110, 397);
             lbContrasenia.Name = "lbContrasenia";
-            lbContrasenia.Size = new Size(104, 26);
+            lbContrasenia.Size = new Size(135, 32);
             lbContrasenia.TabIndex = 7;
             lbContrasenia.Text = "Contraseña";
             // 
@@ -182,28 +187,21 @@
             Panel_Acceso.Controls.Add(txt_Usuario);
             Panel_Acceso.Dock = DockStyle.Fill;
             Panel_Acceso.Location = new Point(0, 0);
+            Panel_Acceso.Margin = new Padding(3, 4, 3, 4);
             Panel_Acceso.Name = "Panel_Acceso";
-            Panel_Acceso.Size = new Size(291, 510);
+            Panel_Acceso.Size = new Size(428, 680);
             Panel_Acceso.TabIndex = 26;
             Panel_Acceso.Paint += Panel_Acceso_Paint;
             // 
-            // panel1
-            // 
-            panel1.Controls.Add(Panel_Acceso);
-            panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(291, 510);
-            panel1.TabIndex = 28;
-            // 
             // Acceso
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(291, 510);
-            Controls.Add(panel1);
+            ClientSize = new Size(428, 680);
+            Controls.Add(Panel_Acceso);
             FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Acceso";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Acceso";
@@ -211,7 +209,6 @@
             ((System.ComponentModel.ISupportInitialize)erP_Usuario).EndInit();
             Panel_Acceso.ResumeLayout(false);
             Panel_Acceso.PerformLayout();
-            panel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -229,6 +226,5 @@
         private ErrorProvider erP_Usuario;
         private CheckBox chk_MostrarContra;
         private Panel Panel_Acceso;
-        private Panel panel1;
     }
 }

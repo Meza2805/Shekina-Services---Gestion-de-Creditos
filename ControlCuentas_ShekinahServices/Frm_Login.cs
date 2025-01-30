@@ -33,7 +33,7 @@ namespace ControlCuentas_ShekinahServices
         [DllImport("user32.dll", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
-       
+
 
         public Acceso(IAcessoSistema<AccesoSistema> repositorio, IServiceProvider serviceProvider)
         {
@@ -51,7 +51,7 @@ namespace ControlCuentas_ShekinahServices
             Libreria_Interna.AplicarBordesEsquinasBoton(txt_Usuario, 5);
             Libreria_Interna.AplicarBordesEsquinasBoton(txt_Contrasenia, 5);
 
-            
+
         }
 
         private void Grp_Acceso_Enter(object sender, EventArgs e)
@@ -78,7 +78,9 @@ namespace ControlCuentas_ShekinahServices
                 erP_Usuario.Clear();
                 btnAcceder.Enabled = true;
                 btnAcceder.BackColor = ColoresRGB.Verde_Menta_Boton;
-                txt_Contrasenia.Focus();
+                //txt_Contrasenia.Focus();
+                // Asegurar que el foco se realice al final
+                this.BeginInvoke((Action)(() => txt_Contrasenia.Focus()));
             }
             else
             {
@@ -106,16 +108,25 @@ namespace ControlCuentas_ShekinahServices
             {
                 Id_Usuario = await _repositorio.Acceder_Sistema(txt_Usuario.Text, txt_Contrasenia.Text);
                 Listad = await _repositorio.ObtenerUsuario_Especifico(Id_Usuario);
-               
+                var Frm_Bienvenida = _serviceProvider.GetRequiredService<Frm_Acceso_Bienvenida>();
                 if (Id_Usuario > 0)
                 {
-                    var Frm_Bienvenida = _serviceProvider.GetRequiredService<Frm_Acceso_Bienvenida>();
-                    Frm_Bienvenida.Mensaje($"Usuario: {Listad[0].Nombre_Usuario}");
+                    this.Hide();
+                    Frm_Bienvenida.Mensaje($"Usuario: {Listad[0].Nombre_Usuario}", $"Nivel de Acceso: {Listad[0].Permiso_Usuario}", "Acceso Concedido", true);
                     Frm_Bienvenida.ShowDialog();
                     Frm_Main frm_Main = new Frm_Main(_serviceProvider);
                     frm_Main.Recibir_Usuario(Listad);
                     this.Hide();
                     frm_Main.ShowDialog();
+                }
+                else
+                {
+                    this.Hide();
+                    Frm_Bienvenida.Mensaje($"Estimado usuario", $"su contraseña es incorrecta", "Contraseña Incorrecta", false);
+                    Frm_Bienvenida.ShowDialog();
+                    txt_Contrasenia.Clear();
+                    txt_Contrasenia.Focus();
+                    this.Show();
                 }
             }
         }
@@ -172,6 +183,11 @@ namespace ControlCuentas_ShekinahServices
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void txt_Contrasenia_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

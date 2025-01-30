@@ -16,24 +16,6 @@ C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Shekina Services - Gestión de Crédito
 C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Shekina Services - Gestión de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\Datos\obj\Debug\net8.0\refint\Datos.dll
 C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Shekina Services - Gestión de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\Datos\obj\Debug\net8.0\Datos.pdb
 C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Shekina Services - Gestión de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\Datos\obj\Debug\net8.0\ref\Datos.dll
-C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Datos\bin\Debug\net8.0\Datos.deps.json
-C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Datos\bin\Debug\net8.0\Datos.dll
-C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Datos\bin\Debug\net8.0\Datos.pdb
-C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Datos\bin\Debug\net8.0\Entidades.dll
-C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Datos\bin\Debug\net8.0\Modelos.dll
-C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Datos\bin\Debug\net8.0\Entidades.pdb
-C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Datos\bin\Debug\net8.0\Modelos.pdb
-C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Datos\obj\Debug\net8.0\Datos.csproj.AssemblyReference.cache
-C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Datos\obj\Debug\net8.0\Datos.GeneratedMSBuildEditorConfig.editorconfig
-C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Datos\obj\Debug\net8.0\Datos.AssemblyInfoInputs.cache
-C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Datos\obj\Debug\net8.0\Datos.AssemblyInfo.cs
-C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Datos\obj\Debug\net8.0\Datos.csproj.CoreCompileInputs.cache
-C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Datos\obj\Debug\net8.0\Datos.sourcelink.json
-C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Datos\obj\Debug\net8.0\Datos.csproj.Up2Date
-C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Datos\obj\Debug\net8.0\Datos.dll
-C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Datos\obj\Debug\net8.0\refint\Datos.dll
-C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Datos\obj\Debug\net8.0\Datos.pdb
-C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Datos\obj\Debug\net8.0\ref\Datos.dll
 C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Gestion de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\Datos\bin\Debug\net8.0\Datos.deps.json
 C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Gestion de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\Datos\bin\Debug\net8.0\Datos.dll
 C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Gestion de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\Datos\bin\Debug\net8.0\Datos.pdb
@@ -52,3 +34,21 @@ C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Gestion de Créditos\Shekina-Services--
 C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Gestion de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\Datos\obj\Debug\net8.0\refint\Datos.dll
 C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Gestion de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\Datos\obj\Debug\net8.0\Datos.pdb
 C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Gestion de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\Datos\obj\Debug\net8.0\ref\Datos.dll
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Datos\bin\Debug\net8.0\Datos.deps.json
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Datos\bin\Debug\net8.0\Datos.dll
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Datos\bin\Debug\net8.0\Datos.pdb
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Datos\bin\Debug\net8.0\Entidades.dll
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Datos\bin\Debug\net8.0\Modelos.dll
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Datos\bin\Debug\net8.0\Entidades.pdb
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Datos\bin\Debug\net8.0\Modelos.pdb
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Datos\obj\Debug\net8.0\Datos.csproj.AssemblyReference.cache
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Datos\obj\Debug\net8.0\Datos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Datos\obj\Debug\net8.0\Datos.AssemblyInfoInputs.cache
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Datos\obj\Debug\net8.0\Datos.AssemblyInfo.cs
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Datos\obj\Debug\net8.0\Datos.csproj.CoreCompileInputs.cache
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Datos\obj\Debug\net8.0\Datos.sourcelink.json
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Datos\obj\Debug\net8.0\Datos.csproj.Up2Date
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Datos\obj\Debug\net8.0\Datos.dll
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Datos\obj\Debug\net8.0\refint\Datos.dll
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Datos\obj\Debug\net8.0\Datos.pdb
+C:\Repositorios\Shekina-Services---Gestion-de-Creditos\Datos\obj\Debug\net8.0\ref\Datos.dll

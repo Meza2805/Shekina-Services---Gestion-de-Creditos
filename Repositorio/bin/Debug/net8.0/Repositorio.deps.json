@@ -559,7 +559,10 @@
           "Entidades": "1.0.0"
         },
         "runtime": {
-          "Aplicacion.dll": {}
+          "Aplicacion.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Datos/1.0.0": {
@@ -570,17 +573,26 @@
           "Modelos": "1.0.0"
         },
         "runtime": {
-          "Datos.dll": {}
+          "Datos.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Entidades/1.0.0": {
         "runtime": {
-          "Entidades.dll": {}
+          "Entidades.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Modelos/1.0.0": {
         "runtime": {
-          "Modelos.dll": {}
+          "Modelos.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

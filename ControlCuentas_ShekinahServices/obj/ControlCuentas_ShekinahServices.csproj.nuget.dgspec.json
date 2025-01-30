@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\ControlCuentas_ShekinahServices\\ControlCuentas_ShekinahServices.csproj": {}
+    "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\ControlCuentas_ShekinahServices\\ControlCuentas_ShekinahServices.csproj": {}
   },
   "projects": {
-    "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Aplicacion\\Aplicacion.csproj": {
+    "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Aplicacion\\Aplicacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Aplicacion\\Aplicacion.csproj",
+        "projectUniqueName": "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Aplicacion\\Aplicacion.csproj",
         "projectName": "Aplicacion",
-        "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Aplicacion\\Aplicacion.csproj",
-        "packagesPath": "C:\\Users\\UNCSM-SISTEMAS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Aplicacion\\obj\\",
+        "projectPath": "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Aplicacion\\Aplicacion.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Aplicacion\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\UNCSM-SISTEMAS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,15 +26,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\Entidades.csproj"
+              "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Entidades\\Entidades.csproj"
               }
             }
           }
@@ -44,7 +47,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -65,21 +69,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\ControlCuentas_ShekinahServices\\ControlCuentas_ShekinahServices.csproj": {
+    "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\ControlCuentas_ShekinahServices\\ControlCuentas_ShekinahServices.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\ControlCuentas_ShekinahServices\\ControlCuentas_ShekinahServices.csproj",
+        "projectUniqueName": "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\ControlCuentas_ShekinahServices\\ControlCuentas_ShekinahServices.csproj",
         "projectName": "ControlCuentas_ShekinahServices",
-        "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\ControlCuentas_ShekinahServices\\ControlCuentas_ShekinahServices.csproj",
-        "packagesPath": "C:\\Users\\UNCSM-SISTEMAS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\ControlCuentas_ShekinahServices\\obj\\",
+        "projectPath": "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\ControlCuentas_ShekinahServices\\ControlCuentas_ShekinahServices.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\ControlCuentas_ShekinahServices\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\UNCSM-SISTEMAS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -87,27 +95,26 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Aplicacion\\Aplicacion.csproj": {
-                "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Aplicacion\\Aplicacion.csproj"
+              "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Aplicacion\\Aplicacion.csproj": {
+                "projectPath": "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Aplicacion\\Aplicacion.csproj"
               },
-              "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Datos\\Datos.csproj": {
-                "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Datos\\Datos.csproj"
+              "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Datos\\Datos.csproj": {
+                "projectPath": "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Datos\\Datos.csproj"
               },
-              "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\Entidades.csproj"
+              "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Entidades\\Entidades.csproj"
               },
-              "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Modelos\\Modelos.csproj": {
-                "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Modelos\\Modelos.csproj"
+              "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Modelos\\Modelos.csproj": {
+                "projectPath": "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Modelos\\Modelos.csproj"
               },
-              "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Repositorio\\Repositorio.csproj": {
-                "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Repositorio\\Repositorio.csproj"
+              "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Repositorio\\Repositorio.csproj": {
+                "projectPath": "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Repositorio\\Repositorio.csproj"
               }
             }
           }
@@ -121,7 +128,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -159,21 +167,25 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Datos\\Datos.csproj": {
+    "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Datos\\Datos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Datos\\Datos.csproj",
+        "projectUniqueName": "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Datos\\Datos.csproj",
         "projectName": "Datos",
-        "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Datos\\Datos.csproj",
-        "packagesPath": "C:\\Users\\UNCSM-SISTEMAS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Datos\\obj\\",
+        "projectPath": "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Datos\\Datos.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Datos\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\UNCSM-SISTEMAS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -181,18 +193,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\Entidades.csproj"
+              "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Entidades\\Entidades.csproj"
               },
-              "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Modelos\\Modelos.csproj": {
-                "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Modelos\\Modelos.csproj"
+              "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Modelos\\Modelos.csproj": {
+                "projectPath": "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Modelos\\Modelos.csproj"
               }
             }
           }
@@ -206,7 +217,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -237,21 +249,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\Entidades.csproj": {
+    "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\Entidades.csproj",
-        "packagesPath": "C:\\Users\\UNCSM-SISTEMAS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\obj\\",
+        "projectPath": "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Entidades\\Entidades.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\UNCSM-SISTEMAS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -259,7 +275,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -277,7 +292,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -298,21 +314,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Modelos\\Modelos.csproj": {
+    "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Modelos\\Modelos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Modelos\\Modelos.csproj",
+        "projectUniqueName": "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Modelos\\Modelos.csproj",
         "projectName": "Modelos",
-        "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Modelos\\Modelos.csproj",
-        "packagesPath": "C:\\Users\\UNCSM-SISTEMAS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Modelos\\obj\\",
+        "projectPath": "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Modelos\\Modelos.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Modelos\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\UNCSM-SISTEMAS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -320,7 +340,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -338,7 +357,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -359,21 +379,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Repositorio\\Repositorio.csproj": {
+    "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Repositorio\\Repositorio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Repositorio\\Repositorio.csproj",
+        "projectUniqueName": "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Repositorio\\Repositorio.csproj",
         "projectName": "Repositorio",
-        "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Repositorio\\Repositorio.csproj",
-        "packagesPath": "C:\\Users\\UNCSM-SISTEMAS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Repositorio\\obj\\",
+        "projectPath": "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Repositorio\\Repositorio.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Repositorio\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\UNCSM-SISTEMAS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -381,24 +405,23 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Aplicacion\\Aplicacion.csproj": {
-                "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Aplicacion\\Aplicacion.csproj"
+              "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Aplicacion\\Aplicacion.csproj": {
+                "projectPath": "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Aplicacion\\Aplicacion.csproj"
               },
-              "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Datos\\Datos.csproj": {
-                "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Datos\\Datos.csproj"
+              "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Datos\\Datos.csproj": {
+                "projectPath": "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Datos\\Datos.csproj"
               },
-              "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\Entidades.csproj"
+              "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Entidades\\Entidades.csproj"
               },
-              "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Modelos\\Modelos.csproj": {
-                "projectPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Créditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Modelos\\Modelos.csproj"
+              "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Modelos\\Modelos.csproj": {
+                "projectPath": "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\Modelos\\Modelos.csproj"
               }
             }
           }
@@ -412,7 +435,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -433,7 +457,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

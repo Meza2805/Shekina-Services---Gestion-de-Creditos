@@ -16,7 +16,10 @@
       },
       "Entidades/1.0.0": {
         "runtime": {
-          "Entidades.dll": {}
+          "Entidades.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

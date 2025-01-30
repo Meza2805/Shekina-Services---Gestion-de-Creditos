@@ -90,29 +90,30 @@
             dgvPersona.EnableHeadersVisualStyles = false;
             dgvPersona.GridColor = Color.Gainsboro;
             dgvPersona.Location = new Point(0, 0);
+            dgvPersona.Margin = new Padding(3, 4, 3, 4);
             dgvPersona.MultiSelect = false;
             dgvPersona.Name = "dgvPersona";
             dgvPersona.ReadOnly = true;
             dgvPersona.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = Color.FromArgb(60, 80, 100);
-            dataGridViewCellStyle3.Font = new Font("Palatino Linotype", 9.75F);
+            dataGridViewCellStyle3.Font = new Font("Palatino Linotype", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             dataGridViewCellStyle3.ForeColor = Color.White;
             dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
             dgvPersona.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             dgvPersona.RowHeadersVisible = false;
-            dgvPersona.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dgvPersona.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToFirstHeader;
             dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle4.BackColor = Color.FromArgb(60, 80, 100);
-            dataGridViewCellStyle4.Font = new Font("Palatino Linotype", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle4.Font = new Font("Palatino Linotype", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             dataGridViewCellStyle4.ForeColor = Color.White;
             dataGridViewCellStyle4.SelectionBackColor = Color.FromArgb(227, 166, 177);
             dataGridViewCellStyle4.SelectionForeColor = Color.Black;
             dgvPersona.RowsDefaultCellStyle = dataGridViewCellStyle4;
             dgvPersona.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvPersona.Size = new Size(657, 342);
+            dgvPersona.Size = new Size(751, 456);
             dgvPersona.TabIndex = 0;
             // 
             // panel1
@@ -124,8 +125,9 @@
             panel1.Controls.Add(txtBusqueda);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(800, 108);
+            panel1.Size = new Size(914, 144);
             panel1.TabIndex = 1;
             panel1.Paint += panel1_Paint;
             // 
@@ -135,9 +137,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Palatino Linotype", 18F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.FromArgb(220, 110, 130);
-            label1.Location = new Point(250, 9);
+            label1.Location = new Point(286, 12);
             label1.Name = "label1";
-            label1.Size = new Size(236, 32);
+            label1.Size = new Size(294, 41);
             label1.TabIndex = 4;
             label1.Text = "Clientes Registrados";
             // 
@@ -150,10 +152,11 @@
             btnCerrar.IconChar = FontAwesome.Sharp.IconChar.Close;
             btnCerrar.IconColor = Color.Gainsboro;
             btnCerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnCerrar.IconSize = 23;
-            btnCerrar.Location = new Point(774, 3);
+            btnCerrar.IconSize = 26;
+            btnCerrar.Location = new Point(885, 4);
+            btnCerrar.Margin = new Padding(3, 4, 3, 4);
             btnCerrar.Name = "btnCerrar";
-            btnCerrar.Size = new Size(23, 25);
+            btnCerrar.Size = new Size(26, 33);
             btnCerrar.TabIndex = 3;
             btnCerrar.TabStop = false;
             btnCerrar.Click += btnCerrar_Click;
@@ -164,9 +167,9 @@
             label2.AutoSize = true;
             label2.Font = new Font("Palatino Linotype", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(23, 74);
+            label2.Location = new Point(26, 99);
             label2.Name = "label2";
-            label2.Size = new Size(95, 18);
+            label2.Size = new Size(121, 23);
             label2.TabIndex = 3;
             label2.Text = "Buscar Cliente";
             // 
@@ -176,9 +179,10 @@
             txtBusqueda.BackColor = Color.White;
             txtBusqueda.BorderStyle = BorderStyle.None;
             txtBusqueda.Font = new Font("Palatino Linotype", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtBusqueda.Location = new Point(124, 74);
+            txtBusqueda.Location = new Point(142, 99);
+            txtBusqueda.Margin = new Padding(3, 4, 3, 4);
             txtBusqueda.Name = "txtBusqueda";
-            txtBusqueda.Size = new Size(396, 22);
+            txtBusqueda.Size = new Size(453, 27);
             txtBusqueda.TabIndex = 1;
             txtBusqueda.TextChanged += txtBusqueda_TextChanged;
             // 
@@ -189,26 +193,29 @@
             panel2.Controls.Add(PanelIzquierdoClientes);
             panel2.Controls.Add(PanelDerechoBotonesClientes);
             panel2.Dock = DockStyle.Fill;
-            panel2.Location = new Point(0, 108);
+            panel2.Location = new Point(0, 144);
+            panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(800, 342);
+            panel2.Size = new Size(914, 456);
             panel2.TabIndex = 2;
             // 
             // PanelContenedorDgvClientes
             // 
             PanelContenedorDgvClientes.Controls.Add(dgvPersona);
             PanelContenedorDgvClientes.Dock = DockStyle.Fill;
-            PanelContenedorDgvClientes.Location = new Point(23, 0);
+            PanelContenedorDgvClientes.Location = new Point(26, 0);
+            PanelContenedorDgvClientes.Margin = new Padding(3, 4, 3, 4);
             PanelContenedorDgvClientes.Name = "PanelContenedorDgvClientes";
-            PanelContenedorDgvClientes.Size = new Size(657, 342);
+            PanelContenedorDgvClientes.Size = new Size(751, 456);
             PanelContenedorDgvClientes.TabIndex = 10;
             // 
             // PanelIzquierdoClientes
             // 
             PanelIzquierdoClientes.Dock = DockStyle.Left;
             PanelIzquierdoClientes.Location = new Point(0, 0);
+            PanelIzquierdoClientes.Margin = new Padding(3, 4, 3, 4);
             PanelIzquierdoClientes.Name = "PanelIzquierdoClientes";
-            PanelIzquierdoClientes.Size = new Size(23, 342);
+            PanelIzquierdoClientes.Size = new Size(26, 456);
             PanelIzquierdoClientes.TabIndex = 9;
             // 
             // PanelDerechoBotonesClientes
@@ -217,9 +224,10 @@
             PanelDerechoBotonesClientes.Controls.Add(btnEliminarCliente);
             PanelDerechoBotonesClientes.Controls.Add(btnEditarCliente);
             PanelDerechoBotonesClientes.Dock = DockStyle.Right;
-            PanelDerechoBotonesClientes.Location = new Point(680, 0);
+            PanelDerechoBotonesClientes.Location = new Point(777, 0);
+            PanelDerechoBotonesClientes.Margin = new Padding(3, 4, 3, 4);
             PanelDerechoBotonesClientes.Name = "PanelDerechoBotonesClientes";
-            PanelDerechoBotonesClientes.Size = new Size(120, 342);
+            PanelDerechoBotonesClientes.Size = new Size(137, 456);
             PanelDerechoBotonesClientes.TabIndex = 8;
             // 
             // btnAgregarCliente
@@ -230,9 +238,10 @@
             btnAgregarCliente.FlatStyle = FlatStyle.Flat;
             btnAgregarCliente.Font = new Font("Palatino Linotype", 9.75F, FontStyle.Bold);
             btnAgregarCliente.ForeColor = Color.White;
-            btnAgregarCliente.Location = new Point(17, 6);
+            btnAgregarCliente.Location = new Point(19, 8);
+            btnAgregarCliente.Margin = new Padding(3, 4, 3, 4);
             btnAgregarCliente.Name = "btnAgregarCliente";
-            btnAgregarCliente.Size = new Size(91, 30);
+            btnAgregarCliente.Size = new Size(104, 40);
             btnAgregarCliente.TabIndex = 5;
             btnAgregarCliente.Text = "Agregar";
             btnAgregarCliente.UseVisualStyleBackColor = false;
@@ -246,9 +255,10 @@
             btnEliminarCliente.FlatStyle = FlatStyle.Flat;
             btnEliminarCliente.Font = new Font("Palatino Linotype", 9.75F, FontStyle.Bold);
             btnEliminarCliente.ForeColor = Color.White;
-            btnEliminarCliente.Location = new Point(17, 78);
+            btnEliminarCliente.Location = new Point(19, 104);
+            btnEliminarCliente.Margin = new Padding(3, 4, 3, 4);
             btnEliminarCliente.Name = "btnEliminarCliente";
-            btnEliminarCliente.Size = new Size(91, 30);
+            btnEliminarCliente.Size = new Size(104, 40);
             btnEliminarCliente.TabIndex = 7;
             btnEliminarCliente.Text = "Eliminar";
             btnEliminarCliente.UseVisualStyleBackColor = false;
@@ -262,9 +272,10 @@
             btnEditarCliente.FlatStyle = FlatStyle.Flat;
             btnEditarCliente.Font = new Font("Palatino Linotype", 9.75F, FontStyle.Bold);
             btnEditarCliente.ForeColor = Color.White;
-            btnEditarCliente.Location = new Point(17, 42);
+            btnEditarCliente.Location = new Point(19, 56);
+            btnEditarCliente.Margin = new Padding(3, 4, 3, 4);
             btnEditarCliente.Name = "btnEditarCliente";
-            btnEditarCliente.Size = new Size(91, 30);
+            btnEditarCliente.Size = new Size(104, 40);
             btnEditarCliente.TabIndex = 6;
             btnEditarCliente.Text = "Editar";
             btnEditarCliente.UseVisualStyleBackColor = false;
@@ -272,11 +283,12 @@
             // 
             // Frm_Persona
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(panel2);
             Controls.Add(panel1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Frm_Persona";
             Text = "Frm_Persona";
             Load += Frm_Persona_Load;
