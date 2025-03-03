@@ -14,9 +14,10 @@
         public string Edad => $"{Convert.ToString(fechaActual.Year - FechaNacimiento.Year)} Años";
         public string NoTelefono { get; set; }
         public string  Direccion { get; set; }
-     
         public DateTime FechaCreacion { get; set; }
-      
+        public int UsuarioCrea {  get; set; }
+
+
     }
 
 }

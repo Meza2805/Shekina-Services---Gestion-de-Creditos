@@ -61,7 +61,7 @@ namespace Repositorio
                 FechaNacimiento = p.FechaNacimiento,
                 FechaCreacion = p.FechaCreacion
 
-            }).ToListAsync();
+            }).OrderBy(p=>p.PrimerNombre).ToListAsync();
         public async Task<Persona> ObtenerporId(int Id)
         {
             //throw new NotImplementedException();

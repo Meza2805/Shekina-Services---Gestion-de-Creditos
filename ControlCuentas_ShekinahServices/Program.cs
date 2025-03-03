@@ -82,6 +82,8 @@ namespace ControlCuentas_ShekinahServices
             // Esto permite que `AgregarPersona` y otros servicios utilicen la abstracción `IRepositorio<Persona>`.
             services.AddTransient<IRepositorio<Persona>, PersonaRepositorio>();
             services.AddTransient<IAcessoSistema<AccesoSistema>, Acceso_Sistema_Repositorio>();
+            services.AddTransient<IPersona, PersonaRepositorio02>(); 
+
 
             // Inyección de dependencias para formularios:
             // Aquí se registran formularios que pertenecen a la capa de presentación.

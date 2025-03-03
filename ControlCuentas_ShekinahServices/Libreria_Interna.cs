@@ -63,5 +63,31 @@ namespace ControlCuentas_ShekinahServices
             ));
         }
 
+
+        // Función para permitir solo números en un TextBox
+        public static void SoloNumeros(object sender, KeyPressEventArgs e)
+        {
+            // Permitir solo números (0-9) y la tecla de retroceso (Backspace)
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back)
+            {
+                e.Handled = true; // Bloquear la tecla
+            }
+        }
+
+        // Función para permitir solo números y un punto decimal
+        public static void NumerosConDecimal(object sender, KeyPressEventArgs e)
+        {
+            // Permitir números, Backspace y un solo punto decimal
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+
+            // Evitar múltiples puntos decimales
+            if (e.KeyChar == '.' && ((TextBox)sender).Text.Contains("."))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

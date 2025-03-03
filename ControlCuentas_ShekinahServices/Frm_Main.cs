@@ -26,6 +26,7 @@ namespace ControlCuentas_ShekinahServices
         private bool isCollapsing; // Indica si el panel se está reduciendo
         private int targetWidth;   // Almacena el ancho objetivo del panel
         private const int animationSpeed = 50; // Velocidad de la animación
+        private int Id_Usuario = 0;
 
         /// Arrastrar Formulario
         [DllImport("user32.dll", EntryPoint = "ReleaseCapture")]
@@ -58,7 +59,7 @@ namespace ControlCuentas_ShekinahServices
             _Usuarios = new List<Perfil_Usuario>();
             _Usuarios = Usuarios;
             Lb_NombreUsuario.Text = $"{Convert.ToString(Usuarios[0].Nombre_Usuario)} /  {Convert.ToString(Usuarios[0].Permiso_Usuario)}";
-         
+            Id_Usuario = Usuarios[0].Id_Usuario;
         }
         ///Metodos
         private void ActivarBoton(object senderBtn, Color color, string Opcion)
@@ -109,6 +110,9 @@ namespace ControlCuentas_ShekinahServices
             IconoFormularioActual.IconColor = Color.White;
             TituloFormularioHijo.Text = "Inicio";
             TituloFormularioHijo.ForeColor = Color.White;
+
+            var Formulario = _serviceProvider.GetRequiredService<Frm_Principal>();
+            AbrirFormularioHijo(Formulario);
         }
 
         public void AbrirFormularioHijo(Form FormularioHijo)
@@ -131,14 +135,15 @@ namespace ControlCuentas_ShekinahServices
         {
             List<Button> botones = new List<Button> { BtnClientes, BtnCreditos, BtnReportes, BtnAjustes };
 
+
             // Diccionario de textos iniciales (definidos manualmente)
             Dictionary<Button, string> textosOriginales = new Dictionary<Button, string>
-                {
-                    { BtnClientes, "Clientes" },
-                    { BtnCreditos, "Créditos" },
-                    { BtnReportes, "Reportes" },
-                    { BtnAjustes, "Ajustes" }
-                };
+            {
+                { BtnClientes, "Clientes" },
+                { BtnCreditos, "Créditos" },
+                { BtnReportes, "Reportes" },
+                { BtnAjustes, "Ajustes" }
+            };
 
             // Iterar sobre los botones para aplicar la lógica
             foreach (var boton in botones)
@@ -156,15 +161,17 @@ namespace ControlCuentas_ShekinahServices
 
             if (btnInicio.Location == new Point(26, 17))
             {
-                btnInicio.Location = new Point(3, 58);
-                btnInicio.Size = new Size(40, 40);
+                btnInicio.Location = new Point(26, 17);
+                btnInicio.Size = new Size(140, 118);
                 btnInicio.Image = Properties.Resources.Lion;
             }
             else
             {
-                btnInicio.Location = new Point(26, 17);
-                btnInicio.Size = new Size(140, 118);
+               
+                btnInicio.Location = new Point(3, 58);
+                btnInicio.Size = new Size(40, 40);
                 btnInicio.Image = Properties.Resources.Logo_Ajustado_Blanco___copia;
+
             }
         }  //Funcion para quitar el texto de los botones y solo se apreceie el icono
 
@@ -174,6 +181,7 @@ namespace ControlCuentas_ShekinahServices
             /// player.Play(); // Reproduce el sonido
             ActivarBoton(sender, ColoresRGB.Rosa_Coral_Suave, "Clientes");
             var Formulario = _serviceProvider.GetRequiredService<Frm_Persona>();
+            Formulario.Recibir_Id_Usuario(Id_Usuario); //No es la forma mas efeciente, pero asi recibo el Id_Usuario Loggeado
             AbrirFormularioHijo(Formulario);
         }
 
@@ -200,8 +208,8 @@ namespace ControlCuentas_ShekinahServices
             /// player.Play(); // Reproduce el sonido
             Resetear();
             //En este caso hago uso de los formularios que he implementado en el archivo Main.cs en lugar de Instanciarlos
-            var Formulario = _serviceProvider.GetRequiredService<Frm_Principal>();
-            AbrirFormularioHijo(Formulario);
+            //var Formulario = _serviceProvider.GetRequiredService<Frm_Principal>();
+            //AbrirFormularioHijo(Formulario);
         }
 
         private void PanelSuperior_MouseDown(object sender, MouseEventArgs e)
@@ -241,7 +249,7 @@ namespace ControlCuentas_ShekinahServices
         {
             /// player.Play(); // Reproduce el sonido
 
-            OpenClose.Play();
+            //OpenClose.Play();
 
 
             ReducirPaneles_Botones();

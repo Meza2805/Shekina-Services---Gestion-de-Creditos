@@ -20,7 +20,7 @@ namespace ControlCuentas_ShekinahServices.FormulariosHijos
         private IRepositorio<Persona> _repositorio;
         private readonly IServiceProvider _serviceProvider;
         private Persona _persona = new Persona();
-
+        private int Id_Usuario;
         // Crear un reproductor de sonido
         SoundPlayer player = new SoundPlayer(Properties.Resources.MouseClickPunchy);
 
@@ -34,7 +34,13 @@ namespace ControlCuentas_ShekinahServices.FormulariosHijos
             Libreria_Interna.AplicarBordesEsquinasBoton(btnEliminarCliente, 5);                //Aplico bordes redondeados al boton
         }
 
-        private async Task Refrescar()
+        public void Recibir_Id_Usuario(int Id_Usuario)
+        {
+            this.Id_Usuario = Id_Usuario;
+        }
+
+
+        public async Task Refrescar()
         {
             var persona = await _repositorio.ObtenerListadoAsync();
             DataTable dtPersonas = ConvertToDataTable(persona);
@@ -49,14 +55,7 @@ namespace ControlCuentas_ShekinahServices.FormulariosHijos
 
             dgvPersona.Columns[1].HeaderText = "Cedula";
             dgvPersona.Columns[6].HeaderText = "Nombre Completo";
-
-          
-
-
             bSPersonas.DataSource = dgvPersona.DataSource;
-
-
-
         }
 
         private async void Frm_Persona_Load(object sender, EventArgs e)
@@ -93,9 +92,19 @@ namespace ControlCuentas_ShekinahServices.FormulariosHijos
 
         }
 
-        private void btnCerrar_Click(object sender, EventArgs e)
+        private  void btnCerrar_Click(object sender, EventArgs e)
         {
+            // Buscar el formulario padre en la lista de formularios abiertos
+            Frm_Main? padre = Application.OpenForms["Frm_Main"] as Frm_Main;
 
+            if (padre != null)
+            {
+                 padre.Resetear();
+            }
+            else
+            {
+                ///  MessageBox.Show("No se encontró el formulario padre.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnAgregarCliente_Click(object sender, EventArgs e)
@@ -103,6 +112,7 @@ namespace ControlCuentas_ShekinahServices.FormulariosHijos
             ////// player.Play(); // Reproduce el sonido
             var Formulario = _serviceProvider.GetRequiredService<Frm_AgregarPersona>();
             Formulario.Tipo_Entrada(true);
+            Formulario.Recibir_Id_Usuario(Id_Usuario);
             Formulario.ShowDialog();
         }
 

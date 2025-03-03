@@ -242,7 +242,7 @@
             pb_Imagen_Usuario.Location = new Point(3, 15);
             pb_Imagen_Usuario.Margin = new Padding(3, 4, 3, 4);
             pb_Imagen_Usuario.Name = "pb_Imagen_Usuario";
-            pb_Imagen_Usuario.Size = new Size(34, 40);
+            pb_Imagen_Usuario.Size = new Size(34, 32);
             pb_Imagen_Usuario.SizeMode = PictureBoxSizeMode.StretchImage;
             pb_Imagen_Usuario.TabIndex = 0;
             pb_Imagen_Usuario.TabStop = false;

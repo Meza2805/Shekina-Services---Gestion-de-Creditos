@@ -6,6 +6,7 @@ namespace Aplicacion
     public class AgregarPersona
     {
         private readonly IRepositorio<Persona> _Persona;
+        
 
         public AgregarPersona(IRepositorio<Persona> repositorio_persona)
         {
