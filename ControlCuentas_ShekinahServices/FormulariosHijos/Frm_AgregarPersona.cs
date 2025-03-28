@@ -16,7 +16,7 @@ namespace ControlCuentas_ShekinahServices.FormulariosHijos
     public partial class Frm_AgregarPersona : Form
     {
         private readonly IPersona _Persona;
-        int Id_Usuario;
+        int Id_Usuario, Id_Persona;
         bool Guardar = true;
         bool Accion = true;
         public Frm_AgregarPersona(IPersona _Persona, IServiceProvider serviceProvider)
@@ -63,7 +63,7 @@ namespace ControlCuentas_ShekinahServices.FormulariosHijos
             txtTelefonoCliente.Text = persona.NoTelefono;
             txtDireccionCliente.Text = persona.Direccion;
             dtFechaNacCliente.Value = persona.FechaNacimiento;
-
+            Id_Persona = persona.Id;
 
         }
 
@@ -194,7 +194,8 @@ namespace ControlCuentas_ShekinahServices.FormulariosHijos
                     FechaNacimiento = dtFechaNacCliente.Value, // ✅ Obtiene el valor de DateTimePicker correctamente
                     NoTelefono = txtTelefonoCliente.Text,
                     Direccion = txtDireccionCliente.Text,
-                    UsuarioCrea = Id_Usuario
+                    UsuarioCrea = Id_Usuario,
+                    Id = Id_Persona
                 };
 
                 // Determinar si se debe insertar o modificar

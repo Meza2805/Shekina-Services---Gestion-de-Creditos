@@ -16,7 +16,9 @@
         public string  Direccion { get; set; }
         public DateTime FechaCreacion { get; set; }
         public int UsuarioCrea {  get; set; }
-
+        public string UsuarioCreaNombre { get; set; }  // Nombre del usuario creador
+        public string UsuarioModificaNombre { get; set; }  // Nombre del usuario modificador
+        public string? FechaModificacion { get; set; }
 
     }
 

@@ -167,7 +167,7 @@ namespace ControlCuentas_ShekinahServices
             }
             else
             {
-               
+
                 btnInicio.Location = new Point(3, 58);
                 btnInicio.Size = new Size(40, 40);
                 btnInicio.Image = Properties.Resources.Logo_Ajustado_Blanco___copia;
@@ -238,7 +238,7 @@ namespace ControlCuentas_ShekinahServices
             /// player.Play(); // Reproduce el sonido
 
             var Formulario = _serviceProvider.GetRequiredService<Frm_Message_SI_NO>();
-            
+
             Formulario.ConfigurarMensaje("¿Está seguro que desea salir?");
             Formulario.ShowDialog();
             Application.Exit();
@@ -401,6 +401,21 @@ namespace ControlCuentas_ShekinahServices
             //        e.Graphics.DrawPath(pen, path);  // Dibuja el borde redondeado
             //    }
             //}
+        }
+
+        private void btnProductos_Click(object sender, EventArgs e)
+        {
+            ActivarBoton(sender, ColoresRGB.Verde_Oliva_Suave, "Productos");
+        }
+
+        private void btnFacturacion_Click(object sender, EventArgs e)
+        {
+            ActivarBoton(sender, ColoresRGB.Azul_Petroleo_Suave, "Facturación");
+        }
+
+        private void btnProveedores_Click(object sender, EventArgs e)
+        {
+            ActivarBoton(sender, ColoresRGB.Rosa_Palo_Suave, "Proveedores");
         }
     }
 

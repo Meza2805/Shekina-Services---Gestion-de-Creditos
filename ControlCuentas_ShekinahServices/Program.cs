@@ -102,6 +102,8 @@ namespace ControlCuentas_ShekinahServices
             services.AddTransient<Frm_Despedida>();   // Formulario de Despedida
             services.AddTransient<Frm_AgregarPersona>();   // Formulario de Agregar Persona
             services.AddTransient<Frm_Acceso_Bienvenida>();   // Formulario de Bienvenida a Acceso a Sistema
+            services.AddTransient<Frm_Cambio_Usuario>();   // Formulario de Cambiar de Sesion de Usuario
+
         }
 
 

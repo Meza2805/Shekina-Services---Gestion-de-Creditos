@@ -9,6 +9,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Media;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -43,9 +44,9 @@ namespace ControlCuentas_ShekinahServices.FormulariosHijos
         public async Task Refrescar()
         {
             var persona = await _repositorio.ObtenerListadoAsync();
-            DataTable dtPersonas = ConvertToDataTable(persona);
+          // DataTable dtPersonas = ConvertToDataTable(persona);
 
-            dgvPersona.DataSource = dtPersonas;
+            dgvPersona.DataSource = ConvertToDataTable(persona);
             dgvPersona.Columns[0].Visible = false;//Id
             dgvPersona.Columns[2].Visible = false;//PrimerNombre
             dgvPersona.Columns[3].Visible = false;//SegundoNombre
@@ -57,6 +58,10 @@ namespace ControlCuentas_ShekinahServices.FormulariosHijos
             dgvPersona.Columns[6].HeaderText = "Nombre Completo";
             bSPersonas.DataSource = dgvPersona.DataSource;
         }
+
+
+
+
 
         private async void Frm_Persona_Load(object sender, EventArgs e)
         {
@@ -121,6 +126,7 @@ namespace ControlCuentas_ShekinahServices.FormulariosHijos
             ////// player.Play(); // Reproduce el sonido
             var Formulario = _serviceProvider.GetRequiredService<Frm_AgregarPersona>();
             Formulario.Tipo_Entrada(false);
+            Formulario.Recibir_Id_Usuario(Id_Usuario);
             Formulario.RecibirDatosPersona(CargarDatosPersona());
             Formulario.ShowDialog();
 
@@ -140,6 +146,7 @@ namespace ControlCuentas_ShekinahServices.FormulariosHijos
             if (dgvPersona.SelectedRows.Count > 0)
             {
                 DataGridViewRow FilaSeleccionada = dgvPersona.SelectedRows[0];
+                _persona.Id = Convert.ToInt32(FilaSeleccionada.Cells[0].Value);
                 _persona.NoCedula = FilaSeleccionada.Cells[1].Value.ToString();
                 _persona.PrimerNombre = FilaSeleccionada.Cells[2].Value.ToString();
                 _persona.SegundoNombre = FilaSeleccionada.Cells[3].Value.ToString();
@@ -201,12 +208,15 @@ namespace ControlCuentas_ShekinahServices.FormulariosHijos
             dataTable.Columns.Add("SegundoNombre", typeof(string));
             dataTable.Columns.Add("PrimerApellido", typeof(string));
             dataTable.Columns.Add("SegundoApellido", typeof(string));
-            dataTable.Columns.Add("NombreCompleto", typeof(string)); // Propiedad calculada
+            dataTable.Columns.Add("Nombre Completo", typeof(string)); // Propiedad calculada
             dataTable.Columns.Add("FechaNacimiento", typeof(DateTime));
             dataTable.Columns.Add("Edad", typeof(string)); // Propiedad calculada
             dataTable.Columns.Add("NoTelefono", typeof(string));
             dataTable.Columns.Add("Direccion", typeof(string));
-            dataTable.Columns.Add("FechaCreacion", typeof(DateTime));
+            dataTable.Columns.Add("Fecha Creacion", typeof(DateTime));
+            dataTable.Columns.Add("Usuario Crea", typeof(string));
+            dataTable.Columns.Add("Usuario Modifica", typeof(string));
+            dataTable.Columns.Add("Fecha de Modificacion", typeof(string));
 
             // Llenar el DataTable con la lista de personas
             foreach (var persona in personas)
@@ -223,7 +233,10 @@ namespace ControlCuentas_ShekinahServices.FormulariosHijos
                     persona.Edad, // Se calcula automáticamente
                     persona.NoTelefono,
                     persona.Direccion,
-                    persona.FechaCreacion
+                    persona.FechaCreacion,
+                    persona.UsuarioCreaNombre,
+                    persona.UsuarioModificaNombre,
+                    persona.FechaModificacion
                 );
             }
 

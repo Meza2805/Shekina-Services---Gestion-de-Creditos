@@ -81,8 +81,9 @@ namespace Datos
 
             // Ejecutar el procedimiento almacenado con parámetros de entrada y salida
             await Database.ExecuteSqlRawAsync(
-                "EXEC Sp_Insertar_Persona @NoCedula, @PrimerNombre, @SegundoNombre, @PrimerApellido, @SegundoApellido, " +
+                "EXEC Sp_Insertar_Persona  @NoCedula, @PrimerNombre, @SegundoNombre, @PrimerApellido, @SegundoApellido, " +
                 "@FechaNacimiento, @Direccion, @NoTelefono, @UsuarioCrea, @Resultado OUTPUT, @MensajeError OUTPUT",
+              
                 new SqlParameter("@NoCedula", Insertar_Persona.NoCedula),
                 new SqlParameter("@PrimerNombre", Insertar_Persona.PrimerNombre), // Estaba incorrecto
                 new SqlParameter("@SegundoNombre", (object)Insertar_Persona.SegundoNombre ?? DBNull.Value),
@@ -118,8 +119,9 @@ namespace Datos
 
             // Ejecutar el procedimiento almacenado con parámetros de entrada y salida
             await Database.ExecuteSqlRawAsync(
-                "EXEC Sp_Actualizar_Persona @NoCedula, @PrimerNombre, @SegundoNombre, @PrimerApellido, @SegundoApellido, " +
+                "EXEC Sp_Actualizar_Persona @Id_Persona, @NoCedula, @PrimerNombre, @SegundoNombre, @PrimerApellido, @SegundoApellido, " +
                 "@FechaNacimiento, @Direccion, @NoTelefono, @UsuarioModifica, @Resultado OUTPUT, @MensajeError OUTPUT",
+                  new SqlParameter("@Id_Persona", Actualizar_Persona.Id),
                 new SqlParameter("@NoCedula", Actualizar_Persona.NoCedula),
                 new SqlParameter("@PrimerNombre", Actualizar_Persona.PrimerNombre),
                 new SqlParameter("@SegundoNombre", (object)Actualizar_Persona.SegundoNombre ?? DBNull.Value),

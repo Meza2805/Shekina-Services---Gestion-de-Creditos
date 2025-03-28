@@ -12,5 +12,8 @@ namespace Aplicacion
         Task<IEnumerable<T>> ObtenerListadoAsync();
         Task AgregarItem(T item);
         Task ObtenerTodos();
+
+  
     }
+
 }
