@@ -19,7 +19,7 @@
       "RelativeMoniker": "D:0:0:{2984B1C0-4723-4E0C-840F-ABDBC2CAE011}|ControlCuentas_ShekinahServices\\ControlCuentas_ShekinahServices.csproj|solutionrelative:controlcuentas_shekinahservices\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2984B1C0-4723-4E0C-840F-ABDBC2CAE011}|ControlCuentas_ShekinahServices\\ControlCuentas_ShekinahServices.csproj|c:\\users\\uncsm-sistemas\\documents\\github\\gestion de cr\u00E9ditos\\shekina-services---gesti-n-de-cr-ditos\\controlcuentas_shekinahservices\\formularioshijos\\frm_cambio_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2984B1C0-4723-4E0C-840F-ABDBC2CAE011}|ControlCuentas_ShekinahServices\\ControlCuentas_ShekinahServices.csproj|C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\controlcuentas_shekinahservices\\formularioshijos\\frm_cambio_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2984B1C0-4723-4E0C-840F-ABDBC2CAE011}|ControlCuentas_ShekinahServices\\ControlCuentas_ShekinahServices.csproj|solutionrelative:controlcuentas_shekinahservices\\formularioshijos\\frm_cambio_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -99,8 +99,7 @@
               "ViewState": "AQIAAFQAAAAAAAAAAAAowFoAAABMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-28T16:47:42.269Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -125,8 +124,7 @@
               "ToolTip": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\ControlCuentas_ShekinahServices\\FormulariosHijos\\Frm_Cambio_Usuario.cs [Dise\u00F1o]",
               "RelativeToolTip": "ControlCuentas_ShekinahServices\\FormulariosHijos\\Frm_Cambio_Usuario.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T14:52:45.248Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-03-19T14:52:45.248Z"
             },
             {
               "$type": "Document",
@@ -246,8 +244,7 @@
               "RelativeToolTip": "ControlCuentas_ShekinahServices\\Libreria_Interna.cs",
               "ViewState": "AQIAADoAAAAAAAAAAAAcwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T02:54:05.446Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-23T02:54:05.446Z"
             },
             {
               "$type": "Document",
