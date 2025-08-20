@@ -13,7 +13,8 @@
     ],
     "additionalProbingPaths": [
       "C:\\Users\\UNCSM-SISTEMAS\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\UNCSM-SISTEMAS\\.nuget\\packages"
+      "C:\\Users\\UNCSM-SISTEMAS\\.nuget\\packages",
+      "C:\\Program Files\\DevExpress 25.1\\Components\\Offline Packages"
     ],
     "configProperties": {
       "System.Reflection.NullabilityInfoContext.IsSupported": true,
