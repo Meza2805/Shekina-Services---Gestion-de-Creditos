@@ -9,9 +9,9 @@ CREATE TABLE [Producto] (
   [StockMinimo] int NOT NULL,
   [Foto] nvarchar(max),
   [Id_Usuario_Crea] int NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO
@@ -20,9 +20,9 @@ CREATE TABLE [Unidad_Medida] (
   [Id] int PRIMARY KEY IDENTITY(1, 1),
   [Descripcion] nvarchar(450) NOT NULL,
   [Id_Usuario_Crea] int NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO
@@ -31,9 +31,9 @@ CREATE TABLE [Categoria] (
   [Id] int PRIMARY KEY IDENTITY(1, 1),
   [Descripcion] nvarchar(450) NOT NULL,
   [Id_Usuario_Crea] int NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO
@@ -46,9 +46,9 @@ CREATE TABLE [Usuario] (
   [Contraseña] varbinary(64) NOT NULL,
   [Foto] nvarchar(max),
   [Id_Usuario_Crea] int NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO
@@ -57,9 +57,9 @@ CREATE TABLE [Permiso] (
   [Id] int PRIMARY KEY IDENTITY(1, 1),
   [Descripcion] nvarchar(450) NOT NULL,
   [Id_Usuario_Crea] int NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO
@@ -75,9 +75,9 @@ CREATE TABLE [Persona_Base] (
   [Foto] nvarchar(max) NOT NULL,
   [FechaNacimiento] datetime NOT NULL,
   [Id_Usuario_Crea] int NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO
@@ -86,9 +86,9 @@ CREATE TABLE [Tipo_Direccion] (
   [Id] int PRIMARY KEY IDENTITY(1, 1),
   [Descripcion] nvarchar(450) NOT NULL,
   [Id_Usuario_Crea] int NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO
@@ -99,9 +99,9 @@ CREATE TABLE [Direccion_Persona] (
   [Id_Tipo_Direccion] int,
   [Id_Usuario_Crea] int NOT NULL,
   [Direccion_Completo] nvarchar(max) NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO
@@ -112,9 +112,9 @@ CREATE TABLE [Contacto_Persona] (
   [Id_Contacto] int,
   [Contacto] nvarchar(500),
   [Id_Usuario_Crea] int NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO
@@ -123,9 +123,9 @@ CREATE TABLE [Departamento] (
   [Id] int PRIMARY KEY IDENTITY(1, 1),
   [Descripcion] nvarchar(450),
   [Id_Usuario_Crea] int NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO
@@ -135,9 +135,9 @@ CREATE TABLE [Municipio] (
   [Id_Departamento] int,
   [Descripcion] nvarchar(450),
   [Id_Usuario_Crea] int NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO
@@ -147,9 +147,9 @@ CREATE TABLE [Barrio_Comunidad] (
   [Id_Municipio] int,
   [Id_Distrito] int,
   [Id_Usuario_Crea] int NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO
@@ -158,9 +158,9 @@ CREATE TABLE [Distrito] (
   [Id] int PRIMARY KEY IDENTITY(1, 1),
   [Descripcion] nvarchar(450),
   [Id_Usuario_Crea] int NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO
@@ -169,9 +169,9 @@ CREATE TABLE [Contacto] (
   [Id] int PRIMARY KEY IDENTITY(1, 1),
   [Descripcion] nvarchar(450),
   [Id_Usuario_Crea] int NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO
@@ -180,9 +180,9 @@ CREATE TABLE [Persona_Tipo] (
   [Id] int PRIMARY KEY IDENTITY(1, 1),
   [Descripcion] nvarchar(450),
   [Id_Usuario_Crea] int NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO
@@ -192,9 +192,9 @@ CREATE TABLE [Persona] (
   [Id_Tipo_Persona] int,
   [Id_Persona_Base] int,
   [Id_Usuario_Crea] int NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO
@@ -210,9 +210,9 @@ CREATE TABLE [Venta] (
   [Id_Metodo_Pago] int,
   [TipoPago] nvarchar(20),
   [Id_Usuario_Crea] int NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO
@@ -226,9 +226,9 @@ CREATE TABLE [Detalle_Venta] (
   [Descuento] decimal(10,2),
   [Total] decimal(10,2),
   [Id_Usuario_Crea] int NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO
@@ -244,9 +244,9 @@ CREATE TABLE [Lotes_Producto] (
   [CantidadDisponible] INT,
   [PrecioCompra] DECIMAL(10,2),
   [Id_Usuario_Crea] int NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO
@@ -263,9 +263,9 @@ CREATE TABLE [MovimientoInventario] (
   [Id_Detalle_Venta] int,
   [Id_Detalle_Compra] int,
   [Id_Usuario_Crea] int NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO
@@ -274,9 +274,9 @@ CREATE TABLE [Marca] (
   [Id] int PRIMARY KEY IDENTITY(1, 1),
   [Descripcion] nvarchar(450),
   [Id_Usuario_Crea] int NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO
@@ -290,9 +290,9 @@ CREATE TABLE [Credito] (
   [PlazoMeses] int,
   [TasaInteres] decimal(5,2),
   [Id_Usuario_Crea] int NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO
@@ -302,9 +302,9 @@ CREATE TABLE [Credito_Venta] (
   [Id_Venta] int,
   [Id_Credito] int,
   [Id_Usuario_Crea] int NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO
@@ -317,9 +317,9 @@ CREATE TABLE [Cuota] (
   [MontoPagado] decimal(10,2) NOT NULL,
   [Id_Metodo_Pago] int,
   [Id_Usuario_Crea] int NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO
@@ -332,9 +332,9 @@ CREATE TABLE [Proveedor] (
   [Email] NVARCHAR(120),
   [Direccion] NVARCHAR(250),
   [Id_Usuario_Crea] int NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO
@@ -350,9 +350,9 @@ CREATE TABLE [Compra] (
   [Id_Metodo_Pago] int,
   [Observacion] NVARCHAR(250),
   [Id_Usuario_Crea] int NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO
@@ -367,9 +367,9 @@ CREATE TABLE [Detalle_Compra] (
   [PrecioCosto] DECIMAL(10,2),
   [SubTotal] DECIMAL(10,2),
   [Id_Usuario_Crea] int NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO
@@ -381,9 +381,9 @@ CREATE TABLE [Cuenta_Pagar] (
   [Saldo] DECIMAL(10,2),
   [FechaVencimiento] DATE,
   [Id_Usuario_Crea] int NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO
@@ -396,9 +396,9 @@ CREATE TABLE [Pago_Proveedor] (
   [Fecha] DATETIME,
   [Observacion] NVARCHAR(200),
   [Id_Usuario_Crea] int NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO
@@ -407,9 +407,9 @@ CREATE TABLE [Metodo_de_Pago] (
   [Id] int PRIMARY KEY IDENTITY(1, 1),
   [Descripcion] nvarchar(50),
   [Id_Usuario_Crea] int NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO
@@ -419,9 +419,9 @@ CREATE TABLE [Denominacion_Billete_Moneda] (
   [Valor] DECIMAL(10,2),
   [Tipo] NVARCHAR(10),
   [Id_Usuario_Crea] int NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO
@@ -430,9 +430,9 @@ CREATE TABLE [Caja] (
   [Id] int PRIMARY KEY IDENTITY(1, 1),
   [NombreCaja] nvarchar(450),
   [Id_Usuario_Crea] int NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO
@@ -444,9 +444,9 @@ CREATE TABLE [Apertura_Caja] (
   [FechaHoraApertura] DATETIME2,
   [FondoInicial] DECIMAL(10,2),
   [Id_Usuario_Crea] int NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO
@@ -457,9 +457,9 @@ CREATE TABLE [Apertura_Caja_Denom] (
   [Id_Denominacion] INT,
   [Cantidad] INT,
   [Id_Usuario_Crea] int NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO
@@ -472,9 +472,9 @@ CREATE TABLE [Movimiento_Caja] (
   [Monto] DECIMAL(10,2),
   [Descripcion] NVARCHAR(200),
   [Id_Usuario_Crea] int NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO
@@ -483,9 +483,9 @@ CREATE TABLE [Tipo_Movimiento_Caja] (
   [Id] int PRIMARY KEY IDENTITY(1, 1),
   [Descripcion] nvarchar(450),
   [Id_Usuario_Crea] int NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO
@@ -499,9 +499,9 @@ CREATE TABLE [Pago] (
   [MontoRecibido] DECIMAL(10,2),
   [Vuelto] DECIMAL(10,2),
   [Id_Usuario_Crea] int NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO
@@ -515,9 +515,9 @@ CREATE TABLE [Cierre_Caja] (
   [Diferencia] DECIMAL(10,2),
   [Observacion] NVARCHAR(200),
   [Id_Usuario_Crea] int NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO
@@ -528,9 +528,9 @@ CREATE TABLE [Cierre_Caja_Denom] (
   [Id_Denominacion] INT,
   [Cantidad] INT,
   [Id_Usuario_Crea] int NOT NULL,
-  [Fecha_Registro] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Registro] datetimeoffset DEFAULT GETDATE(),
   [Id_Usuario_Modifica] int,
-  [Fecha_Modifica] datetimeoffset DEFAULT 'GETDATE()',
+  [Fecha_Modifica] datetimeoffset DEFAULT GETDATE(),
   [Estado] bit DEFAULT (1)
 )
 GO

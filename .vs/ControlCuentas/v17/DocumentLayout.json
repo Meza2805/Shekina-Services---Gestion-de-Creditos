@@ -3,6 +3,42 @@
   "WorkspaceRootPath": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{75545721-5DFE-4996-8677-06ED75584218}|Aplicacion\\Aplicacion.csproj|c:\\users\\uncsm-sistemas\\documents\\github\\gestion de cr\u00E9ditos\\shekina-services---gesti-n-de-cr-ditos\\aplicacion\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75545721-5DFE-4996-8677-06ED75584218}|Aplicacion\\Aplicacion.csproj|solutionrelative:aplicacion\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75545721-5DFE-4996-8677-06ED75584218}|Aplicacion\\Aplicacion.csproj|c:\\users\\uncsm-sistemas\\documents\\github\\gestion de cr\u00E9ditos\\shekina-services---gesti-n-de-cr-ditos\\aplicacion\\iacessosistema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75545721-5DFE-4996-8677-06ED75584218}|Aplicacion\\Aplicacion.csproj|solutionrelative:aplicacion\\iacessosistema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF9D596F-9EEC-4078-A2CF-C81C832EEE42}|Datos\\Datos.csproj|c:\\users\\uncsm-sistemas\\documents\\github\\gestion de cr\u00E9ditos\\shekina-services---gesti-n-de-cr-ditos\\datos\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF9D596F-9EEC-4078-A2CF-C81C832EEE42}|Datos\\Datos.csproj|solutionrelative:datos\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD1739B-B4FB-4A2A-B6A0-1A537CAF480C}|Repositorio\\Repositorio.csproj|c:\\users\\uncsm-sistemas\\documents\\github\\gestion de cr\u00E9ditos\\shekina-services---gesti-n-de-cr-ditos\\repositorio\\acceso_sistema_repositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD1739B-B4FB-4A2A-B6A0-1A537CAF480C}|Repositorio\\Repositorio.csproj|solutionrelative:repositorio\\acceso_sistema_repositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1BF132A-4D4B-442A-A978-9410156D5579}|Entidades\\Entidades.csproj|c:\\users\\uncsm-sistemas\\documents\\github\\gestion de cr\u00E9ditos\\shekina-services---gesti-n-de-cr-ditos\\entidades\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1BF132A-4D4B-442A-A978-9410156D5579}|Entidades\\Entidades.csproj|solutionrelative:entidades\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1BF132A-4D4B-442A-A978-9410156D5579}|Entidades\\Entidades.csproj|c:\\users\\uncsm-sistemas\\documents\\github\\gestion de cr\u00E9ditos\\shekina-services---gesti-n-de-cr-ditos\\entidades\\accesosistema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1BF132A-4D4B-442A-A978-9410156D5579}|Entidades\\Entidades.csproj|solutionrelative:entidades\\accesosistema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F78655F9-AE34-4B53-9B1F-688084A3BF48}|Modelos\\Modelos.csproj|c:\\users\\uncsm-sistemas\\documents\\github\\gestion de cr\u00E9ditos\\shekina-services---gesti-n-de-cr-ditos\\modelos\\acceso_sistema_resultado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F78655F9-AE34-4B53-9B1F-688084A3BF48}|Modelos\\Modelos.csproj|solutionrelative:modelos\\acceso_sistema_resultado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD1739B-B4FB-4A2A-B6A0-1A537CAF480C}|Repositorio\\Repositorio.csproj|c:\\users\\uncsm-sistemas\\documents\\github\\gestion de cr\u00E9ditos\\shekina-services---gesti-n-de-cr-ditos\\repositorio\\personarepositorio02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD1739B-B4FB-4A2A-B6A0-1A537CAF480C}|Repositorio\\Repositorio.csproj|solutionrelative:repositorio\\personarepositorio02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD1739B-B4FB-4A2A-B6A0-1A537CAF480C}|Repositorio\\Repositorio.csproj|c:\\users\\uncsm-sistemas\\documents\\github\\gestion de cr\u00E9ditos\\shekina-services---gesti-n-de-cr-ditos\\repositorio\\personarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FD1739B-B4FB-4A2A-B6A0-1A537CAF480C}|Repositorio\\Repositorio.csproj|solutionrelative:repositorio\\personarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2984B1C0-4723-4E0C-840F-ABDBC2CAE011}|ControlCuentas_ShekinahServices\\ControlCuentas_ShekinahServices.csproj|c:\\users\\uncsm-sistemas\\documents\\github\\gestion de cr\u00E9ditos\\shekina-services---gesti-n-de-cr-ditos\\controlcuentas_shekinahservices\\frm_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2984B1C0-4723-4E0C-840F-ABDBC2CAE011}|ControlCuentas_ShekinahServices\\ControlCuentas_ShekinahServices.csproj|solutionrelative:controlcuentas_shekinahservices\\frm_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -43,10 +79,6 @@
       "RelativeMoniker": "D:0:0:{2984B1C0-4723-4E0C-840F-ABDBC2CAE011}|ControlCuentas_ShekinahServices\\ControlCuentas_ShekinahServices.csproj|solutionrelative:controlcuentas_shekinahservices\\formularioshijos\\frm_persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD1739B-B4FB-4A2A-B6A0-1A537CAF480C}|Repositorio\\Repositorio.csproj|c:\\users\\uncsm-sistemas\\documents\\github\\gestion de cr\u00E9ditos\\shekina-services---gesti-n-de-cr-ditos\\repositorio\\personarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FD1739B-B4FB-4A2A-B6A0-1A537CAF480C}|Repositorio\\Repositorio.csproj|solutionrelative:repositorio\\personarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{75545721-5DFE-4996-8677-06ED75584218}|Aplicacion\\Aplicacion.csproj|c:\\users\\uncsm-sistemas\\documents\\github\\gestion de cr\u00E9ditos\\shekina-services---gesti-n-de-cr-ditos\\aplicacion\\irepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75545721-5DFE-4996-8677-06ED75584218}|Aplicacion\\Aplicacion.csproj|solutionrelative:aplicacion\\irepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -59,16 +91,8 @@
       "RelativeMoniker": "D:0:0:{2984B1C0-4723-4E0C-840F-ABDBC2CAE011}|ControlCuentas_ShekinahServices\\ControlCuentas_ShekinahServices.csproj|solutionrelative:controlcuentas_shekinahservices\\formularioshijos\\frm_agregarpersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FD1739B-B4FB-4A2A-B6A0-1A537CAF480C}|Repositorio\\Repositorio.csproj|c:\\users\\uncsm-sistemas\\documents\\github\\gestion de cr\u00E9ditos\\shekina-services---gesti-n-de-cr-ditos\\repositorio\\personarepositorio02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FD1739B-B4FB-4A2A-B6A0-1A537CAF480C}|Repositorio\\Repositorio.csproj|solutionrelative:repositorio\\personarepositorio02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2984B1C0-4723-4E0C-840F-ABDBC2CAE011}|ControlCuentas_ShekinahServices\\ControlCuentas_ShekinahServices.csproj|C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\controlcuentas_shekinahservices\\formularioshijos\\frm_agregarpersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2984B1C0-4723-4E0C-840F-ABDBC2CAE011}|ControlCuentas_ShekinahServices\\ControlCuentas_ShekinahServices.csproj|solutionrelative:controlcuentas_shekinahservices\\formularioshijos\\frm_agregarpersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF9D596F-9EEC-4078-A2CF-C81C832EEE42}|Datos\\Datos.csproj|c:\\users\\uncsm-sistemas\\documents\\github\\gestion de cr\u00E9ditos\\shekina-services---gesti-n-de-cr-ditos\\datos\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF9D596F-9EEC-4078-A2CF-C81C832EEE42}|Datos\\Datos.csproj|solutionrelative:datos\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F78655F9-AE34-4B53-9B1F-688084A3BF48}|Modelos\\Modelos.csproj|c:\\users\\uncsm-sistemas\\documents\\github\\gestion de cr\u00E9ditos\\shekina-services---gesti-n-de-cr-ditos\\modelos\\permisosmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -86,11 +110,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 17,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\ControlCuentas_ShekinahServices\\Program.cs",
               "RelativeDocumentMoniker": "ControlCuentas_ShekinahServices\\Program.cs",
@@ -103,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "Frm_Main.cs",
               "DocumentMoniker": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\ControlCuentas_ShekinahServices\\Frm_Main.cs",
               "RelativeDocumentMoniker": "ControlCuentas_ShekinahServices\\Frm_Main.cs",
@@ -117,7 +141,85 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Aplicacion\\Login.cs",
+              "RelativeDocumentMoniker": "Aplicacion\\Login.cs",
+              "ToolTip": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Aplicacion\\Login.cs",
+              "RelativeToolTip": "Aplicacion\\Login.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T18:11:05.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IAcessoSistema.cs",
+              "DocumentMoniker": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Aplicacion\\IAcessoSistema.cs",
+              "RelativeDocumentMoniker": "Aplicacion\\IAcessoSistema.cs",
+              "ToolTip": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Aplicacion\\IAcessoSistema.cs",
+              "RelativeToolTip": "Aplicacion\\IAcessoSistema.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T18:09:48.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "Entidades\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\LoginRequest.cs",
+              "RelativeToolTip": "Entidades\\LoginRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T18:08:09.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Acceso_Sistema_Resultado.cs",
+              "DocumentMoniker": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Modelos\\Acceso_Sistema_Resultado.cs",
+              "RelativeDocumentMoniker": "Modelos\\Acceso_Sistema_Resultado.cs",
+              "ToolTip": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Modelos\\Acceso_Sistema_Resultado.cs",
+              "RelativeToolTip": "Modelos\\Acceso_Sistema_Resultado.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T18:06:05.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AccesoSistema.cs",
+              "DocumentMoniker": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\AccesoSistema.cs",
+              "RelativeDocumentMoniker": "Entidades\\AccesoSistema.cs",
+              "ToolTip": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\AccesoSistema.cs",
+              "RelativeToolTip": "Entidades\\AccesoSistema.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T18:05:36.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Acceso_Sistema_Repositorio.cs",
+              "DocumentMoniker": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Repositorio\\Acceso_Sistema_Repositorio.cs",
+              "RelativeDocumentMoniker": "Repositorio\\Acceso_Sistema_Repositorio.cs",
+              "ToolTip": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Repositorio\\Acceso_Sistema_Repositorio.cs",
+              "RelativeToolTip": "Repositorio\\Acceso_Sistema_Repositorio.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T16:32:13.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Frm_Cambio_Usuario.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\ControlCuentas_ShekinahServices\\FormulariosHijos\\Frm_Cambio_Usuario.cs",
               "RelativeDocumentMoniker": "ControlCuentas_ShekinahServices\\FormulariosHijos\\Frm_Cambio_Usuario.cs",
@@ -128,7 +230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 17,
               "Title": "Persona.cs",
               "DocumentMoniker": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Entidades\\Persona.cs",
               "RelativeDocumentMoniker": "Entidades\\Persona.cs",
@@ -140,7 +242,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 19,
               "Title": "IRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Aplicacion\\IRepositorio.cs",
               "RelativeDocumentMoniker": "Aplicacion\\IRepositorio.cs",
@@ -152,7 +254,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 20,
               "Title": "PersonaListadoDTO.cs",
               "DocumentMoniker": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Modelos\\PersonaListadoDTO.cs",
               "RelativeDocumentMoniker": "Modelos\\PersonaListadoDTO.cs",
@@ -164,7 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 16,
               "Title": "PersonaModel.cs",
               "DocumentMoniker": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Modelos\\PersonaModel.cs",
               "RelativeDocumentMoniker": "Modelos\\PersonaModel.cs",
@@ -176,7 +278,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 23,
               "Title": "PermisosModel.cs",
               "DocumentMoniker": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Modelos\\PermisosModel.cs",
               "RelativeDocumentMoniker": "Modelos\\PermisosModel.cs",
@@ -188,7 +290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 15,
               "Title": "Perfil_UsuarioModel.cs",
               "DocumentMoniker": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Modelos\\Perfil_UsuarioModel.cs",
               "RelativeDocumentMoniker": "Modelos\\Perfil_UsuarioModel.cs",
@@ -200,19 +302,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
               "Title": "PersonaRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Repositorio\\PersonaRepositorio.cs",
               "RelativeDocumentMoniker": "Repositorio\\PersonaRepositorio.cs",
               "ToolTip": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Repositorio\\PersonaRepositorio.cs",
               "RelativeToolTip": "Repositorio\\PersonaRepositorio.cs",
-              "ViewState": "AQIAAFAAAAAAAAAAAAAuwGMAAAAfAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGMAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T20:53:59.697Z"
+              "WhenOpened": "2025-03-02T20:53:59.697Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 18,
               "Title": "Frm_Persona.cs",
               "DocumentMoniker": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\ControlCuentas_ShekinahServices\\FormulariosHijos\\Frm_Persona.cs",
               "RelativeDocumentMoniker": "ControlCuentas_ShekinahServices\\FormulariosHijos\\Frm_Persona.cs",
@@ -224,19 +327,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 7,
               "Title": "PersonaRepositorio02.cs",
               "DocumentMoniker": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Repositorio\\PersonaRepositorio02.cs",
               "RelativeDocumentMoniker": "Repositorio\\PersonaRepositorio02.cs",
               "ToolTip": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Repositorio\\PersonaRepositorio02.cs",
               "RelativeToolTip": "Repositorio\\PersonaRepositorio02.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T05:01:34.388Z"
+              "WhenOpened": "2025-03-02T05:01:34.388Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 14,
               "Title": "Libreria_Interna.cs",
               "DocumentMoniker": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\ControlCuentas_ShekinahServices\\Libreria_Interna.cs",
               "RelativeDocumentMoniker": "ControlCuentas_ShekinahServices\\Libreria_Interna.cs",
@@ -248,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 21,
               "Title": "Frm_AgregarPersona.cs",
               "DocumentMoniker": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\ControlCuentas_ShekinahServices\\FormulariosHijos\\Frm_AgregarPersona.cs",
               "RelativeDocumentMoniker": "ControlCuentas_ShekinahServices\\FormulariosHijos\\Frm_AgregarPersona.cs",
@@ -261,19 +365,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 2,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Datos\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Datos\\AppDbContext.cs",
               "ToolTip": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\Datos\\AppDbContext.cs",
               "RelativeToolTip": "Datos\\AppDbContext.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAcwBAAAAAsAAAA",
+              "ViewState": "AQIAADIAAAAAAAAAAAAuwDgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T16:54:19.331Z"
+              "WhenOpened": "2025-01-28T16:54:19.331Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "Frm_Login.cs",
               "DocumentMoniker": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\ControlCuentas_ShekinahServices\\Frm_Login.cs",
               "RelativeDocumentMoniker": "ControlCuentas_ShekinahServices\\Frm_Login.cs",
@@ -286,18 +391,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 22,
               "Title": "Frm_AgregarPersona.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\ControlCuentas_ShekinahServices\\FormulariosHijos\\Frm_AgregarPersona.cs",
               "RelativeDocumentMoniker": "ControlCuentas_ShekinahServices\\FormulariosHijos\\Frm_AgregarPersona.cs",
               "ToolTip": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\ControlCuentas_ShekinahServices\\FormulariosHijos\\Frm_AgregarPersona.cs [Dise\u00F1o]",
               "RelativeToolTip": "ControlCuentas_ShekinahServices\\FormulariosHijos\\Frm_AgregarPersona.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T00:47:33.928Z"
+              "WhenOpened": "2025-02-23T00:47:33.928Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "Frm_Main.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\ControlCuentas_ShekinahServices\\Frm_Main.cs",
               "RelativeDocumentMoniker": "ControlCuentas_ShekinahServices\\Frm_Main.cs",
@@ -309,14 +415,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 24,
               "Title": "Frm_Login.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\ControlCuentas_ShekinahServices\\Frm_Login.cs",
               "RelativeDocumentMoniker": "ControlCuentas_ShekinahServices\\Frm_Login.cs",
-              "ToolTip": "C:\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\ControlCuentas_ShekinahServices\\Frm_Login.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Repositorios\\Shekina-Services---Gestion-de-Creditos\\ControlCuentas_ShekinahServices\\Frm_Login.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\UNCSM-SISTEMAS\\Documents\\GitHub\\Gestion de Cr\u00E9ditos\\Shekina-Services---Gesti-n-de-Cr-ditos\\ControlCuentas_ShekinahServices\\Frm_Login.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ControlCuentas_ShekinahServices\\Frm_Login.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T16:02:52.458Z"
+              "WhenOpened": "2025-01-28T16:02:52.458Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

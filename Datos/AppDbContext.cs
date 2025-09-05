@@ -56,16 +56,6 @@ namespace Datos
 
 
 
-        //public async Task<Perfil_UsuarioModel> BuscarUsuarioPorId(int idUsuario)
-        //{
-        //    var usuario = await Perfil_UsuarioModel
-        //        .FromSqlRaw("EXEC Sp_Buscar_Usuario_Id @Id_usuario = {0}", idUsuario)
-        //        .AsNoTracking() // Mejora el rendimiento si solo es una consulta
-        //        .FirstOrDefaultAsync();
-
-        //    return usuario;
-        //}
-
         public async Task<(int Resultado, string MensajeError)> InsertarPersonaAsync(Persona Insertar_Persona)
         {
             // Declaración de parámetros de salida correctamente configurados
