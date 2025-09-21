@@ -3,6 +3,7 @@ using ControlCuentas_ShekinahServices.Message_Persl;
 using ControlCuentas_ShekinahServices.MessageBox_Personalizados;
 using Entidades;
 using Microsoft.Extensions.DependencyInjection;
+using Modelos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,9 +19,9 @@ namespace ControlCuentas_ShekinahServices
 {
     public partial class Acceso : Form
     {
-        private IAcessoSistema<AccesoSistema> _repositorio;
+        private IAcessoSistema<UsuarioEntity> _repositorio;
         private readonly IServiceProvider _serviceProvider;
-        private List<Perfil_Usuario> Listad = new List<Perfil_Usuario>();
+        private List<Perfil_UsuarioModel> Listad = new List<Perfil_UsuarioModel>();
         private AccesoSistema _accesoSistema = new AccesoSistema();
         bool bandera;
         int Id_Usuario = 0;
@@ -35,7 +36,7 @@ namespace ControlCuentas_ShekinahServices
 
 
 
-        public Acceso(IAcessoSistema<AccesoSistema> repositorio, IServiceProvider serviceProvider)
+        public Acceso(IAcessoSistema<UsuarioEntity> repositorio, IServiceProvider serviceProvider)
         {
             _repositorio = repositorio;
             _serviceProvider = serviceProvider;
@@ -106,13 +107,13 @@ namespace ControlCuentas_ShekinahServices
             }
             else
             {
-                Id_Usuario = await _repositorio.Acceder_Sistema(txt_Usuario.Text, txt_Contrasenia.Text);
+                Id_Usuario = await _repositorio.Acceder_Sistema( txt_Usuario.Text.Trim(), txt_Contrasenia.Text.Trim());
                 Listad = await _repositorio.ObtenerUsuario_Especifico(Id_Usuario);
                 var Frm_Bienvenida = _serviceProvider.GetRequiredService<Frm_Acceso_Bienvenida>();
                 if (Id_Usuario > 0)
                 {
                     this.Hide();
-                    Frm_Bienvenida.Mensaje($"Usuario: {Listad[0].Nombre_Usuario}", $"Nivel de Acceso: {Listad[0].Permiso_Usuario}", "Acceso Concedido", true);
+                    Frm_Bienvenida.Mensaje($"Usuario: {Listad[0].Nombre_Usuario}", $"Nivel de Acceso: {Listad[0].Nombre_Permiso}", "Acceso Concedido", true);
                     Frm_Bienvenida.ShowDialog();
                     Frm_Main frm_Main = new Frm_Main(_serviceProvider);
                     frm_Main.Recibir_Usuario(Listad);

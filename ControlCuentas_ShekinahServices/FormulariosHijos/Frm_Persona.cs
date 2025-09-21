@@ -18,14 +18,14 @@ namespace ControlCuentas_ShekinahServices.FormulariosHijos
 {
     public partial class Frm_Persona : Form
     {
-        private IRepositorio<Persona> _repositorio;
+        private IRepositorio<PersonaBaseEntity> _repositorio;
         private readonly IServiceProvider _serviceProvider;
         private Persona _persona = new Persona();
         private int Id_Usuario;
         // Crear un reproductor de sonido
         SoundPlayer player = new SoundPlayer(Properties.Resources.MouseClickPunchy);
 
-        public Frm_Persona(IRepositorio<Persona> repositorio, IServiceProvider serviceProvider)  //Aca realizo la inyeccion de dependencias
+        public Frm_Persona(IRepositorio<PersonaBaseEntity> repositorio, IServiceProvider serviceProvider)  //Aca realizo la inyeccion de dependencias
         {                                                                                        // la dependecia del repositorio para poder establecer las reglas del negocio de la entidad
             _repositorio = repositorio;                                                         // y la dependencia del serviceProvider para poder inyectar los formularios hijos y/o formularios de carga
             _serviceProvider = serviceProvider;
@@ -43,20 +43,19 @@ namespace ControlCuentas_ShekinahServices.FormulariosHijos
 
         public async Task Refrescar()
         {
-            var persona = await _repositorio.ObtenerListadoAsync();
-          // DataTable dtPersonas = ConvertToDataTable(persona);
+            //var persona = await _repositorio.ObtenerListadoAsync();
+        
+            //dgvPersona.DataSource = ConvertToDataTable(persona);
+            //dgvPersona.Columns[0].Visible = false;//Id
+            //dgvPersona.Columns[2].Visible = false;//PrimerNombre
+            //dgvPersona.Columns[3].Visible = false;//SegundoNombre
+            //dgvPersona.Columns[4].Visible = false;//PrimerApellido
+            //dgvPersona.Columns[5].Visible = false;//SegundoApellido
+            //dgvPersona.Columns[7].Visible = false;//FechaNacimiento
 
-            dgvPersona.DataSource = ConvertToDataTable(persona);
-            dgvPersona.Columns[0].Visible = false;//Id
-            dgvPersona.Columns[2].Visible = false;//PrimerNombre
-            dgvPersona.Columns[3].Visible = false;//SegundoNombre
-            dgvPersona.Columns[4].Visible = false;//PrimerApellido
-            dgvPersona.Columns[5].Visible = false;//SegundoApellido
-            dgvPersona.Columns[7].Visible = false;//FechaNacimiento
-
-            dgvPersona.Columns[1].HeaderText = "Cedula";
-            dgvPersona.Columns[6].HeaderText = "Nombre Completo";
-            bSPersonas.DataSource = dgvPersona.DataSource;
+            //dgvPersona.Columns[1].HeaderText = "Cedula";
+            //dgvPersona.Columns[6].HeaderText = "Nombre Completo";
+            //bSPersonas.DataSource = dgvPersona.DataSource;
         }
 
 

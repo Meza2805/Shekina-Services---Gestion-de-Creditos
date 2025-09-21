@@ -2,6 +2,7 @@
 using Datos;
 using Entidades;
 using Microsoft.EntityFrameworkCore;
+using Modelos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Repositorio
 {
-    public class Acceso_Sistema_Repositorio : IAcessoSistema<AccesoSistema>
+    public class Acceso_Sistema_Repositorio : IAcessoSistema<UsuarioEntity>
     {
         private readonly AppDbContext _dbContext;
 
@@ -31,33 +32,36 @@ namespace Repositorio
             return resultado;
         }
 
-        public async Task<List<Perfil_Usuario>> ObtenerUsuarios_y_Permisos()
+        public async Task<List<Perfil_UsuarioModel>> ObtenerUsuarios_y_Permisos()
         {
-            var query = from u in _dbContext.Usuarios
-                        join p in _dbContext.Permisos on u.Id_Permiso equals p.Id
-                        select new Perfil_Usuario
+            var query = await ( from u in _dbContext.Usuario
+                        join p in _dbContext.Permiso on u.Id_Permiso equals p.Id
+                        select new Perfil_UsuarioModel
                         {
                             Id_Permiso = p.Id,
                             Id_Usuario = u.Id,
                             Nombre_Usuario = u.Nombre_Usuario,
-                            Permiso_Usuario = p.Descripcion
-                        };
-            return  await query.ToListAsync();
+                            Nombre_Permiso = p.Descripcion
+                        }).ToListAsync();
+            return  query;
         }
 
-        public async Task<List<Perfil_Usuario>> ObtenerUsuario_Especifico(int Id_Usuario)
+        public async Task<List<Perfil_UsuarioModel>> ObtenerUsuario_Especifico(int Id_Usuario)
         {
-            var query = from u in _dbContext.Usuarios
-                        join p in _dbContext.Permisos on u.Id_Permiso equals p.Id
-                        where u.Id == Id_Usuario
-                        select new Perfil_Usuario
-                        {
-                            Id_Permiso = p.Id,
-                            Id_Usuario = u.Id,
-                            Nombre_Usuario = u.Nombre_Usuario,
-                            Permiso_Usuario = p.Descripcion
-                        } ;
-            return await query.ToListAsync();
+            var lista = await ( from u in _dbContext.Usuario.AsNoTracking()
+                   join p in _dbContext.Permiso.AsNoTracking() on u.Id_Permiso equals p.Id
+                   where u.Id == Id_Usuario
+                   select new Perfil_UsuarioModel
+                   {
+                       Id_Permiso = p.Id,
+                       Id_Usuario = u.Id,
+                       Nombre_Usuario = u.Nombre_Usuario,
+                       Nombre_Permiso = p.Descripcion
+                   }
+               ).ToListAsync();      // ← materializa y cierra el reader
+
+            return lista;
         }
+
     }
 }

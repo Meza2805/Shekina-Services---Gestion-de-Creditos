@@ -73,16 +73,15 @@ namespace ControlCuentas_ShekinahServices
                 options.UseSqlServer(configuration.GetConnectionString("Conexion_VPS")));
 
             // Inyección de dependencias para casos de uso:
-            // `AgregarPersona` es un caso de uso en la capa de aplicación. Se registra con un ciclo de vida "transitorio".
-            services.AddTransient<AgregarPersona>();
+            // `PersonaBase` es un caso de uso en la capa de aplicación. Se registra con un ciclo de vida "transitorio".
+            // services.AddTransient<AgregarPersona>();
+            services.AddTransient<PersonaBaseEntity>();
+
 
             // Inyección de un repositorio genérico:
-            // `IRepositorio<Persona>` es una interfaz genérica para manejar la entidad `Persona`.
-            // `PersonaRepositorio` es la implementación concreta de este repositorio.
-            // Esto permite que `AgregarPersona` y otros servicios utilicen la abstracción `IRepositorio<Persona>`.
-            services.AddTransient<IRepositorio<Persona>, PersonaRepositorio>();
-            services.AddTransient<IAcessoSistema<AccesoSistema>, Acceso_Sistema_Repositorio>();
-            services.AddTransient<IPersona, PersonaRepositorio02>(); 
+            services.AddTransient<IRepositorio<PersonaBaseEntity>, PersonaBase_Repositorio>();
+            services.AddTransient<IAcessoSistema<UsuarioEntity>, Acceso_Sistema_Repositorio>();
+          //  services.AddTransient<IPersona, PersonaRepositorio02>(); 
 
 
             // Inyección de dependencias para formularios:

@@ -1,4 +1,5 @@
 ﻿using Entidades;
+using Modelos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,8 +14,8 @@ namespace Aplicacion
 
         Task<int> Acceder_Sistema(string usuario,string contra);
 
-        Task<List<Perfil_Usuario>> ObtenerUsuarios_y_Permisos();
+        Task<List<Perfil_UsuarioModel>> ObtenerUsuarios_y_Permisos();
 
-        Task<List<Perfil_Usuario>> ObtenerUsuario_Especifico( int Id_Usuario);
+        Task<List<Perfil_UsuarioModel>> ObtenerUsuario_Especifico( int Id_Usuario);
     }
 }

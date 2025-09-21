@@ -15,11 +15,11 @@ namespace ControlCuentas_ShekinahServices.FormulariosHijos
 {
     public partial class Frm_AgregarPersona : Form
     {
-        private readonly IPersona _Persona;
+        private readonly IRepositorio<PersonaBaseEntity> _Persona;
         int Id_Usuario, Id_Persona;
         bool Guardar = true;
         bool Accion = true;
-        public Frm_AgregarPersona(IPersona _Persona, IServiceProvider serviceProvider)
+        public Frm_AgregarPersona(IRepositorio<PersonaBaseEntity> _Persona, IServiceProvider serviceProvider)
         {
             InitializeComponent();
             this._Persona = _Persona;
@@ -41,13 +41,13 @@ namespace ControlCuentas_ShekinahServices.FormulariosHijos
         {
             if (tipo)
             {
-                GrpAgregarCliente.Text = "Agregar Cliente";
+                GrpAgregarCliente.Text = "Agregar Persona";
                 PicPhotoCliente.Image = Properties.Resources.AgregarPersona;
                 Accion = true;
             }
             else
             {
-                GrpAgregarCliente.Text = "Editar Cliente";
+                GrpAgregarCliente.Text = "Editar Persona";
                 PicPhotoCliente.Image = Properties.Resources.EditarPersona;
                 Accion = false;
             }
@@ -183,41 +183,40 @@ namespace ControlCuentas_ShekinahServices.FormulariosHijos
 
             if (Guardar == true)
             {
-                //MessageBox.Show("Todos los Campos son Correctos");
-                Persona persona_r = new Persona
-                {
-                    NoCedula = txtNoCedulaCliente.Text,
-                    PrimerNombre = txtPrimerNombreCliente.Text,
-                    SegundoNombre = txtSegundoNombreCliente.Text,
-                    PrimerApellido = txtPrimerApellidoCliente.Text,
-                    SegundoApellido = txtSegundoApellidoCliente.Text,
-                    FechaNacimiento = dtFechaNacCliente.Value, // ✅ Obtiene el valor de DateTimePicker correctamente
-                    NoTelefono = txtTelefonoCliente.Text,
-                    Direccion = txtDireccionCliente.Text,
-                    UsuarioCrea = Id_Usuario,
-                    Id = Id_Persona
-                };
+                // //MessageBox.Show("Todos los Campos son Correctos");
+                // PersonaBaseEntity persona_r = new PersonaBaseEntity
+                // {
+                //     Cedula = txtNoCedulaCliente.Text,
+                //     PrimerNombre = txtPrimerNombreCliente.Text,
+                //     SegundoNombre = txtSegundoNombreCliente.Text,
+                //     PrimerApellido = txtPrimerApellidoCliente.Text,
+                //     SegundoApellido = txtSegundoApellidoCliente.Text,
+                //     FechaNacimiento = dtFechaNacCliente.Value, // ✅ Obtiene el valor de DateTimePicker correctamente
 
-                // Determinar si se debe insertar o modificar
-                (int idGenerado, string mensaje) = Accion
-                    ? await _Persona.InsertarAsync(persona_r)
-                    : await _Persona.ModificarAsync(persona_r);
+                //     IdUsuarioCrea = Id_Usuario,
+                //     Id = Id_Persona
+                // };
 
-                // Verificar resultado e informar al usuario
-                MessageBox.Show(mensaje, idGenerado == 1 ? "Éxito" : "Error",
-                                MessageBoxButtons.OK,
-                                idGenerado == 1 ? MessageBoxIcon.Information : MessageBoxIcon.Error);
+                // // Determinar si se debe insertar o modificar
+                //( int idGenerado, string mensaje) = Accion
+                //     ? await _Persona.Insertar_Nuevo_Registro(persona_r)
+                //     : await _Persona.Actualizar_Registro(persona_r);
 
-                if (idGenerado == 1)
-                {
-                    this.Close();
+                // // Verificar resultado e informar al usuario
+                // MessageBox.Show(mensaje, idGenerado == 1 ? "Éxito" : "Error",
+                //                 MessageBoxButtons.OK,
+                //                 idGenerado == 1 ? MessageBoxIcon.Information : MessageBoxIcon.Error);
 
-                    // Buscar el formulario padre en la lista de formularios abiertos
-                    if (Application.OpenForms["Frm_Persona"] is Frm_Persona padre)
-                    {
-                        await padre.Refrescar();
-                    }
-                }
+                // if (idGenerado == 1)
+                // {
+                //     this.Close();
+
+                //     // Buscar el formulario padre en la lista de formularios abiertos
+                //     if (Application.OpenForms["Frm_Persona"] is Frm_Persona padre)
+                //     {
+                //         await padre.Refrescar();
+                //     }
+                // }
 
 
             }
@@ -227,7 +226,7 @@ namespace ControlCuentas_ShekinahServices.FormulariosHijos
             }
         }
 
-  
+
 
         private bool ValidarCampo(TextBox campo, ErrorProvider errorProvider, string mensajeError, Func<string, bool>? validacionAdicional = null)
         {
@@ -241,6 +240,25 @@ namespace ControlCuentas_ShekinahServices.FormulariosHijos
 
             errorProvider.Clear();
             return true;
+        }
+
+        private void BtnFotografia_Click(object sender, EventArgs e)
+        {
+            if (OpenFile_Foto_Persona.ShowDialog() == DialogResult.OK)
+            {
+                // Carga sin bloquear el archivo en disco:
+                using var fs = new FileStream(OpenFile_Foto_Persona.FileName, FileMode.Open, FileAccess.Read);
+                pictureBox1.Image = Image.FromStream(fs);
+                pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+
+                // Si guardarás en BD:
+                // a) VARBINARY(MAX)
+                // byte[] bytes = File.ReadAllBytes(dlg.FileName);
+
+                // b) NVARCHAR(MAX) (ej. base64)
+                // string base64 = Convert.ToBase64String(File.ReadAllBytes(dlg.FileName));
+                // persona.Foto = base64;  // según tu modelo
+            }
         }
     }
 }

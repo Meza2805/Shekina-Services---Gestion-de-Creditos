@@ -13,31 +13,21 @@ namespace Datos
         {
     
         }
-        public DbSet<PersonaModel> Personas { get; set; }
-        public DbSet<UsuariosModel> Usuarios { get; set; }
-        public DbSet<PermisosModel> Permisos { get; set; }
+        //public DbSet<PersonaModel> Personas { get; set; }
+        public DbSet<UsuarioEntity> Usuario { get; set; }
+        public DbSet<PermisoEntity> Permiso { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<PersonaModel>().ToTable("Persona");
-            modelBuilder.Entity<UsuariosModel>().ToTable("Usuarios");
-            modelBuilder.Entity<PermisosModel>().ToTable("Permisos"); ///Establezco la relacion de uno a muchos entres las tablas
-            modelBuilder.Entity<UsuariosModel>().HasOne(u => u.Permiso).WithMany().HasForeignKey(u => u.Id_Permiso)
-                .OnDelete(DeleteBehavior.SetNull);
-           
-            modelBuilder.Entity<Perfil_UsuarioModel>().HasNoKey(); // Indica que no es una tabla real
-            
-        }
 
         // Método para llamar al procedimiento almacenado
         public async Task<int> AccederSistemaAsync(string usuario, string contrasena)
         {
             var salidaParam = new SqlParameter("@Salida", SqlDbType.Int) { Direction = ParameterDirection.Output };
-            await Database.ExecuteSqlRawAsync("EXEC Sp_Acceder_Sistema @Usuario, @Contra, @Salida OUTPUT",
-                new SqlParameter("@Usuario", usuario),
-                new SqlParameter("@Contra", contrasena),
-                salidaParam);
+            var mensajeParam = new SqlParameter("@Mensaje", SqlDbType.NVarChar,-1 ) { Direction = ParameterDirection.Output };
+            await Database.ExecuteSqlRawAsync("EXEC Sp_Acceder_Sistema @Nombre_Usuario, @ContrasenaPlano, @Salida OUTPUT,@Mensaje OUTPUT",
+
+                new SqlParameter("@Nombre_Usuario", usuario),
+                new SqlParameter("@ContrasenaPlano", contrasena),
+                salidaParam,mensajeParam);
 
             return (int)salidaParam.Value;
         }
@@ -46,15 +36,13 @@ namespace Datos
         public async Task<int> VerificarUsuarioAsync(string usuario)
         {
             var salidaParam = new SqlParameter("@Salida", SqlDbType.Int) { Direction = ParameterDirection.Output };
-            await Database.ExecuteSqlRawAsync("EXEC Sp_Verificar_Usuario @Usuario, @Salida OUTPUT",
-                new SqlParameter("@Usuario", usuario),
+            await Database.ExecuteSqlRawAsync("EXEC Sp_Verificar_Usuario @Nombre_Usuario, @Salida OUTPUT",
+                new SqlParameter("@Nombre_Usuario", usuario),
                 salidaParam);
             return (int)salidaParam.Value;
         }
 
-        public DbSet<Perfil_UsuarioModel> UsuariosConPermiso { get; set; }
-
-
+       /// public DbSet<Perfil_UsuarioModel> UsuariosConPermiso { get; set; }
 
         public async Task<(int Resultado, string MensajeError)> InsertarPersonaAsync(Persona Insertar_Persona)
         {

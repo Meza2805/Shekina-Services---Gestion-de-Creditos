@@ -18,20 +18,11 @@ namespace Repositorio
         }
 
 
-        ///Este metodo recibe un modelo y lo convierte en una entidad
-        public async Task AgregarItem(Persona persona)
+        //Este metodo recibe un modelo y lo convierte en una entidad
+        public async Task AgregarItem(PersonaBaseEntity persona)
         {
-            //throw new NotImplementedException();
-
-
-
-            /// Este codigo permite validar los nombres de las columnas de la tabla, 
-            ///con los nombres del modelo respectivamente, ya que siempre existe la 
-            ///posibilidad que los nombres de los paramentros del modelo sean diferentes 
-            ///a los nombres de las columnas
-            ///
-
-            var PersonaModelo = new PersonaModel()
+  
+            var PersonaModelo = new PersonaBaseEntity()
             {
                 PrimerNombre = persona.PrimerNombre,
                 SegundoNombre = persona.SegundoNombre,
@@ -39,9 +30,9 @@ namespace Repositorio
                 SegundoApellido = persona.SegundoApellido,
                 NoCedula = persona.NoCedula,
                 NoTelefono = persona.NoTelefono,
-                Direccion   = persona.Direccion,
-                FechaNacimiento  = persona.FechaNacimiento
-            };  
+                Direccion = persona.Direccion,
+                FechaNacimiento = persona.FechaNacimiento
+            };
 
             await _dbContext.AddAsync(PersonaModelo);  ///Agregar los campios al modelot
             await _dbContext.SaveChangesAsync();  // Guardar los campos en la base de datos

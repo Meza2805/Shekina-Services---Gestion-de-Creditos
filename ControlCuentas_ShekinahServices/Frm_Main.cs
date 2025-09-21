@@ -4,6 +4,7 @@ using ControlCuentas_ShekinahServices.MessageBox_Personalizados;
 using Entidades;
 using FontAwesome.Sharp;
 using Microsoft.Extensions.DependencyInjection;
+using Modelos;
 using System.Media;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
@@ -14,7 +15,7 @@ namespace ControlCuentas_ShekinahServices
     public partial class Frm_Main : Form
     {
         private readonly IServiceProvider _serviceProvider;
-        private List<Perfil_Usuario> _Usuarios; //Declaro una lista para recibir los usarios, no uso inyeccion de dependecias, simplemente los pasos desde un metodo manipulado desde el formulario Login
+        private List<Perfil_UsuarioModel> _Usuarios; //Declaro una lista para recibir los usarios, no uso inyeccion de dependecias, simplemente los pasos desde un metodo manipulado desde el formulario Login
         // Crear un reproductor de sonido
         SoundPlayer player = new SoundPlayer(Properties.Resources.MouseClickPunchy);
         SoundPlayer OpenClose = new SoundPlayer(Properties.Resources.space_ship_door_open_47688);
@@ -54,11 +55,11 @@ namespace ControlCuentas_ShekinahServices
         }
 
 
-        public void Recibir_Usuario(List<Perfil_Usuario> Usuarios)
+        public void Recibir_Usuario(List<Perfil_UsuarioModel> Usuarios)
         {
-            _Usuarios = new List<Perfil_Usuario>();
+           // _Usuarios = new List<Perfil_Usuario>();
             _Usuarios = Usuarios;
-            Lb_NombreUsuario.Text = $"{Convert.ToString(Usuarios[0].Nombre_Usuario)} /  {Convert.ToString(Usuarios[0].Permiso_Usuario)}";
+            Lb_NombreUsuario.Text = $"{Convert.ToString(Usuarios[0].Nombre_Usuario)} /  {Convert.ToString(Usuarios[0].Nombre_Permiso)}";
             Id_Usuario = Usuarios[0].Id_Usuario;
         }
         ///Metodos
