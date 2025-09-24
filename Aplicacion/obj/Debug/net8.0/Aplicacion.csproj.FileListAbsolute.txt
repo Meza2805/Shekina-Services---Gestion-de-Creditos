@@ -64,3 +64,5 @@ C:\Users\lionm\OneDrive\Documentos\GitHub\Shekina-Services---Gestion-de-Creditos
 C:\Users\lionm\OneDrive\Documentos\GitHub\Shekina-Services---Gestion-de-Creditos\Aplicacion\obj\Debug\net8.0\refint\Aplicacion.dll
 C:\Users\lionm\OneDrive\Documentos\GitHub\Shekina-Services---Gestion-de-Creditos\Aplicacion\obj\Debug\net8.0\Aplicacion.pdb
 C:\Users\lionm\OneDrive\Documentos\GitHub\Shekina-Services---Gestion-de-Creditos\Aplicacion\obj\Debug\net8.0\ref\Aplicacion.dll
+C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Gestion de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\Aplicacion\bin\Debug\net8.0\Modelos.dll
+C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Gestion de Créditos\Shekina-Services---Gesti-n-de-Cr-ditos\Aplicacion\bin\Debug\net8.0\Modelos.pdb

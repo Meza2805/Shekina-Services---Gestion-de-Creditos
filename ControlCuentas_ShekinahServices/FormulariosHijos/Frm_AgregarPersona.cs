@@ -53,15 +53,15 @@ namespace ControlCuentas_ShekinahServices.FormulariosHijos
             }
         }
 
-        public void RecibirDatosPersona(Persona persona)
+        public void RecibirDatosPersona(PersonaBaseEntity persona)
         {
             txtPrimerNombreCliente.Text = persona.PrimerNombre;
             txtSegundoNombreCliente.Text = persona.SegundoNombre;
             txtPrimerApellidoCliente.Text = persona.PrimerApellido;
             txtSegundoApellidoCliente.Text = persona.SegundoApellido;
-            txtNoCedulaCliente.Text = persona.NoCedula;
-            txtTelefonoCliente.Text = persona.NoTelefono;
-            txtDireccionCliente.Text = persona.Direccion;
+            txtNoCedulaCliente.Text = persona.Cedula;
+            //txtTelefonoCliente.Text = persona.NoTelefono;
+            //txtDireccionCliente.Text = persona.Direccion;
             dtFechaNacCliente.Value = persona.FechaNacimiento;
             Id_Persona = persona.Id;
 

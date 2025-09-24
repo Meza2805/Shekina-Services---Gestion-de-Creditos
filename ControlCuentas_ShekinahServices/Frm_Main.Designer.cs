@@ -31,12 +31,11 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Main));
             PanelMenu = new Panel();
-            btnProveedores = new FontAwesome.Sharp.IconButton();
+            BtnReportes = new FontAwesome.Sharp.IconButton();
+            BtnCreditos = new FontAwesome.Sharp.IconButton();
             btnFacturacion = new FontAwesome.Sharp.IconButton();
             btnProductos = new FontAwesome.Sharp.IconButton();
             BtnAjustes = new FontAwesome.Sharp.IconButton();
-            BtnReportes = new FontAwesome.Sharp.IconButton();
-            BtnCreditos = new FontAwesome.Sharp.IconButton();
             BtnClientes = new FontAwesome.Sharp.IconButton();
             PanelLogo = new Panel();
             BtnAccionMenu = new FontAwesome.Sharp.IconPictureBox();
@@ -77,12 +76,11 @@
             // PanelMenu
             // 
             PanelMenu.BackColor = Color.FromArgb(25, 55, 110);
-            PanelMenu.Controls.Add(btnProveedores);
+            PanelMenu.Controls.Add(BtnReportes);
+            PanelMenu.Controls.Add(BtnCreditos);
             PanelMenu.Controls.Add(btnFacturacion);
             PanelMenu.Controls.Add(btnProductos);
             PanelMenu.Controls.Add(BtnAjustes);
-            PanelMenu.Controls.Add(BtnReportes);
-            PanelMenu.Controls.Add(BtnCreditos);
             PanelMenu.Controls.Add(BtnClientes);
             PanelMenu.Controls.Add(PanelLogo);
             PanelMenu.Dock = DockStyle.Left;
@@ -91,99 +89,6 @@
             PanelMenu.Size = new Size(187, 531);
             PanelMenu.TabIndex = 0;
             PanelMenu.Paint += PanelMenu_Paint;
-            // 
-            // btnProveedores
-            // 
-            btnProveedores.Cursor = Cursors.Hand;
-            btnProveedores.Dock = DockStyle.Top;
-            btnProveedores.FlatAppearance.BorderSize = 0;
-            btnProveedores.FlatStyle = FlatStyle.Flat;
-            btnProveedores.Font = new Font("Palatino Linotype", 9.75F, FontStyle.Bold);
-            btnProveedores.ForeColor = Color.Gainsboro;
-            btnProveedores.IconChar = FontAwesome.Sharp.IconChar.HandHoldingUsd;
-            btnProveedores.IconColor = Color.White;
-            btnProveedores.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnProveedores.IconSize = 40;
-            btnProveedores.ImageAlign = ContentAlignment.MiddleLeft;
-            btnProveedores.Location = new Point(0, 410);
-            btnProveedores.Name = "btnProveedores";
-            btnProveedores.Size = new Size(187, 42);
-            btnProveedores.TabIndex = 7;
-            btnProveedores.Text = "Proveedores";
-            btnProveedores.TextAlign = ContentAlignment.MiddleLeft;
-            btnProveedores.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnProveedores.UseVisualStyleBackColor = true;
-            btnProveedores.Click += btnProveedores_Click;
-            // 
-            // btnFacturacion
-            // 
-            btnFacturacion.Cursor = Cursors.Hand;
-            btnFacturacion.Dock = DockStyle.Top;
-            btnFacturacion.FlatAppearance.BorderSize = 0;
-            btnFacturacion.FlatStyle = FlatStyle.Flat;
-            btnFacturacion.Font = new Font("Palatino Linotype", 9.75F, FontStyle.Bold);
-            btnFacturacion.ForeColor = Color.Gainsboro;
-            btnFacturacion.IconChar = FontAwesome.Sharp.IconChar.CashRegister;
-            btnFacturacion.IconColor = Color.White;
-            btnFacturacion.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnFacturacion.IconSize = 40;
-            btnFacturacion.ImageAlign = ContentAlignment.MiddleLeft;
-            btnFacturacion.Location = new Point(0, 368);
-            btnFacturacion.Name = "btnFacturacion";
-            btnFacturacion.Size = new Size(187, 42);
-            btnFacturacion.TabIndex = 6;
-            btnFacturacion.Text = "Facturacion";
-            btnFacturacion.TextAlign = ContentAlignment.MiddleLeft;
-            btnFacturacion.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnFacturacion.UseVisualStyleBackColor = true;
-            btnFacturacion.Click += btnFacturacion_Click;
-            // 
-            // btnProductos
-            // 
-            btnProductos.Cursor = Cursors.Hand;
-            btnProductos.Dock = DockStyle.Top;
-            btnProductos.FlatAppearance.BorderSize = 0;
-            btnProductos.FlatStyle = FlatStyle.Flat;
-            btnProductos.Font = new Font("Palatino Linotype", 9.75F, FontStyle.Bold);
-            btnProductos.ForeColor = Color.Gainsboro;
-            btnProductos.IconChar = FontAwesome.Sharp.IconChar.Box;
-            btnProductos.IconColor = Color.White;
-            btnProductos.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnProductos.IconSize = 40;
-            btnProductos.ImageAlign = ContentAlignment.MiddleLeft;
-            btnProductos.Location = new Point(0, 326);
-            btnProductos.Name = "btnProductos";
-            btnProductos.Size = new Size(187, 42);
-            btnProductos.TabIndex = 5;
-            btnProductos.Text = "Productos";
-            btnProductos.TextAlign = ContentAlignment.MiddleLeft;
-            btnProductos.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnProductos.UseVisualStyleBackColor = true;
-            btnProductos.Click += btnProductos_Click;
-            // 
-            // BtnAjustes
-            // 
-            BtnAjustes.BackColor = Color.FromArgb(25, 55, 110);
-            BtnAjustes.Cursor = Cursors.Hand;
-            BtnAjustes.Dock = DockStyle.Top;
-            BtnAjustes.FlatAppearance.BorderSize = 0;
-            BtnAjustes.FlatStyle = FlatStyle.Flat;
-            BtnAjustes.Font = new Font("Palatino Linotype", 9.75F, FontStyle.Bold);
-            BtnAjustes.ForeColor = Color.Gainsboro;
-            BtnAjustes.IconChar = FontAwesome.Sharp.IconChar.Wrench;
-            BtnAjustes.IconColor = Color.White;
-            BtnAjustes.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            BtnAjustes.IconSize = 40;
-            BtnAjustes.ImageAlign = ContentAlignment.MiddleLeft;
-            BtnAjustes.Location = new Point(0, 284);
-            BtnAjustes.Name = "BtnAjustes";
-            BtnAjustes.Size = new Size(187, 42);
-            BtnAjustes.TabIndex = 4;
-            BtnAjustes.Text = "Ajustes";
-            BtnAjustes.TextAlign = ContentAlignment.MiddleLeft;
-            BtnAjustes.TextImageRelation = TextImageRelation.ImageBeforeText;
-            BtnAjustes.UseVisualStyleBackColor = false;
-            BtnAjustes.Click += BtnAjustes_Click;
             // 
             // BtnReportes
             // 
@@ -198,15 +103,15 @@
             BtnReportes.IconFont = FontAwesome.Sharp.IconFont.Auto;
             BtnReportes.IconSize = 40;
             BtnReportes.ImageAlign = ContentAlignment.MiddleLeft;
-            BtnReportes.Location = new Point(0, 242);
+            BtnReportes.Location = new Point(0, 326);
             BtnReportes.Name = "BtnReportes";
             BtnReportes.Size = new Size(187, 42);
-            BtnReportes.TabIndex = 3;
+            BtnReportes.TabIndex = 8;
             BtnReportes.Text = "Reportes";
             BtnReportes.TextAlign = ContentAlignment.MiddleLeft;
             BtnReportes.TextImageRelation = TextImageRelation.ImageBeforeText;
             BtnReportes.UseVisualStyleBackColor = true;
-            BtnReportes.Click += BtnReportes_Click;
+            BtnReportes.Click += BtnReportes_Click_1;
             // 
             // BtnCreditos
             // 
@@ -221,15 +126,85 @@
             BtnCreditos.IconFont = FontAwesome.Sharp.IconFont.Auto;
             BtnCreditos.IconSize = 40;
             BtnCreditos.ImageAlign = ContentAlignment.MiddleLeft;
-            BtnCreditos.Location = new Point(0, 200);
+            BtnCreditos.Location = new Point(0, 284);
             BtnCreditos.Name = "BtnCreditos";
             BtnCreditos.Size = new Size(187, 42);
-            BtnCreditos.TabIndex = 2;
-            BtnCreditos.Text = "Creditos";
+            BtnCreditos.TabIndex = 7;
+            BtnCreditos.Text = "Créditos";
             BtnCreditos.TextAlign = ContentAlignment.MiddleLeft;
             BtnCreditos.TextImageRelation = TextImageRelation.ImageBeforeText;
             BtnCreditos.UseVisualStyleBackColor = true;
-            BtnCreditos.Click += BtnCreditos_Click;
+            BtnCreditos.Click += BtnCreditos_Click_1;
+            // 
+            // btnFacturacion
+            // 
+            btnFacturacion.Cursor = Cursors.Hand;
+            btnFacturacion.Dock = DockStyle.Top;
+            btnFacturacion.FlatAppearance.BorderSize = 0;
+            btnFacturacion.FlatStyle = FlatStyle.Flat;
+            btnFacturacion.Font = new Font("Palatino Linotype", 9.75F, FontStyle.Bold);
+            btnFacturacion.ForeColor = Color.Gainsboro;
+            btnFacturacion.IconChar = FontAwesome.Sharp.IconChar.CashRegister;
+            btnFacturacion.IconColor = Color.White;
+            btnFacturacion.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnFacturacion.IconSize = 40;
+            btnFacturacion.ImageAlign = ContentAlignment.MiddleLeft;
+            btnFacturacion.Location = new Point(0, 242);
+            btnFacturacion.Name = "btnFacturacion";
+            btnFacturacion.Size = new Size(187, 42);
+            btnFacturacion.TabIndex = 6;
+            btnFacturacion.Text = "Facturación";
+            btnFacturacion.TextAlign = ContentAlignment.MiddleLeft;
+            btnFacturacion.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnFacturacion.UseVisualStyleBackColor = true;
+            btnFacturacion.Click += btnFacturacion_Click_1;
+            // 
+            // btnProductos
+            // 
+            btnProductos.Cursor = Cursors.Hand;
+            btnProductos.Dock = DockStyle.Top;
+            btnProductos.FlatAppearance.BorderSize = 0;
+            btnProductos.FlatStyle = FlatStyle.Flat;
+            btnProductos.Font = new Font("Palatino Linotype", 9.75F, FontStyle.Bold);
+            btnProductos.ForeColor = Color.Gainsboro;
+            btnProductos.IconChar = FontAwesome.Sharp.IconChar.Box;
+            btnProductos.IconColor = Color.White;
+            btnProductos.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnProductos.IconSize = 40;
+            btnProductos.ImageAlign = ContentAlignment.MiddleLeft;
+            btnProductos.Location = new Point(0, 200);
+            btnProductos.Name = "btnProductos";
+            btnProductos.Size = new Size(187, 42);
+            btnProductos.TabIndex = 2;
+            btnProductos.Text = "Productos";
+            btnProductos.TextAlign = ContentAlignment.MiddleLeft;
+            btnProductos.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnProductos.UseVisualStyleBackColor = true;
+            btnProductos.Click += btnProductos_Click;
+            // 
+            // BtnAjustes
+            // 
+            BtnAjustes.BackColor = Color.FromArgb(25, 55, 110);
+            BtnAjustes.Cursor = Cursors.Hand;
+            BtnAjustes.Dock = DockStyle.Bottom;
+            BtnAjustes.FlatAppearance.BorderSize = 0;
+            BtnAjustes.FlatStyle = FlatStyle.Flat;
+            BtnAjustes.Font = new Font("Palatino Linotype", 9.75F, FontStyle.Bold);
+            BtnAjustes.ForeColor = Color.Gainsboro;
+            BtnAjustes.IconChar = FontAwesome.Sharp.IconChar.Wrench;
+            BtnAjustes.IconColor = Color.White;
+            BtnAjustes.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            BtnAjustes.IconSize = 40;
+            BtnAjustes.ImageAlign = ContentAlignment.MiddleLeft;
+            BtnAjustes.Location = new Point(0, 489);
+            BtnAjustes.Name = "BtnAjustes";
+            BtnAjustes.Size = new Size(187, 42);
+            BtnAjustes.TabIndex = 4;
+            BtnAjustes.Text = "Ajustes";
+            BtnAjustes.TextAlign = ContentAlignment.MiddleLeft;
+            BtnAjustes.TextImageRelation = TextImageRelation.ImageBeforeText;
+            BtnAjustes.UseVisualStyleBackColor = false;
+            BtnAjustes.Click += BtnAjustes_Click;
             // 
             // BtnClientes
             // 
@@ -239,7 +214,7 @@
             BtnClientes.FlatStyle = FlatStyle.Flat;
             BtnClientes.Font = new Font("Palatino Linotype", 9.75F, FontStyle.Bold);
             BtnClientes.ForeColor = Color.Gainsboro;
-            BtnClientes.IconChar = FontAwesome.Sharp.IconChar.UserTag;
+            BtnClientes.IconChar = FontAwesome.Sharp.IconChar.PersonCircleCheck;
             BtnClientes.IconColor = Color.White;
             BtnClientes.IconFont = FontAwesome.Sharp.IconFont.Auto;
             BtnClientes.IconSize = 40;
@@ -248,7 +223,7 @@
             BtnClientes.Name = "BtnClientes";
             BtnClientes.Size = new Size(187, 42);
             BtnClientes.TabIndex = 1;
-            BtnClientes.Text = "Clientes";
+            BtnClientes.Text = "Personas";
             BtnClientes.TextAlign = ContentAlignment.MiddleLeft;
             BtnClientes.TextImageRelation = TextImageRelation.ImageBeforeText;
             BtnClientes.UseVisualStyleBackColor = true;
@@ -514,8 +489,6 @@
         private Panel PanelMenu;
         private Panel PanelLogo;
         private FontAwesome.Sharp.IconButton BtnClientes;
-        private FontAwesome.Sharp.IconButton BtnReportes;
-        private FontAwesome.Sharp.IconButton BtnCreditos;
         private FontAwesome.Sharp.IconButton BtnAjustes;
         private PictureBox btnInicio;
         private Panel PanelSuperior;
@@ -537,7 +510,8 @@
         private Panel panel3;
         private Panel Panel_Botones_Ventana;
         private FontAwesome.Sharp.IconButton btnProductos;
+        private FontAwesome.Sharp.IconButton BtnCreditos;
         private FontAwesome.Sharp.IconButton btnFacturacion;
-        private FontAwesome.Sharp.IconButton btnProveedores;
+        private FontAwesome.Sharp.IconButton BtnReportes;
     }
 }

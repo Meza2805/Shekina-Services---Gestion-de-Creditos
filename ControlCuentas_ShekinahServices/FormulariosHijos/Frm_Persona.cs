@@ -20,7 +20,7 @@ namespace ControlCuentas_ShekinahServices.FormulariosHijos
     {
         private IRepositorio<PersonaBaseEntity> _repositorio;
         private readonly IServiceProvider _serviceProvider;
-        private Persona _persona = new Persona();
+        private PersonaBaseEntity _persona = new PersonaBaseEntity();
         private int Id_Usuario;
         // Crear un reproductor de sonido
         SoundPlayer player = new SoundPlayer(Properties.Resources.MouseClickPunchy);
@@ -137,23 +137,19 @@ namespace ControlCuentas_ShekinahServices.FormulariosHijos
         }
 
 
-        private Persona CargarDatosPersona()
+        private PersonaBaseEntity CargarDatosPersona()
         {
-
-         
-
             if (dgvPersona.SelectedRows.Count > 0)
             {
                 DataGridViewRow FilaSeleccionada = dgvPersona.SelectedRows[0];
                 _persona.Id = Convert.ToInt32(FilaSeleccionada.Cells[0].Value);
-                _persona.NoCedula = FilaSeleccionada.Cells[1].Value.ToString();
+                _persona.Cedula = FilaSeleccionada.Cells[1].Value.ToString();
                 _persona.PrimerNombre = FilaSeleccionada.Cells[2].Value.ToString();
                 _persona.SegundoNombre = FilaSeleccionada.Cells[3].Value.ToString();
                 _persona.PrimerApellido = FilaSeleccionada.Cells[4].Value.ToString();
                 _persona.SegundoApellido = FilaSeleccionada.Cells[5].Value.ToString();
                 _persona.FechaNacimiento = Convert.ToDateTime(FilaSeleccionada.Cells[7].Value.ToString());
-                _persona.Direccion = FilaSeleccionada.Cells[10].Value.ToString();
-                _persona.NoTelefono = FilaSeleccionada.Cells[9].Value.ToString();
+     
             }
             else
             {

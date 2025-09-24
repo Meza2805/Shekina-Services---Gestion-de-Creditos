@@ -1,4 +1,5 @@
 ﻿using Aplicacion;
+using Datos;
 using Entidades;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
@@ -13,13 +14,14 @@ namespace Repositorio
 {
     public class PersonaBase_Repositorio : IRepositorio<PersonaBaseEntity>
     {
-        private readonly DbContext _dbContext;
+        private readonly AppDbContext _dbContext;
 
-       public PersonaBase_Repositorio(DbContext dbContext)
+       public PersonaBase_Repositorio(AppDbContext dbContext)
         {
             _dbContext = dbContext;
         }
 
+     
         public async Task<(string, int)> Insertar_Nuevo_Registro(PersonaBaseEntity persona)
         {
             // Parámetros de entrada (respeta nombres y tipos del SP)

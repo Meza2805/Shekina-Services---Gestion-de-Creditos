@@ -6,6 +6,7 @@ using FontAwesome.Sharp;
 using Microsoft.Extensions.DependencyInjection;
 using Modelos;
 using System.Media;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -52,12 +53,14 @@ namespace ControlCuentas_ShekinahServices
 
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             this._serviceProvider = serviceProvider;
+            BtnAccionMenu.ForeColor = ColoresRGB.Amarrillo_Mostaza;
+
         }
 
 
         public void Recibir_Usuario(List<Perfil_UsuarioModel> Usuarios)
         {
-           // _Usuarios = new List<Perfil_Usuario>();
+            // _Usuarios = new List<Perfil_Usuario>();
             _Usuarios = Usuarios;
             Lb_NombreUsuario.Text = $"{Convert.ToString(Usuarios[0].Nombre_Usuario)} /  {Convert.ToString(Usuarios[0].Nombre_Permiso)}";
             Id_Usuario = Usuarios[0].Id_Usuario;
@@ -180,7 +183,7 @@ namespace ControlCuentas_ShekinahServices
         private void BtnClientes_Click(object sender, EventArgs e)
         {
             /// player.Play(); // Reproduce el sonido
-            ActivarBoton(sender, ColoresRGB.Rosa_Coral_Suave, "Clientes");
+            ActivarBoton(sender, ColoresRGB.Amarrillo_Mostaza, "Personas");
             var Formulario = _serviceProvider.GetRequiredService<Frm_Persona>();
             Formulario.Recibir_Id_Usuario(Id_Usuario); //No es la forma mas efeciente, pero asi recibo el Id_Usuario Loggeado
             AbrirFormularioHijo(Formulario);
@@ -196,18 +199,20 @@ namespace ControlCuentas_ShekinahServices
         {
             /// player.Play(); // Reproduce el sonido
             ActivarBoton(sender, ColoresRGB.Malva_Claro, "Reportes");
+           
         }
 
         private void BtnAjustes_Click(object sender, EventArgs e)
         {
             /// player.Play(); // Reproduce el sonido
-            ActivarBoton(sender, ColoresRGB.Amarillo_Dorado_Suave, "Ajustes");
+            ActivarBoton(sender, ColoresRGB.Amarrillo_Mostaza, "Ajustes");
+            
         }
 
         private void btnInicio_Click(object sender, EventArgs e)
         {
             /// player.Play(); // Reproduce el sonido
-            Resetear();
+        
             //En este caso hago uso de los formularios que he implementado en el archivo Main.cs en lugar de Instanciarlos
             //var Formulario = _serviceProvider.GetRequiredService<Frm_Principal>();
             //AbrirFormularioHijo(Formulario);
@@ -406,17 +411,38 @@ namespace ControlCuentas_ShekinahServices
 
         private void btnProductos_Click(object sender, EventArgs e)
         {
-            ActivarBoton(sender, ColoresRGB.Verde_Oliva_Suave, "Productos");
+            ActivarBoton(sender, ColoresRGB.Amarrillo_Mostaza, "Productos");
+     
         }
 
         private void btnFacturacion_Click(object sender, EventArgs e)
         {
-            ActivarBoton(sender, ColoresRGB.Azul_Petroleo_Suave, "Facturación");
+            ActivarBoton(sender, ColoresRGB.Amarrillo_Mostaza, "Facturación");
+     
         }
 
         private void btnProveedores_Click(object sender, EventArgs e)
         {
-            ActivarBoton(sender, ColoresRGB.Rosa_Palo_Suave, "Proveedores");
+            ActivarBoton(sender, ColoresRGB.Amarrillo_Mostaza, "Proveedores");
+        
+        }
+
+        private void btnFacturacion_Click_1(object sender, EventArgs e)
+        {
+            ActivarBoton(sender, ColoresRGB.Amarrillo_Mostaza, "Facturación");
+         
+        }
+
+        private void BtnCreditos_Click_1(object sender, EventArgs e)
+        {
+            ActivarBoton(sender, ColoresRGB.Amarrillo_Mostaza, "Créditos");
+          
+        }
+
+        private void BtnReportes_Click_1(object sender, EventArgs e)
+        {
+            ActivarBoton(sender, ColoresRGB.Amarrillo_Mostaza, "Reportes");
+          
         }
     }
 
