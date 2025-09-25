@@ -75,11 +75,11 @@ namespace ControlCuentas_ShekinahServices
             // Inyección de dependencias para casos de uso:
             // `PersonaBase` es un caso de uso en la capa de aplicación. Se registra con un ciclo de vida "transitorio".
             // services.AddTransient<AgregarPersona>();
-            services.AddTransient<PersonaBaseEntity>();
+            services.AddTransient<Persona_BaseEntity>();
 
 
             // Inyección de un repositorio genérico:
-            services.AddTransient<IRepositorio<PersonaBaseEntity>, PersonaBase_Repositorio>();
+            services.AddTransient<IRepositorio<Persona_BaseEntity>, PersonaBase_Repositorio>();
             services.AddTransient<IAcessoSistema<UsuarioEntity>, Acceso_Sistema_Repositorio>();
           //  services.AddTransient<IPersona, PersonaRepositorio02>(); 
 

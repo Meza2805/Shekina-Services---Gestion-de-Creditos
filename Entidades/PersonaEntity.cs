@@ -22,7 +22,7 @@ namespace Entidades
         public bool? Estado { get; set; }                    // bit, default 1, puede ser NULL
 
         // 🔹 Propiedades de navegación (opcional, si usas EF u otro ORM)
-        public PersonaBaseEntity PersonaBase { get; set; }
+        public Persona_BaseEntity PersonaBase { get; set; }
         public PersonaTipoEntity PersonaTipo { get; set; }
     }
 

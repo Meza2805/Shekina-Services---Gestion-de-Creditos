@@ -15,11 +15,11 @@ namespace ControlCuentas_ShekinahServices.FormulariosHijos
 {
     public partial class Frm_AgregarPersona : Form
     {
-        private readonly IRepositorio<PersonaBaseEntity> _Persona;
+        private readonly IRepositorio<Persona_BaseEntity> _Persona;
         int Id_Usuario, Id_Persona;
         bool Guardar = true;
         bool Accion = true;
-        public Frm_AgregarPersona(IRepositorio<PersonaBaseEntity> _Persona, IServiceProvider serviceProvider)
+        public Frm_AgregarPersona(IRepositorio<Persona_BaseEntity> _Persona, IServiceProvider serviceProvider)
         {
             InitializeComponent();
             this._Persona = _Persona;
@@ -53,7 +53,7 @@ namespace ControlCuentas_ShekinahServices.FormulariosHijos
             }
         }
 
-        public void RecibirDatosPersona(PersonaBaseEntity persona)
+        public void RecibirDatosPersona(Persona_BaseEntity persona)
         {
             txtPrimerNombreCliente.Text = persona.PrimerNombre;
             txtSegundoNombreCliente.Text = persona.SegundoNombre;

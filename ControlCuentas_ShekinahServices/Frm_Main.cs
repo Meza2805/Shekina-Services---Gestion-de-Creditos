@@ -53,7 +53,13 @@ namespace ControlCuentas_ShekinahServices
 
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             this._serviceProvider = serviceProvider;
-            BtnAccionMenu.ForeColor = ColoresRGB.Amarrillo_Mostaza;
+
+            ///Colorear botones
+            //BtnAccionMenu.ForeColor = ColoresRGB.Amarrillo_Mostaza;
+            //btnMinimizar.ForeColor = ColoresRGB.Amarrillo_Mostaza;
+            //btnMaximizar.ForeColor = ColoresRGB.Amarrillo_Mostaza;
+            //btnCerrar.ForeColor = ColoresRGB.Amarrillo_Mostaza;
+            //IconoFormularioActual.ForeColor = ColoresRGB.Amarrillo_Mostaza;
 
         }
 
@@ -143,7 +149,7 @@ namespace ControlCuentas_ShekinahServices
             // Diccionario de textos iniciales (definidos manualmente)
             Dictionary<Button, string> textosOriginales = new Dictionary<Button, string>
             {
-                { BtnClientes, "Clientes" },
+                { BtnClientes, "Personas" },
                 { BtnCreditos, "Créditos" },
                 { BtnReportes, "Reportes" },
                 { BtnAjustes, "Ajustes" }
@@ -165,16 +171,18 @@ namespace ControlCuentas_ShekinahServices
 
             if (btnInicio.Location == new Point(26, 17))
             {
-                btnInicio.Location = new Point(26, 17);
-                btnInicio.Size = new Size(140, 118);
+
+                btnInicio.Location = new Point(3, 58);
+                btnInicio.Size = new Size(40, 40);
                 btnInicio.Image = Properties.Resources.Lion;
             }
             else
             {
-
-                btnInicio.Location = new Point(3, 58);
-                btnInicio.Size = new Size(40, 40);
+                btnInicio.Location = new Point(26, 17);
+                btnInicio.Size = new Size(140, 118);
                 btnInicio.Image = Properties.Resources.Logo_Ajustado_Blanco___copia;
+
+                
 
             }
         }  //Funcion para quitar el texto de los botones y solo se apreceie el icono

@@ -17,6 +17,7 @@ namespace Aplicacion
 
         Task<T> Buscar_Registro(int id);
 
+        Task<List<T>> ObtenerListadoAsync();
     }
 
 }

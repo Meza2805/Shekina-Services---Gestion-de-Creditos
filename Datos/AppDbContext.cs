@@ -17,32 +17,19 @@ namespace Datos
         public DbSet<UsuarioEntity> Usuario { get; set; }
         public DbSet<PermisoEntity> Permiso { get; set; }
 
+        public DbSet<Persona_BaseEntity> Persona_Base { get; set; }
 
-        // Método para llamar al procedimiento almacenado
-        public async Task<int> AccederSistemaAsync(string usuario, string contrasena)
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            var salidaParam = new SqlParameter("@Salida", SqlDbType.Int) { Direction = ParameterDirection.Output };
-            var mensajeParam = new SqlParameter("@Mensaje", SqlDbType.NVarChar,-1 ) { Direction = ParameterDirection.Output };
-            await Database.ExecuteSqlRawAsync("EXEC Sp_Acceder_Sistema @Nombre_Usuario, @ContrasenaPlano, @Salida OUTPUT,@Mensaje OUTPUT",
-
-                new SqlParameter("@Nombre_Usuario", usuario),
-                new SqlParameter("@ContrasenaPlano", contrasena),
-                salidaParam,mensajeParam);
-
-            return (int)salidaParam.Value;
+            modelBuilder.Entity<Persona_BaseEntity>().ToTable("Persona_Base");
         }
 
-        // Método para ejecutar Sp_Verificar_Usuario
-        public async Task<int> VerificarUsuarioAsync(string usuario)
+        public async Task<List<Persona_BaseEntity>> Mostrar_Persona_Base()
         {
-            var salidaParam = new SqlParameter("@Salida", SqlDbType.Int) { Direction = ParameterDirection.Output };
-            await Database.ExecuteSqlRawAsync("EXEC Sp_Verificar_Usuario @Nombre_Usuario, @Salida OUTPUT",
-                new SqlParameter("@Nombre_Usuario", usuario),
-                salidaParam);
-            return (int)salidaParam.Value;
+          var Personas = await  Persona_Base.Where(p => p.Estado == true) .ToListAsync();
+            return Personas;
         }
-
-       /// public DbSet<Perfil_UsuarioModel> UsuariosConPermiso { get; set; }
 
         public async Task<(int Resultado, string MensajeError)> InsertarPersonaAsync(Persona Insertar_Persona)
         {

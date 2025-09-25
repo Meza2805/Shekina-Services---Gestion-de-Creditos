@@ -35,7 +35,7 @@
             DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             dgvPersona = new DataGridView();
             panel1 = new Panel();
-            label1 = new Label();
+            lbTituloPersona = new Label();
             btnCerrar = new FontAwesome.Sharp.IconPictureBox();
             label2 = new Label();
             txtBusqueda = new TextBox();
@@ -63,16 +63,16 @@
             dgvPersona.AllowUserToResizeColumns = false;
             dgvPersona.AllowUserToResizeRows = false;
             dgvPersona.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            dgvPersona.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            dgvPersona.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvPersona.BackgroundColor = Color.FromArgb(60, 80, 100);
             dgvPersona.BorderStyle = BorderStyle.None;
             dgvPersona.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             dgvPersona.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = Color.FromArgb(220, 110, 130);
-            dataGridViewCellStyle1.Font = new Font("Palatino Linotype", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(25, 55, 110);
+            dataGridViewCellStyle1.Font = new Font("Palatino Linotype", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             dataGridViewCellStyle1.ForeColor = Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(220, 110, 130);
+            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(25, 55, 110);
             dataGridViewCellStyle1.SelectionForeColor = Color.White;
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             dgvPersona.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
@@ -89,7 +89,7 @@
             dgvPersona.DefaultCellStyle = dataGridViewCellStyle2;
             dgvPersona.EnableHeadersVisualStyles = false;
             dgvPersona.GridColor = Color.Gainsboro;
-            dgvPersona.Location = new Point(0, 0);
+            dgvPersona.Location = new Point(11, 3);
             dgvPersona.MultiSelect = false;
             dgvPersona.Name = "dgvPersona";
             dgvPersona.ReadOnly = true;
@@ -108,7 +108,7 @@
             dataGridViewCellStyle4.BackColor = Color.FromArgb(60, 80, 100);
             dataGridViewCellStyle4.Font = new Font("Palatino Linotype", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             dataGridViewCellStyle4.ForeColor = Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = Color.FromArgb(227, 166, 177);
+            dataGridViewCellStyle4.SelectionBackColor = Color.PapayaWhip;
             dataGridViewCellStyle4.SelectionForeColor = Color.Black;
             dgvPersona.RowsDefaultCellStyle = dataGridViewCellStyle4;
             dgvPersona.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
@@ -118,7 +118,7 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(60, 80, 100);
-            panel1.Controls.Add(label1);
+            panel1.Controls.Add(lbTituloPersona);
             panel1.Controls.Add(btnCerrar);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(txtBusqueda);
@@ -129,17 +129,18 @@
             panel1.TabIndex = 1;
             panel1.Paint += panel1_Paint;
             // 
-            // label1
+            // lbTituloPersona
             // 
-            label1.Anchor = AnchorStyles.Left;
-            label1.AutoSize = true;
-            label1.Font = new Font("Palatino Linotype", 18F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.FromArgb(220, 110, 130);
-            label1.Location = new Point(250, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(236, 32);
-            label1.TabIndex = 4;
-            label1.Text = "Clientes Registrados";
+            lbTituloPersona.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            lbTituloPersona.AutoSize = true;
+            lbTituloPersona.Font = new Font("Palatino Linotype", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbTituloPersona.ForeColor = Color.FromArgb(200, 180, 60);
+            lbTituloPersona.Location = new Point(250, 9);
+            lbTituloPersona.Name = "lbTituloPersona";
+            lbTituloPersona.Size = new Size(243, 32);
+            lbTituloPersona.TabIndex = 4;
+            lbTituloPersona.Text = "Personas Registradas";
+            lbTituloPersona.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btnCerrar
             // 
@@ -162,23 +163,23 @@
             // 
             label2.Anchor = AnchorStyles.Left;
             label2.AutoSize = true;
-            label2.Font = new Font("Palatino Linotype", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(23, 74);
+            label2.Font = new Font("Palatino Linotype", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.FromArgb(200, 180, 60);
+            label2.Location = new Point(12, 73);
             label2.Name = "label2";
-            label2.Size = new Size(95, 18);
+            label2.Size = new Size(146, 26);
             label2.TabIndex = 3;
-            label2.Text = "Buscar Cliente";
+            label2.Text = "Buscar Persona";
             // 
             // txtBusqueda
             // 
             txtBusqueda.Anchor = AnchorStyles.Left;
             txtBusqueda.BackColor = Color.White;
             txtBusqueda.BorderStyle = BorderStyle.None;
-            txtBusqueda.Font = new Font("Palatino Linotype", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtBusqueda.Location = new Point(124, 74);
+            txtBusqueda.Font = new Font("Palatino Linotype", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtBusqueda.Location = new Point(164, 73);
             txtBusqueda.Name = "txtBusqueda";
-            txtBusqueda.Size = new Size(396, 22);
+            txtBusqueda.Size = new Size(396, 26);
             txtBusqueda.TabIndex = 1;
             txtBusqueda.TextChanged += txtBusqueda_TextChanged;
             // 
@@ -298,7 +299,7 @@
         private Panel panel2;
         private TextBox txtBusqueda;
         private FontAwesome.Sharp.IconPictureBox btnCerrar;
-        private Label label1;
+        private Label lbTituloPersona;
         private Label label2;
         private Panel PanelDerechoBotonesClientes;
         private Button btnEliminarCliente;

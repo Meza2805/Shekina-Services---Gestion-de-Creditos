@@ -18,14 +18,14 @@ namespace ControlCuentas_ShekinahServices.FormulariosHijos
 {
     public partial class Frm_Persona : Form
     {
-        private IRepositorio<PersonaBaseEntity> _repositorio;
+        private IRepositorio<Persona_BaseEntity> _repositorio;
         private readonly IServiceProvider _serviceProvider;
-        private PersonaBaseEntity _persona = new PersonaBaseEntity();
+        private Persona_BaseEntity _persona = new Persona_BaseEntity();
         private int Id_Usuario;
         // Crear un reproductor de sonido
         SoundPlayer player = new SoundPlayer(Properties.Resources.MouseClickPunchy);
 
-        public Frm_Persona(IRepositorio<PersonaBaseEntity> repositorio, IServiceProvider serviceProvider)  //Aca realizo la inyeccion de dependencias
+        public Frm_Persona(IRepositorio<Persona_BaseEntity> repositorio, IServiceProvider serviceProvider)  //Aca realizo la inyeccion de dependencias
         {                                                                                        // la dependecia del repositorio para poder establecer las reglas del negocio de la entidad
             _repositorio = repositorio;                                                         // y la dependencia del serviceProvider para poder inyectar los formularios hijos y/o formularios de carga
             _serviceProvider = serviceProvider;
@@ -33,6 +33,7 @@ namespace ControlCuentas_ShekinahServices.FormulariosHijos
             Libreria_Interna.AplicarBordesEsquinasBoton(btnAgregarCliente, 5);                 //Aplico bordes redondeados al boton
             Libreria_Interna.AplicarBordesEsquinasBoton(btnEditarCliente, 5);                  //Aplico bordes redondeados al boton
             Libreria_Interna.AplicarBordesEsquinasBoton(btnEliminarCliente, 5);                //Aplico bordes redondeados al boton
+            lbTituloPersona.ForeColor = ColoresRGB.Amarrillo_Mostaza;
         }
 
         public void Recibir_Id_Usuario(int Id_Usuario)
@@ -43,19 +44,20 @@ namespace ControlCuentas_ShekinahServices.FormulariosHijos
 
         public async Task Refrescar()
         {
-            //var persona = await _repositorio.ObtenerListadoAsync();
-        
-            //dgvPersona.DataSource = ConvertToDataTable(persona);
-            //dgvPersona.Columns[0].Visible = false;//Id
-            //dgvPersona.Columns[2].Visible = false;//PrimerNombre
-            //dgvPersona.Columns[3].Visible = false;//SegundoNombre
-            //dgvPersona.Columns[4].Visible = false;//PrimerApellido
-            //dgvPersona.Columns[5].Visible = false;//SegundoApellido
-            //dgvPersona.Columns[7].Visible = false;//FechaNacimiento
+            var persona = await _repositorio.ObtenerListadoAsync();
 
-            //dgvPersona.Columns[1].HeaderText = "Cedula";
-            //dgvPersona.Columns[6].HeaderText = "Nombre Completo";
-            //bSPersonas.DataSource = dgvPersona.DataSource;
+            dgvPersona.DataSource = ConvertToDataTable(persona);
+            dgvPersona.Columns[0].Visible = true;//Id
+            dgvPersona.Columns[1].Visible = true;//Cedula
+            dgvPersona.Columns[2].Visible = true;//PrimerNombre
+            dgvPersona.Columns[3].Visible = true;//SegundoNombre
+            dgvPersona.Columns[4].Visible = true;//PrimerApellido
+            dgvPersona.Columns[5].Visible = true;//SegundoApellido
+            dgvPersona.Columns[6].Visible = true;//FechaNacimiento
+            dgvPersona.Columns[7].Visible = true;//Sexo
+
+            //dgvPersona.Columns[1].HeaderText = "Cedula"; 
+            bSPersonas.DataSource = dgvPersona.DataSource;
         }
 
 
@@ -137,7 +139,7 @@ namespace ControlCuentas_ShekinahServices.FormulariosHijos
         }
 
 
-        private PersonaBaseEntity CargarDatosPersona()
+        private Persona_BaseEntity CargarDatosPersona()
         {
             if (dgvPersona.SelectedRows.Count > 0)
             {
@@ -148,6 +150,7 @@ namespace ControlCuentas_ShekinahServices.FormulariosHijos
                 _persona.SegundoNombre = FilaSeleccionada.Cells[3].Value.ToString();
                 _persona.PrimerApellido = FilaSeleccionada.Cells[4].Value.ToString();
                 _persona.SegundoApellido = FilaSeleccionada.Cells[5].Value.ToString();
+            
                 _persona.FechaNacimiento = Convert.ToDateTime(FilaSeleccionada.Cells[7].Value.ToString());
      
             }
@@ -192,46 +195,35 @@ namespace ControlCuentas_ShekinahServices.FormulariosHijos
         }
 
 
-        public static DataTable ConvertToDataTable(IEnumerable<Persona> personas)
+        public static DataTable ConvertToDataTable(IEnumerable<Persona_BaseEntity> personas)
         {
             DataTable dataTable = new DataTable("Personas");
 
             // Definir columnas en base a las propiedades de la clase Persona
-            dataTable.Columns.Add("Id", typeof(int));
-            dataTable.Columns.Add("NoCedula", typeof(string));
-            dataTable.Columns.Add("PrimerNombre", typeof(string));
-            dataTable.Columns.Add("SegundoNombre", typeof(string));
-            dataTable.Columns.Add("PrimerApellido", typeof(string));
-            dataTable.Columns.Add("SegundoApellido", typeof(string));
-            dataTable.Columns.Add("Nombre Completo", typeof(string)); // Propiedad calculada
-            dataTable.Columns.Add("FechaNacimiento", typeof(DateTime));
-            dataTable.Columns.Add("Edad", typeof(string)); // Propiedad calculada
-            dataTable.Columns.Add("NoTelefono", typeof(string));
-            dataTable.Columns.Add("Direccion", typeof(string));
-            dataTable.Columns.Add("Fecha Creacion", typeof(DateTime));
-            dataTable.Columns.Add("Usuario Crea", typeof(string));
-            dataTable.Columns.Add("Usuario Modifica", typeof(string));
-            dataTable.Columns.Add("Fecha de Modificacion", typeof(string));
+            dataTable.Columns.Add("Código", typeof(int));
+            dataTable.Columns.Add("Cedula", typeof(string));
+            dataTable.Columns.Add("Primer Nombre", typeof(string));
+            dataTable.Columns.Add("Segundo Nombre", typeof(string));
+            dataTable.Columns.Add("Primer Apellido", typeof(string));
+            dataTable.Columns.Add("Segundo Apellido", typeof(string));
+            dataTable.Columns.Add("Fecha de Nacimiento", typeof(DateTime));
+            dataTable.Columns.Add("Sexo", typeof(string));
+            dataTable.Columns.Add("Fecha de Registro", typeof(string));
+
 
             // Llenar el DataTable con la lista de personas
             foreach (var persona in personas)
             {
                 dataTable.Rows.Add(
                     persona.Id,
-                    persona.NoCedula,
+                    persona.Cedula,
                     persona.PrimerNombre,
                     persona.SegundoNombre,
                     persona.PrimerApellido,
                     persona.SegundoApellido,
-                    persona.NombreCompleto, // Se calcula automáticamente
                     persona.FechaNacimiento,
-                    persona.Edad, // Se calcula automáticamente
-                    persona.NoTelefono,
-                    persona.Direccion,
-                    persona.FechaCreacion,
-                    persona.UsuarioCreaNombre,
-                    persona.UsuarioModificaNombre,
-                    persona.FechaModificacion
+                    persona.Sexo,
+                    persona.Fecha_Registro
                 );
             }
 

@@ -1,10 +1,12 @@
 ﻿using Aplicacion;
 using Datos;
 using Entidades;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Modelos;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,14 +24,28 @@ namespace Repositorio
 
         public async Task<int> Acceder_Sistema(string usuario, string contrasena)
         {
-            int resultado = await _dbContext.AccederSistemaAsync(usuario, contrasena);
-            return resultado;
+            //int resultado = await _dbContext.AccederSistemaAsync(usuario, contrasena);
+            //return resultado;
+            var salidaParam = new SqlParameter("@Salida", SqlDbType.Int) { Direction = ParameterDirection.Output };
+            var mensajeParam = new SqlParameter("@Mensaje", SqlDbType.NVarChar, -1) { Direction = ParameterDirection.Output };
+            await _dbContext.Database.ExecuteSqlRawAsync("EXEC Sp_Acceder_Sistema @Nombre_Usuario, @ContrasenaPlano, @Salida OUTPUT,@Mensaje OUTPUT",
+
+                new SqlParameter("@Nombre_Usuario", usuario),
+                new SqlParameter("@ContrasenaPlano", contrasena),
+                salidaParam, mensajeParam);
+
+            return (int)salidaParam.Value;
         }
 
         public async Task<int> Verificar_Usuario(string usuario)
         {
-            int resultado = await _dbContext.VerificarUsuarioAsync(usuario);
-            return resultado;
+            //int resultado = await _dbContext.VerificarUsuarioAsync(usuario);
+            //return resultado;
+            var salidaParam = new SqlParameter("@Salida", SqlDbType.Int) { Direction = ParameterDirection.Output };
+            await _dbContext.Database.ExecuteSqlRawAsync("EXEC Sp_Verificar_Usuario @Nombre_Usuario, @Salida OUTPUT",
+                new SqlParameter("@Nombre_Usuario", usuario),
+                salidaParam);
+            return (int)salidaParam.Value;
         }
 
         public async Task<List<Perfil_UsuarioModel>> ObtenerUsuarios_y_Permisos()
